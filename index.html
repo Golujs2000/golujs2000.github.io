@@ -324,7 +324,52 @@
       <div class="rounded-2xl border shadow-smooth p-6 md:p-10">
         <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Book a free 15‑minute audit</h2>
         <p class="mt-2 text-slate-600">Tell us about your clinic. We’ll audit your Google presence and show quick wins.</p>
-        <form class="mt-6 grid md:grid-cols-2 gap-4" onsubmit="event.preventDefault(); handleSubmit();">
+          <form class="mt-6 grid md:grid-cols-2 gap-4" action="https://formsubmit.co/hello@cgp360.com" method="POST">
+            <!-- Hidden config fields -->
+            <input type="hidden" name="_subject" value="New Clinic Enquiry - CGP360">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+          
+            <div>
+              <label class="text-sm text-slate-700">Clinic Name</label>
+              <input required type="text" name="clinic_name" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+            </div>
+            <div>
+              <label class="text-sm text-slate-700">Your Name</label>
+              <input required type="text" name="your_name" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+            </div>
+            <div>
+              <label class="text-sm text-slate-700">Email</label>
+              <input required type="email" name="email" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+            </div>
+            <div>
+              <label class="text-sm text-slate-700">Phone / WhatsApp</label>
+              <input type="tel" name="phone" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+            </div>
+            <div class="md:col-span-2">
+              <label class="text-sm text-slate-700">Specialty</label>
+              <select name="specialty" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                <option>Dentist</option>
+                <option>Psychiatrist</option>
+                <option>Other Clinic</option>
+              </select>
+            </div>
+            <div class="md:col-span-2">
+              <label class="text-sm text-slate-700">What’s your biggest growth challenge?</label>
+              <textarea name="message" rows="4" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600" placeholder="e.g., need more new patients, improve reviews, reduce no-shows"></textarea>
+            </div>
+            <div class="md:col-span-2 flex items-start gap-3">
+              <input id="consent" type="checkbox" name="consent" class="mt-1 h-4 w-4 rounded border-slate-300"/>
+              <label for="consent" class="text-sm text-slate-600">I agree to be contacted about this enquiry. No spam.</label>
+            </div>
+            <div class="md:col-span-2">
+              <button class="inline-flex items-center rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white hover:bg-indigo-700" type="submit">
+                Request Audit →
+              </button>
+            </div>
+          </form>
+
+<!--         <form class="mt-6 grid md:grid-cols-2 gap-4" onsubmit="event.preventDefault(); handleSubmit();">
           <div>
             <label class="text-sm text-slate-700">Clinic Name</label>
             <input required type="text" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
@@ -360,7 +405,7 @@
           <div class="md:col-span-2">
             <button class="inline-flex items-center rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white hover:bg-indigo-700">Request Audit →</button>
           </div>
-        </form>
+        </form> -->
         <p id="formMsg" class="mt-4 text-sm text-emerald-600 hidden">Thanks! We’ll get in touch within 24 hours.</p>
       </div>
     </div>
@@ -432,4 +477,5 @@
   </script>
 </body>
 </html>
+
 
