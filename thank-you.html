@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You – CGP360</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased text-slate-800">
+
+  <!-- HEADER (same as index.html) -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html#home" class="flex items-center gap-2 font-semibold text-slate-900">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-600 text-white">CG</span>
+        <span>CGP360 :- Clinic Growth Partner</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="index.html#services" class="hover:text-indigo-600">Services</a>
+        <a href="index.html#packages" class="hover:text-indigo-600">Packages</a>
+        <a href="index.html#case-studies" class="hover:text-indigo-600">Case Studies</a>
+        <a href="index.html#process" class="hover:text-indigo-600">Process</a>
+        <a href="index.html#faq" class="hover:text-indigo-600">FAQ</a>
+        <a href="index.html#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- THANK YOU SECTION -->
+  <section class="bg-slate-50">
+    <div class="max-w-3xl mx-auto px-4 py-20 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">🙏 Thank You!</h1>
+      <p class="text-lg text-slate-600 mb-6">
+        We’ve received your enquiry. Our team will get back to you within 24 hours.  
+      </p>
+      <p class="text-slate-600 mb-8">For urgent queries, email us at 
+        <a href="mailto:hello@cgp360.com" class="text-indigo-600 font-medium hover:underline">hello@cgp360.com</a>
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="index.html" class="inline-flex items-center rounded-xl bg-indigo-600 px-5 py-3 font-semibold text-white hover:bg-indigo-700">
+          ← Back to Home
+        </a>
+        <a href="https://wa.me/919234525942" target="_blank" class="inline-flex items-center rounded-xl bg-green-600 px-5 py-3 font-semibold text-white hover:bg-green-700">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" class="h-5 w-5 mr-2 invert">
+          Connect on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (same as index.html) -->
+  <footer class="bg-slate-900 text-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center gap-2 font-semibold text-white">
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-indigo-600 text-white">CG</span>
+          <span>Clinic Growth Partner</span>
+        </div>
+        <p class="mt-3 text-sm text-slate-400">We help dentists & psychiatrists grow with ethical, patient-first marketing.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white">Services</h4>
+        <ul class="mt-3 space-y-2 text-sm text-slate-300">
+          <li>Local SEO & Maps</li>
+          <li>Reviews & Reputation</li>
+          <li>Google & Meta Ads</li>
+          <li>Telehealth Enablement</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white">Company</h4>
+        <ul class="mt-3 space-y-2 text-sm text-slate-300">
+          <li><a href="index.html#case-studies" class="hover:text-white">Case Studies</a></li>
+          <li><a href="index.html#faq" class="hover:text-white">FAQs</a></li>
+          <li><a href="index.html#packages" class="hover:text-white">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-white">Contact</h4>
+        <ul class="mt-3 space-y-2 text-sm text-slate-300">
+          <li>Email: hello@cgp360.com</li>
+          <li>Phone/WhatsApp: +91 9234525942</li>
+          <li>Hours: Mon–Fri, 9am–6pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 py-4 text-center text-xs text-slate-400">
+      © <span id="yr"></span> Clinic Growth Partner. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
