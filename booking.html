@@ -14,6 +14,7 @@ Simple static appointment booking form:
     <meta name="description"
         content="Simple clinic appointment booking form (static) that sends booking request to WhatsApp/email." />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body class="bg-white text-slate-900">
@@ -213,6 +214,9 @@ Simple static appointment booking form:
             const mailto = `mailto:${encodeURIComponent(CLINIC_EMAIL)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
             window.location.href = mailto;
         });
+    </script>
+    <script>
+        lucide.createIcons();
     </script>
 </body>
 
