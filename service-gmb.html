@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Business Optimization — CGP360</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <meta name="description"
+        content="Dominate local search results. We optimize your Google Business Profile to rank higher on Maps and get more patient calls." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3754ED',
+                            offwhite: '#EEF3F7',
+                            deepblue: '#131B62',
+                            black: '#080E29',
+                            white: '#F7FDFF',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-offwhite text-slate-900">
+    <!-- Top Bar -->
+    <div class="bg-brand-deepblue text-white">
+        <div
+            class="mx-auto max-w-7xl px-4 py-2 text-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-brand-blue"></i>
+                <span>One-time packages • No monthly fees</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a class="flex items-center gap-1.5 underline decoration-white/40 hover:decoration-white"
+                    href="tel:+919234525942">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call: +91 92345 25942
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-30 bg-white/60 backdrop-blur-xl border-b border-slate-200/50 shadow-sm">
+        <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="./assets/logo.svg" alt="CGP360 Logo" class="h-10 w-auto object-contain" />
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+                <a class="hover:text-slate-900" href="index.html">Home</a>
+                <a class="hover:text-slate-900 text-brand-blue font-semibold" href="services.html">Services</a>
+                <a class="hover:text-slate-900" href="packages.html">Packages</a>
+                <a class="hover:text-slate-900" href="contact.html">Contact</a>
+                <a class="hover:text-slate-900" href="about.html">About</a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <a href="contact.html"
+                    class="hidden sm:inline-flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">Get
+                    Free Audit</a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-brand-blue">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-200/50 shadow-lg md:hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="index.html">Home</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="services.html">Services</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="packages.html">Packages</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="about.html">About</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="contact.html">Contact</a>
+                <div class="pt-4 border-t border-slate-200/50 flex flex-col gap-3">
+                    <a href="contact.html"
+                        class="flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-3 text-sm font-medium text-white hover:bg-slate-800">
+                        Get Free Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
+                mobileMenuBtn.innerHTML = `<i data-lucide="${icon}" class="w-6 h-6"></i>`;
+                lucide.createIcons();
+            });
+        </script>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 bg-gradient-to-b from-brand-offwhite to-white border-b border-slate-200">
+            <div class="mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div
+                        class="inline-flex items-center gap-2 rounded-full bg-brand-blue/10 px-3 py-1 text-sm text-brand-blue font-medium mb-6">
+                        <i data-lucide="map-pin" class="w-4 h-4"></i> Local SEO Expert
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-brand-deepblue leading-tight mb-6">
+                        Dominate Local Search & Get Found First
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        90% of patients choose a clinic from the first 3 results on Google Maps. We optimize your
+                        profile to ensure you are one of them.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="contact.html"
+                            class="rounded-md bg-brand-blue px-8 py-3.5 text-white font-semibold hover:bg-brand-blue/90 shadow-lg shadow-brand-blue/20">
+                            Get Free GMB Audit
+                        </a>
+                        <a href="#details"
+                            class="rounded-md border border-slate-300 bg-white px-8 py-3.5 text-slate-700 font-semibold hover:bg-slate-50">
+                            See How It Works
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <!-- Abstract 'Map Ranking' Graphic using Glassy Cards -->
+                    <div class="absolute -top-10 -left-10 w-72 h-72 bg-brand-blue/10 rounded-full blur-3xl opacity-50">
+                    </div>
+                    <div
+                        class="relative z-10 bg-white/60 backdrop-blur-xl border border-white/50 rounded-xl p-6 shadow-xl">
+                        <div class="flex items-center gap-4 mb-6 border-b border-slate-100 pb-4">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                            <div class="ml-auto text-xs text-slate-400">Google Maps Preview</div>
+                        </div>
+                        <div class="space-y-4">
+                            <!-- #1 Ranking Mockup -->
+                            <div
+                                class="flex items-center gap-4 p-3 bg-brand-blue/5 rounded-lg border border-brand-blue/20">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-brand-blue text-white flex items-center justify-center font-bold text-xs">
+                                    A</div>
+                                <div>
+                                    <div class="h-3 w-32 bg-slate-800 rounded mb-1.5"></div>
+                                    <div class="flex gap-1">
+                                        <div class="h-2 w-12 bg-amber-400 rounded"></div>
+                                        <div class="h-2 w-8 bg-slate-300 rounded"></div>
+                                    </div>
+                                </div>
+                                <div class="ml-auto text-emerald-600 text-xs font-bold">#1 Ranking</div>
+                            </div>
+                            <!-- #2 -->
+                            <div class="flex items-center gap-4 p-3 opacity-60">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-slate-200 text-slate-500 flex items-center justify-center font-bold text-xs">
+                                    B</div>
+                                <div>
+                                    <div class="h-3 w-32 bg-slate-300 rounded mb-1.5"></div>
+                                    <div class="flex gap-1">
+                                        <div class="h-2 w-16 bg-slate-200 rounded"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Features -->
+        <section id="details" class="py-24 bg-white">
+            <div class="mx-auto max-w-4xl px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-brand-deepblue">What We Do</h2>
+                    <p class="mt-4 text-slate-600">A complete overhaul of your Google Business Profile.</p>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div
+                            class="w-12 h-12 rounded-md bg-brand-blue/10 text-brand-blue flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="search" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Keyword & Category Optimization</h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                We research exactly what patients in your area are typing (e.g., "best dentist near me"
+                                or "physio for back pain") and weave these keywords into your business description,
+                                services list, and Q&A section. We also select the primary and secondary categories that
+                                competitors often miss.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div
+                            class="w-12 h-12 rounded-md bg-brand-blue/10 text-brand-blue flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="image" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Visual Trust Building</h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                Profiles with photos get 42% more requests for directions. We upload your clinic photos
+                                (reception, doctor, equipment) with proper geo-tags and naming conventions so Google
+                                understands where you are located.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-8 items-start">
+                        <div
+                            class="w-12 h-12 rounded-md bg-brand-blue/10 text-brand-blue flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="message-square" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-3">Q&A Seeding</h3>
+                            <p class="text-slate-600 leading-relaxed">
+                                We don't wait for patients to ask questions. We pre-populate your profile with common
+                                questions (e.g., "Do you accept insurance?", "Is parking available?") and provide clear,
+                                professional answers. This reduces friction for new patients.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Box -->
+        <section class="py-20 px-4">
+            <div
+                class="mx-auto max-w-5xl rounded-2xl bg-brand-deepblue text-white p-12 text-center relative overflow-hidden">
+                <!-- Abstract BG shapes -->
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-64 h-64 bg-brand-blue/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2">
+                </div>
+
+                <h2 class="text-3xl font-bold relative z-10">Stop losing patients to competitors.</h2>
+                <p class="mt-4 text-white/80 text-lg relative z-10 max-w-2xl mx-auto">
+                    Get a fully optimized Google Business Profile that works for you 24/7. Included in our Basic,
+                    Standard, and Premium packages.
+                </p>
+                <div class="mt-8 flex justify-center gap-4 relative z-10">
+                    <a href="packages.html"
+                        class="rounded-md bg-white text-brand-deepblue px-8 py-3.5 font-bold hover:bg-slate-100">
+                        View Packages
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200">
+        <div
+            class="mx-auto max-w-7xl px-4 py-8 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div>© <span id="year"></span> CGP360</div>
+            <div class="flex gap-4">
+                <a class="hover:text-slate-900" href="packages.html">Packages</a>
+                <a class="hover:text-slate-900" href="contact.html">Contact</a>
+                <a class="hover:text-slate-900" href="terms.html">Terms</a>
+                <a class="hover:text-slate-900" href="privacy.html">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

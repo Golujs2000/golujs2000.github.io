@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review System Setup — CGP360</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <meta name="description"
+        content="Automated review collection for clinics. Get more 5-star Google reviews with our QR codes and WhatsApp templates." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3754ED',
+                            offwhite: '#EEF3F7',
+                            deepblue: '#131B62',
+                            black: '#080E29',
+                            white: '#F7FDFF',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-offwhite text-slate-900">
+    <!-- Top Bar -->
+    <div class="bg-brand-deepblue text-white">
+        <div
+            class="mx-auto max-w-7xl px-4 py-2 text-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-brand-blue"></i>
+                <span>One-time packages • No monthly fees</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a class="flex items-center gap-1.5 underline decoration-white/40 hover:decoration-white"
+                    href="tel:+919234525942">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call: +91 92345 25942
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-30 bg-white/60 backdrop-blur-xl border-b border-slate-200/50 shadow-sm">
+        <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="./assets/logo.svg" alt="CGP360 Logo" class="h-10 w-auto object-contain" />
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+                <a class="hover:text-slate-900" href="index.html">Home</a>
+                <a class="hover:text-slate-900 text-brand-blue font-semibold" href="services.html">Services</a>
+                <a class="hover:text-slate-900" href="packages.html">Packages</a>
+                <a class="hover:text-slate-900" href="contact.html">Contact</a>
+                <a class="hover:text-slate-900" href="about.html">About</a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <a href="contact.html"
+                    class="hidden sm:inline-flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">Get
+                    Free Audit</a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-brand-blue">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-200/50 shadow-lg md:hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="index.html">Home</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="services.html">Services</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="packages.html">Packages</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="about.html">About</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="contact.html">Contact</a>
+                <div class="pt-4 border-t border-slate-200/50 flex flex-col gap-3">
+                    <a href="contact.html"
+                        class="flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-3 text-sm font-medium text-white hover:bg-slate-800">
+                        Get Free Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
+                mobileMenuBtn.innerHTML = `<i data-lucide="${icon}" class="w-6 h-6"></i>`;
+                lucide.createIcons();
+            });
+        </script>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 bg-gradient-to-b from-brand-offwhite to-white border-b border-slate-200">
+            <div class="mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div
+                        class="inline-flex items-center gap-2 rounded-full bg-brand-deepblue/10 px-3 py-1 text-sm text-brand-deepblue font-medium mb-6">
+                        <i data-lucide="star" class="w-4 h-4"></i> Reputation Management
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-brand-deepblue leading-tight mb-6">
+                        Build 5-Star Trust on Autopilot
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        The #1 factor patients check before booking is your rating. We implement a seamless system to
+                        collect genuine positive reviews while filtering out negative ones.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="contact.html"
+                            class="rounded-md bg-brand-deepblue px-8 py-3.5 text-white font-semibold hover:bg-slate-800 shadow-lg shadow-brand-deepblue/20">
+                            Start Getting Reviews
+                        </a>
+                        <a href="#details"
+                            class="rounded-md border border-slate-300 bg-white px-8 py-3.5 text-slate-700 font-semibold hover:bg-slate-50">
+                            How It Works
+                        </a>
+                    </div>
+                </div>
+                <!-- Abstract 'Review' Graphic using Glassy Cards -->
+                <div class="relative flex justify-center">
+                    <div class="absolute inset-0 bg-yellow-400/20 rounded-full blur-3xl opacity-60"></div>
+                    <div
+                        class="relative z-10 bg-white/60 backdrop-blur-xl border border-white/50 rounded-xl p-8 shadow-xl max-w-sm w-full">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="h-12 w-12 rounded-full bg-slate-200 overflow-hidden">
+                                <img src="./assets/doctor.png" alt="Patient"
+                                    class="h-full w-full object-cover grayscale opacity-50" />
+                            </div>
+                            <div>
+                                <div class="h-3 w-24 bg-slate-800 rounded mb-1.5"></div>
+                                <div class="flex gap-1 text-yellow-400">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-2 w-full bg-slate-200 rounded mb-2"></div>
+                        <div class="h-2 w-5/6 bg-slate-200 rounded mb-2"></div>
+                        <div class="h-2 w-4/6 bg-slate-200 rounded"></div>
+
+                        <div
+                            class="mt-6 p-4 bg-brand-blue/5 rounded-lg border border-brand-blue/10 flex items-center gap-3">
+                            <i data-lucide="thumbs-up" class="w-5 h-5 text-brand-blue"></i>
+                            <span class="text-sm font-medium text-brand-blue">Verified Patient Review</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Features -->
+        <section id="details" class="py-24 bg-white">
+            <div class="mx-auto max-w-4xl px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-brand-deepblue">The Review Funnel</h2>
+                    <p class="mt-4 text-slate-600">We make it impossible for patients to "forget" to review you.</p>
+                </div>
+
+                <div class="grid gap-12">
+                    <div class="grid md:grid-cols-[80px_1fr] gap-6">
+                        <div
+                            class="w-20 h-20 rounded-2xl bg-brand-deepblue/5 text-brand-deepblue flex items-center justify-center flex-shrink-0 text-3xl font-bold border border-brand-deepblue/10">
+                            1</div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-4">Step 1: The "Ask" (QR Code Standee)</h3>
+                            <p class="text-slate-600 leading-relaxed text-lg">
+                                We design a premium, branded QR code standee for your reception desk. While patients are
+                                waiting for their bill or prescription, they simply scan to leave feedback.
+                            </p>
+                            <ul class="mt-4 space-y-2 text-sm text-slate-500">
+                                <li class="flex items-center gap-2"><i data-lucide="check"
+                                        class="w-4 h-4 text-emerald-500"></i> Branded with your logo</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check"
+                                        class="w-4 h-4 text-emerald-500"></i> "Scan focused" design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-[80px_1fr] gap-6">
+                        <div
+                            class="w-20 h-20 rounded-2xl bg-brand-deepblue/5 text-brand-deepblue flex items-center justify-center flex-shrink-0 text-3xl font-bold border border-brand-deepblue/10">
+                            2</div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-4">Step 2: The Logic (Feedback Shield)</h3>
+                            <p class="text-slate-600 leading-relaxed text-lg">
+                                The QR code doesn't just go to Google. It goes to a smart landing page.
+                                <br><br>
+                                <strong>5 Stars?</strong> -> Redirects straight to Google Reviews.<br>
+                                <strong>1-3 Stars?</strong> -> Opens a private feedback form sent only to your email.
+                            </p>
+                            <p class="mt-2 text-sm text-slate-500">This prevents bad reviews from going public while
+                                letting you fix the issue privately.</p>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-[80px_1fr] gap-6">
+                        <div
+                            class="w-20 h-20 rounded-2xl bg-brand-deepblue/5 text-brand-deepblue flex items-center justify-center flex-shrink-0 text-3xl font-bold border border-brand-deepblue/10">
+                            3</div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-4">Step 3: The Follow-up (WhatsApp)</h3>
+                            <p class="text-slate-600 leading-relaxed text-lg">
+                                Patients busy? No problem. We give you a pre-written WhatsApp template. Send it 2 hours
+                                after their visit: <em>"Hi [Name], great seeing you! Could you take 10 seconds to rate
+                                    us?"</em>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA Box -->
+        <section class="py-20 px-4 bg-brand-offwhite">
+            <div class="mx-auto max-w-4xl text-center">
+                <h2 class="text-3xl font-bold text-brand-deepblue">Ready to become the top-rated clinic?</h2>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="packages.html"
+                        class="rounded-md bg-brand-blue px-8 py-3.5 text-white font-semibold hover:bg-brand-blue/90">
+                        See Pricing
+                    </a>
+                    <a href="contact.html"
+                        class="rounded-md border border-slate-300 bg-white px-8 py-3.5 text-slate-700 font-semibold hover:bg-slate-50">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200">
+        <div
+            class="mx-auto max-w-7xl px-4 py-8 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div>© <span id="year"></span> CGP360</div>
+            <div class="flex gap-4">
+                <a class="hover:text-slate-900" href="packages.html">Packages</a>
+                <a class="hover:text-slate-900" href="contact.html">Contact</a>
+                <a class="hover:text-slate-900" href="terms.html">Terms</a>
+                <a class="hover:text-slate-900" href="privacy.html">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

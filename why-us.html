@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Choose Us — CGP360</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <meta name="description"
+        content="We are exclusively for clinics. No monthly fees, 100% asset ownership, and medical-grade marketing standards." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3754ED',
+                            offwhite: '#EEF3F7',
+                            deepblue: '#131B62',
+                            black: '#080E29',
+                            white: '#F7FDFF',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-offwhite text-slate-900">
+    <!-- Top Bar -->
+    <div class="bg-brand-deepblue text-white">
+        <div
+            class="mx-auto max-w-7xl px-4 py-2 text-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-brand-blue"></i>
+                <span>One-time packages • No monthly fees</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a class="flex items-center gap-1.5 underline decoration-white/40 hover:decoration-white"
+                    href="tel:+919234525942">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call: +91 92345 25942
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-30 bg-white/60 backdrop-blur-xl border-b border-slate-200/50 shadow-sm">
+        <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="./assets/logo.svg" alt="CGP360 Logo" class="h-10 w-auto object-contain" />
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+                <a class="hover:text-slate-900" href="index.html">Home</a>
+                <a class="hover:text-slate-900" href="services.html">Services</a>
+                <a class="hover:text-slate-900" href="packages.html">Packages</a>
+                <a class="hover:text-slate-900 text-brand-blue font-semibold" href="why-us.html">Why Us?</a>
+                <a class="hover:text-slate-900" href="about.html">About</a>
+                <a class="hover:text-slate-900" href="contact.html">Contact</a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <a href="contact.html"
+                    class="hidden sm:inline-flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">Get
+                    Free Audit</a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-brand-blue">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-200/50 shadow-lg md:hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="index.html">Home</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="services.html">Services</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="packages.html">Packages</a>
+                <a class="block text-sm font-medium text-brand-blue hover:text-brand-blue" href="why-us.html">Why
+                    Us?</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="about.html">About</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="contact.html">Contact</a>
+                <div class="pt-4 border-t border-slate-200/50 flex flex-col gap-3">
+                    <a href="contact.html"
+                        class="flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-3 text-sm font-medium text-white hover:bg-slate-800">
+                        Get Free Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
+                mobileMenuBtn.innerHTML = `<i data-lucide="${icon}" class="w-6 h-6"></i>`;
+                lucide.createIcons();
+            });
+        </script>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-24 bg-brand-deepblue text-white relative overflow-hidden">
+            <!-- Abstract Background -->
+            <div
+                class="absolute top-0 right-0 w-96 h-96 bg-brand-blue/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2">
+            </div>
+
+            <div class="mx-auto max-w-4xl px-4 text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                    We only work with <span class="text-brand-blue bg-white/10 px-2 rounded-md">Clinics.</span>
+                </h1>
+                <p class="text-xl text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Most agencies sell "marketing". We sell "patient calls". There's a difference.
+                </p>
+            </div>
+        </section>
+
+        <!-- USPs -->
+        <section class="py-24 bg-brand-offwhite">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="grid md:grid-cols-3 gap-8 -mt-32 relative z-20">
+                    <!-- USP 1 -->
+                    <div
+                        class="bg-white/60 backdrop-blur-lg border border-white/50 p-8 rounded-md shadow-lg hover:-translate-y-1 transition-transform">
+                        <div
+                            class="w-12 h-12 rounded-md bg-brand-blue text-white flex items-center justify-center mb-6">
+                            <i data-lucide="stethoscope" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Medically Optimized</h3>
+                        <p class="text-slate-600">
+                            We know the difference between "customers" and "patients". Our copy, keywords, and designs
+                            are built for healthcare trust.
+                        </p>
+                    </div>
+
+                    <!-- USP 2 -->
+                    <div
+                        class="bg-brand-deepblue text-white backdrop-blur-lg border border-brand-blue/30 p-8 rounded-md shadow-lg hover:-translate-y-1 transition-transform transform scale-105">
+                        <div
+                            class="w-12 h-12 rounded-md bg-white text-brand-deepblue flex items-center justify-center mb-6">
+                            <i data-lucide="ban" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">No Monthly Fees</h3>
+                        <p class="text-white/80">
+                            Why pay rent for your own website? We offer one-time setup packages. You pay once, and it's
+                            yours forever.
+                        </p>
+                    </div>
+
+                    <!-- USP 3 -->
+                    <div
+                        class="bg-white/60 backdrop-blur-lg border border-white/50 p-8 rounded-md shadow-lg hover:-translate-y-1 transition-transform">
+                        <div
+                            class="w-12 h-12 rounded-md bg-brand-blue text-white flex items-center justify-center mb-6">
+                            <i data-lucide="lock" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">100% Asset Ownership</h3>
+                        <p class="text-slate-600">
+                            You own the domain, the hosting account, and the Google Profile. We don't hold your digital
+                            assets hostage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="py-24 bg-white">
+            <div class="mx-auto max-w-5xl px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-brand-deepblue">Compare & Decide</h2>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b-2 border-slate-100">
+                                <th
+                                    class="py-6 px-4 text-slate-400 font-semibold text-sm uppercase tracking-wider w-1/4">
+                                    Feature</th>
+                                <th
+                                    class="py-6 px-4 text-brand-blue font-bold text-lg w-1/4 bg-brand-blue/5 rounded-t-lg">
+                                    CGP360</th>
+                                <th class="py-6 px-4 text-slate-900 font-semibold w-1/4">Freelancers</th>
+                                <th class="py-6 px-4 text-slate-900 font-semibold w-1/4">Big Agencies</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-slate-600">
+                            <tr class="border-b border-slate-50 hover:bg-slate-50">
+                                <td class="py-6 px-4 font-medium text-slate-900">Cost Model</td>
+                                <td class="py-6 px-4 font-bold text-slate-900 bg-brand-blue/5">One-time</td>
+                                <td class="py-6 px-4">Hourly / Project</td>
+                                <td class="py-6 px-4 text-red-500">Monthly Retainer</td>
+                            </tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50">
+                                <td class="py-6 px-4 font-medium text-slate-900">Industry Focus</td>
+                                <td class="py-6 px-4 font-bold text-slate-900 bg-brand-blue/5">Clinics Only</td>
+                                <td class="py-6 px-4">Generalist</td>
+                                <td class="py-6 px-4">Generalist</td>
+                            </tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50">
+                                <td class="py-6 px-4 font-medium text-slate-900">Turnaround Time</td>
+                                <td class="py-6 px-4 font-bold text-slate-900 bg-brand-blue/5">3-5 Days</td>
+                                <td class="py-6 px-4">Unpredictable</td>
+                                <td class="py-6 px-4">2-4 Weeks</td>
+                            </tr>
+                            <tr class="border-b border-slate-50 hover:bg-slate-50">
+                                <td class="py-6 px-4 font-medium text-slate-900">Asset Ownership</td>
+                                <td class="py-6 px-4 font-bold text-slate-900 bg-brand-blue/5">100% Yours</td>
+                                <td class="py-6 px-4">Yours</td>
+                                <td class="py-6 px-4 text-red-500">Theirs (Leased)</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50">
+                                <td class="py-6 px-4 font-medium text-slate-900">Local SEO Expertise</td>
+                                <td class="py-6 px-4 font-bold text-slate-900 bg-brand-blue/5">High</td>
+                                <td class="py-6 px-4">Varies</td>
+                                <td class="py-6 px-4">High but expensive</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Signals -->
+        <section class="py-24 bg-brand-offwhite border-t border-slate-200">
+            <div class="mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-brand-deepblue mb-6">Data Privacy & Compliance</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        We understand the sensitivity of medical data. While we primarily handle marketing data (Google
+                        Maps interactions, website clicks), we ensure that any patient lead data (like names/numbers
+                        from booking forms) is transmitted securely directly to you.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-slate-700">
+                            <div
+                                class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="shield-check" class="w-4 h-4"></i>
+                            </div>
+                            <span>Secure SSL Encryption</span>
+                        </li>
+                        <li class="flex items-center gap-3 text-slate-700">
+                            <div
+                                class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="database" class="w-4 h-4"></i>
+                            </div>
+                            <span>No Third-Party Data Sharing</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <div class="bg-white rounded-md p-8 shadow-sm border border-slate-200">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-slate-100 rounded-full overflow-hidden">
+                                <!-- Placeholder for client logo or generic medical icon -->
+                                <i data-lucide="user" class="w-full h-full p-4 text-slate-300"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-slate-900">Dr. Sharma</div>
+                                <div class="text-sm text-slate-500">Orthopedic Surgeon</div>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 italic">
+                            "I tried two other agencies before. CGP360 was the first one that actually understood how
+                            patients think. The 'No Monthly Fee' model saved me over ₹50,000 this year alone."
+                        </p>
+                        <div class="mt-4 flex gap-1 text-yellow-400">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-brand-deepblue py-20 px-4 text-center">
+            <div class="mx-auto max-w-4xl">
+                <h2 class="text-3xl font-bold text-white">Trust the experts who trust you.</h2>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="packages.html"
+                        class="rounded-md bg-white text-brand-deepblue px-8 py-3.5 font-bold hover:bg-slate-100">
+                        View Packages
+                    </a>
+                    <a href="contact.html"
+                        class="rounded-md border border-white/20 bg-white/5 backdrop-blur-sm text-white px-8 py-3.5 font-semibold hover:bg-white/10">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200">
+        <div
+            class="mx-auto max-w-7xl px-4 py-8 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div>© <span id="year"></span> CGP360</div>
+            <div class="flex gap-4">
+                <a class="hover:text-slate-900" href="packages.html">Packages</a>
+                <a class="hover:text-slate-900" href="contact.html">Contact</a>
+                <a class="hover:text-slate-900" href="terms.html">Terms</a>
+                <a class="hover:text-slate-900" href="privacy.html">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
