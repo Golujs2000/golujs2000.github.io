@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+    <!-- Pin Shape -->
+    <path d="M40 75C40 75 15 50 15 31C15 17 26 6 40 6C54 6 65 17 65 31C65 50 40 75 40 75Z" fill="#3754ED"/>
+    <!-- Inner White Circle -->
+    <circle cx="40" cy="31" r="15" fill="#F7FDFF"/>
+    <!-- Growth Arrow -->
+    <path d="M33 36L40 29L47 36" stroke="#131B62" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M40 42V29" stroke="#131B62" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

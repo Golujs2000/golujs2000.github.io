@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms & Conditions — CGP360</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3754ED',
+                            offwhite: '#EEF3F7',
+                            deepblue: '#131B62',
+                            black: '#080E29',
+                            white: '#F7FDFF',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-slate-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-slate-200">
+        <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between gap-4">
+            <a href="index.html"><img src="./assets/logo.svg" alt="CGP360 Logo"
+                    class="h-10 w-auto object-contain" /></a>
+            <div class="flex items-center gap-2">
+                <a href="index.html" class="text-sm font-medium hover:text-brand-blue">Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-3xl px-4 py-16">
+        <h1 class="text-3xl font-bold text-brand-deepblue mb-8">Terms and Conditions</h1>
+
+        <div class="prose prose-slate max-w-none text-slate-600">
+            <p><strong>Effective Date:</strong> January 1, 2025</p>
+            <p>Welcome to CGP360. By purchasing our services, you agree to the following terms:</p>
+
+            <h3 class="text-lg font-semibold text-slate-900 mt-6">1. Services</h3>
+            <p>We provide digital marketing setup services including Google Business Profile optimization, website
+                development, and review management systems.</p>
+
+            <h3 class="text-lg font-semibold text-slate-900 mt-6">2. Payments & Refunds</h3>
+            <p>All packages are one-time payments. Refunds are only applicable if we fail to deliver the agreed services
+                within 30 days of receiving all required data from the client.</p>
+
+            <h3 class="text-lg font-semibold text-slate-900 mt-6">3. Hosting & Domain</h3>
+            <p>Hosting is free for the first year. The domain name must be purchased and owned by the client. We are not
+                responsible for domain renewals.</p>
+
+            <h3 class="text-lg font-semibold text-slate-900 mt-6">4. Limitation of Liability</h3>
+            <p>We do not guarantee specific rankings on Google, as search algorithms are third-party systems. We promise
+                to implement best practices to improve visibility.</p>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 py-10 text-center text-sm text-slate-500">
+        © 2025 CGP360. All rights reserved.
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
