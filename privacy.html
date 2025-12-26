@@ -27,13 +27,68 @@
     </script>
 </head>
 
-<body class="bg-white text-slate-900">
-    <header class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-slate-200">
+<body class="bg-brand-offwhite text-slate-900">
+    <header class="sticky top-0 z-30 bg-white/60 backdrop-blur-xl border-b border-slate-200/50 shadow-sm">
         <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between gap-4">
-            <a href="index.html"><img src="./assets/logo.svg" alt="CGP360 Logo"
-                    class="h-10 w-auto object-contain" /></a>
-            <a href="index.html" class="text-sm font-medium hover:text-brand-blue">Back to Home</a>
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="./assets/logo.svg" alt="CGP360 Logo" class="h-10 w-auto object-contain" />
+            </a>
+
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+                <a class="hover:text-slate-900" href="./services.html">Services</a>
+                <a class="hover:text-slate-900" href="./packages.html">Packages</a>
+                <a class="hover:text-slate-900" href="./about.html">About</a>
+                <a class="hover:text-slate-900" href="./contact.html">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <a href="./contact.html"
+                    class="hidden sm:inline-flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">
+                    Get Free Audit
+                </a>
+                <a href="https://wa.me/919234525942" target="_blank" rel="noopener"
+                    class="inline-flex items-center justify-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50">
+                    WhatsApp
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-brand-blue">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
         </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-200/50 shadow-lg md:hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="./index.html">Home</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="./services.html">Services</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="./packages.html">Packages</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="./about.html">About</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="./contact.html">Contact</a>
+                <div class="pt-4 border-t border-slate-200/50 flex flex-col gap-3">
+                    <a href="./contact.html"
+                        class="flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-3 text-sm font-medium text-white hover:bg-slate-800">
+                        Get Free Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
+                mobileMenuBtn.innerHTML = `<i data-lucide="${icon}" class="w-6 h-6"></i>`;
+                lucide.createIcons();
+            });
+        </script>
     </header>
 
     <main class="mx-auto max-w-3xl px-4 py-16 prose prose-slate">

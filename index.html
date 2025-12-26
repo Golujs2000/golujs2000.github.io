@@ -55,7 +55,7 @@
     </div>
 
     <!-- Header -->
-    <header class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-slate-200">
+    <header class="sticky top-0 z-30 bg-white/60 backdrop-blur-xl border-b border-slate-200/50 shadow-sm">
         <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between gap-4">
             <a href="#top" class="flex items-center gap-2">
                 <img src="./assets/logo.svg" alt="CGP360 Logo" class="h-10 w-auto object-contain" />
@@ -70,15 +70,52 @@
 
             <div class="flex items-center gap-2">
                 <a href="./contact.html"
-                    class="hidden sm:inline-flex items-center justify-center rounded-xl bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">
+                    class="hidden sm:inline-flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">
                     Get Free Audit
                 </a>
                 <a href="https://wa.me/919234525942" target="_blank" rel="noopener"
-                    class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50">
+                    class="inline-flex items-center justify-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50">
                     WhatsApp
                 </a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-brand-blue">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
             </div>
         </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-200/50 shadow-lg md:hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="./index.html">Home</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="./services.html">Services</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="./packages.html">Packages</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="./about.html">About</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="./contact.html">Contact</a>
+                <div class="pt-4 border-t border-slate-200/50 flex flex-col gap-3">
+                    <a href="./contact.html"
+                        class="flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-3 text-sm font-medium text-white hover:bg-slate-800">
+                        Get Free Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
+                mobileMenuBtn.innerHTML = `<i data-lucide="${icon}" class="w-6 h-6"></i>`;
+                lucide.createIcons();
+            });
+        </script>
     </header>
 
     <!-- Hero -->
@@ -106,29 +143,29 @@
 
                     <div class="mt-6 flex flex-col sm:flex-row gap-3">
                         <a href="./packages.html"
-                            class="inline-flex items-center justify-center rounded-xl bg-brand-blue px-5 py-3 text-base font-semibold text-white hover:bg-brand-blue/90">
+                            class="inline-flex items-center justify-center rounded-md bg-brand-blue px-5 py-3 text-base font-semibold text-white hover:bg-brand-blue/90">
                             View Packages
                         </a>
                         <a href="./contact.html"
-                            class="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-base font-semibold text-slate-900 hover:bg-slate-50">
+                            class="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-5 py-3 text-base font-semibold text-slate-900 hover:bg-slate-50">
                             Get Free Clinic Audit
                         </a>
                     </div>
 
                     <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
-                        <div class="rounded-2xl bg-white border border-slate-200 p-4">
+                        <div class="rounded-md bg-white/60 backdrop-blur-md border border-white/50 p-4 shadow-sm">
                             <div class="text-2xl font-bold">5–10x</div>
                             <div class="text-sm text-slate-600">More map views*</div>
                         </div>
-                        <div class="rounded-2xl bg-white border border-slate-200 p-4">
+                        <div class="rounded-md bg-white/60 backdrop-blur-md border border-white/50 p-4 shadow-sm">
                             <div class="text-2xl font-bold">4.6+</div>
                             <div class="text-sm text-slate-600">Rating goal</div>
                         </div>
-                        <div class="rounded-2xl bg-white border border-slate-200 p-4">
+                        <div class="rounded-md bg-white/60 backdrop-blur-md border border-white/50 p-4 shadow-sm">
                             <div class="text-2xl font-bold">7 days</div>
                             <div class="text-sm text-slate-600">Typical delivery</div>
                         </div>
-                        <div class="rounded-2xl bg-white border border-slate-200 p-4">
+                        <div class="rounded-md bg-white/60 backdrop-blur-md border border-white/50 p-4 shadow-sm">
                             <div class="text-2xl font-bold">₹0/mo</div>
                             <div class="text-sm text-slate-600">No monthly fees</div>
                         </div>
@@ -142,10 +179,10 @@
                 <!-- Hero Card -->
                 <div class="lg:justify-self-end relative">
                     <div
-                        class="relative rounded-3xl overflow-hidden shadow-2xl shadow-brand-blue/10 border-4 border-white">
+                        class="relative rounded-md overflow-hidden shadow-2xl shadow-brand-blue/10 border-4 border-white">
                         <img src="./assets/doctor.png" alt="Professional Doctor" class="w-full h-auto object-cover" />
                         <div
-                            class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur px-4 py-3 rounded-xl border border-brand-offwhite shadow-sm flex items-center gap-3">
+                            class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur px-4 py-3 rounded-md border border-brand-offwhite shadow-sm flex items-center gap-3">
                             <div
                                 class="w-10 h-10 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue">
                                 <i data-lucide="shield-check" class="w-5 h-5"></i>
@@ -161,7 +198,7 @@
         </section>
 
         <!-- Services -->
-        <section id="services" class="py-24">
+        <section id="services" class="py-24 bg-brand-offwhite">
             <div class="mx-auto max-w-7xl px-4">
                 <div class="max-w-2xl">
                     <h2 class="text-3xl font-bold tracking-tight">Services built for local clinics</h2>
@@ -172,8 +209,9 @@
                 </div>
 
                 <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="rounded-3xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-                        <div class="h-12 w-12 rounded-2xl bg-brand-blue text-white grid place-items-center">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 rounded-md bg-brand-blue text-white grid place-items-center">
                             <i data-lucide="map-pin" class="w-6 h-6"></i>
                         </div>
                         <h3 class="mt-6 font-semibold text-xl">Google Business Optimization</h3>
@@ -182,8 +220,9 @@
                         </p>
                     </div>
 
-                    <div class="rounded-3xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-                        <div class="h-12 w-12 rounded-2xl bg-brand-deepblue text-white grid place-items-center">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 rounded-md bg-brand-deepblue text-white grid place-items-center">
                             <i data-lucide="star" class="w-6 h-6"></i>
                         </div>
                         <h3 class="mt-6 font-semibold text-xl">Reviews System Setup</h3>
@@ -192,8 +231,9 @@
                         </p>
                     </div>
 
-                    <div class="rounded-3xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-                        <div class="h-12 w-12 rounded-2xl bg-brand-blue/10 text-brand-deepblue grid place-items-center">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 rounded-md bg-brand-blue/10 text-brand-deepblue grid place-items-center">
                             <i data-lucide="layout" class="w-6 h-6"></i>
                         </div>
                         <h3 class="mt-6 font-semibold text-xl">Clinic Website (Static)</h3>
@@ -202,8 +242,9 @@
                         </p>
                     </div>
 
-                    <div class="rounded-3xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-                        <div class="h-12 w-12 rounded-2xl bg-slate-100 text-slate-800 grid place-items-center">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 rounded-md bg-slate-100 text-slate-800 grid place-items-center">
                             <i data-lucide="calendar" class="w-6 h-6"></i>
                         </div>
                         <h3 class="mt-6 font-semibold text-xl">Online Appointment Booking</h3>
@@ -212,9 +253,9 @@
                         </p>
                     </div>
 
-                    <div class="rounded-3xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-                        <div
-                            class="h-12 w-12 rounded-2xl bg-brand-offwhite text-brand-deepblue grid place-items-center">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 rounded-md bg-brand-offwhite text-brand-deepblue grid place-items-center">
                             <i data-lucide="megaphone" class="w-6 h-6"></i>
                         </div>
                         <h3 class="mt-6 font-semibold text-xl">Ads Setup (Optional)</h3>
@@ -223,8 +264,9 @@
                         </p>
                     </div>
 
-                    <div class="rounded-3xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-                        <div class="h-12 w-12 rounded-2xl bg-slate-50 text-slate-800 grid place-items-center">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 rounded-md bg-slate-50 text-slate-800 grid place-items-center">
                             <i data-lucide="life-buoy" class="w-6 h-6"></i>
                         </div>
                         <h3 class="mt-6 font-semibold text-xl">1-Year Support</h3>
@@ -247,14 +289,15 @@
                         </p>
                     </div>
                     <a href="./contact.html"
-                        class="inline-flex items-center justify-center rounded-xl bg-brand-deepblue px-5 py-3 text-base font-semibold text-white hover:bg-slate-800">
+                        class="inline-flex items-center justify-center rounded-md bg-brand-deepblue px-5 py-3 text-base font-semibold text-white hover:bg-slate-800">
                         Get Free Audit
                     </a>
                 </div>
 
                 <div class="mt-10 grid lg:grid-cols-3 gap-6">
                     <!-- Basic -->
-                    <div class="rounded-3xl border border-slate-200 bg-white p-6 flex flex-col">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-6 flex flex-col shadow-sm">
                         <div class="flex items-center justify-between">
                             <h3 class="text-lg font-semibold">Basic</h3>
                             <span class="text-xs rounded-full bg-slate-100 px-3 py-1 text-slate-700">Most
@@ -262,35 +305,35 @@
                         </div>
                         <div class="mt-4">
                             <div class="text-4xl font-bold">₹4,999</div>
-                            <div class="text-sm text-slate-600 mt-1">One-time • 1-year hosting + maintenance included
-                            </div>
+                            <div class="text-sm text-slate-600 mt-1">One-time • <span
+                                    class="text-brand-blue font-semibold">Ready in 3 Days</span></div>
                         </div>
 
                         <ul class="mt-6 space-y-4 text-sm text-slate-700">
                             <li class="flex gap-3"><i data-lucide="check"
                                     class="w-5 h-5 text-brand-blue shrink-0"></i>Static
                                 website (1 page)</li>
+                            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0"></i>1
+                                Year Free Maintenance + Hosting</li>
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Google
-                                Business setup/optimization</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>30 Days Free Content Updates</li>
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Review
-                                link + QR + WhatsApp templates</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Google Business Verification Help</li>
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Maps
-                                embed + click-to-call + WhatsApp</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Social Media Links Integration</li>
                             <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-slate-400 shrink-0"></i><span
                                     class="text-slate-500">Domain not included</span></li>
                         </ul>
 
                         <a href="./contact.html"
-                            class="mt-8 inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-base font-semibold text-slate-900 hover:bg-slate-50">
-                            Choose Basic
+                            class="mt-8 inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-5 py-3 text-base font-semibold text-slate-900 hover:bg-slate-50">
+                            Get Started Now
                         </a>
                     </div>
 
                     <!-- Standard -->
-                    <div class="rounded-3xl border border-brand-blue bg-white p-6 shadow-sm flex flex-col">
+                    <div
+                        class="rounded-md border border-brand-blue bg-white/80 backdrop-blur-lg p-6 shadow-xl flex flex-col relative">
                         <div class="flex items-center justify-between">
                             <h3 class="text-lg font-semibold">Standard</h3>
                             <span class="text-xs rounded-full bg-brand-blue/10 px-3 py-1 text-brand-deepblue">Best
@@ -298,80 +341,114 @@
                         </div>
                         <div class="mt-4">
                             <div class="text-4xl font-bold">₹6,999</div>
-                            <div class="text-sm text-slate-600 mt-1">One-time • 1-year hosting + maintenance included
-                            </div>
+                            <div class="text-sm text-slate-600 mt-1">One-time • <span
+                                    class="text-brand-blue font-semibold">Ready in 3 Days</span></div>
                         </div>
 
                         <ul class="mt-6 space-y-4 text-sm text-slate-700">
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Static
-                                website (up to 3 pages)</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>5 Page Website</strong></li>
+                            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0"></i>1
+                                Year Free Maintenance + Hosting</li>
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Google
-                                photos upload (10–15)</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>30 Days Free Content Updates</li>
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Services
-                                + Q&A setup</li>
-                            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0"></i>2
-                                Google posts published</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Google Business Verification Help</li>
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Review
-                                reply templates</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Google Photos (10-15)</li>
+                            <li class="flex gap-3"><i data-lucide="check"
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Social Media Links Integration</li>
+                            <li class="flex gap-3"><i data-lucide="check"
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Services + Q&A Setup</li>
+                            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-slate-400 shrink-0"></i><span
+                                    class="text-slate-500">Domain not included</span></li>
                         </ul>
 
                         <a href="./contact.html"
-                            class="mt-8 inline-flex items-center justify-center rounded-xl bg-brand-blue px-5 py-3 text-base font-semibold text-white hover:bg-brand-blue/90">
-                            Choose Standard
+                            class="mt-8 inline-flex items-center justify-center rounded-md bg-brand-blue px-5 py-3 text-base font-semibold text-white hover:bg-brand-blue/90">
+                            Get Started Now
                         </a>
                     </div>
 
                     <!-- Premium -->
-                    <div class="rounded-3xl border border-slate-200 bg-white p-6 flex flex-col">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-6 flex flex-col shadow-sm">
                         <div class="flex items-center justify-between">
                             <h3 class="text-lg font-semibold">Premium</h3>
                             <span class="text-xs rounded-full bg-slate-100 px-3 py-1 text-slate-700">With booking</span>
                         </div>
                         <div class="mt-4">
                             <div class="text-4xl font-bold">₹9,999</div>
-                            <div class="text-sm text-slate-600 mt-1">One-time • 1-year hosting + maintenance included
-                            </div>
+                            <div class="text-sm text-slate-600 mt-1">One-time • <span
+                                    class="text-brand-blue font-semibold">Ready in 5 Days</span></div>
                         </div>
 
                         <ul class="mt-6 space-y-4 text-sm text-slate-700">
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Static
-                                website (up to 5 pages)</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>Everything in Standard</strong>
+                            </li>
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i><span class="font-semibold">Online
-                                    appointment booking</span> (date/time)</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>10 Page Website</strong></li>
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Competitor
-                                analysis (top 3)</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>Online Appointment
+                                    Booking</strong></li>
+                            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0"></i>1
+                                Year Free Maintenance + Hosting</li>
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Advanced
-                                review flow (positive filter)</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>30 Days Free Content Updates</li>
                             <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Simple
-                                visibility report</li>
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Complete Google Business Setup</li>
+                            <li class="flex gap-3"><i data-lucide="check"
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Patient-Focused Site Structure</li>
+                            <li class="flex gap-3"><i data-lucide="check"
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Priority Support (Phone/WhatsApp)</li>
+                            <li class="flex gap-3"><i data-lucide="check"
+                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Advanced Local Competitor Audit</li>
+                            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-slate-400 shrink-0"></i><span
+                                    class="text-slate-500">Domain not included</span></li>
                         </ul>
 
                         <a href="./contact.html"
-                            class="mt-8 inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-base font-semibold text-slate-900 hover:bg-slate-50">
-                            Choose Premium
+                            class="mt-8 inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-5 py-3 text-base font-semibold text-slate-900 hover:bg-slate-50">
+                            Get Started Now
                         </a>
                     </div>
                 </div>
 
-                <div class="mt-8 text-sm text-slate-600">
-                    <span class="font-semibold text-slate-900">Domain:</span> Clinic owner purchases domain. We connect
-                    it free.
-                    After 1 year, optional renewal for hosting/maintenance can be offered (example: ₹1,999/year).
+                <div class="mt-16 bg-white/40 backdrop-blur-lg rounded-md p-8 border border-white/50 shadow-sm">
+                    <h3 class="text-xl font-bold text-brand-deepblue mb-4">Extensions & Annual Renewals</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold text-slate-900">Hosting & Maintenance Renewal (After 1 Year)</h4>
+                            <p class="text-brand-blue font-bold text-lg mt-1">₹1,999 / year</p>
+                            <ul class="mt-2 space-y-2 text-sm text-slate-600">
+                                <li class="flex gap-2"><i data-lucide="check-circle"
+                                        class="w-4 h-4 text-brand-blue"></i> Keeps your website online (Hosting)</li>
+                                <li class="flex gap-2"><i data-lucide="check-circle"
+                                        class="w-4 h-4 text-brand-blue"></i> Technical security updates</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-slate-900">Content Updates Content (After 30 Days)</h4>
+                            <p class="text-brand-blue font-bold text-lg mt-1">₹499 / update request</p>
+                            <ul class="mt-2 space-y-2 text-sm text-slate-600">
+                                <li class="flex gap-2"><i data-lucide="check-circle"
+                                        class="w-4 h-4 text-brand-blue"></i> Changing photos, prices, or text</li>
+                                <li class="flex gap-2"><i data-lucide="check-circle"
+                                        class="w-4 h-4 text-brand-blue"></i> Adding new stats or info</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-200 text-sm text-slate-600">
+                        <span class="font-semibold text-slate-900">Domain Note:</span> You purchase the domain name
+                        (Approx ₹800-1000/year) from providers like GoDaddy. We connect it for free.
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Ads -->
-        <section id="ads" class="py-24">
+        <section id="ads" class="py-24 bg-brand-offwhite">
             <div class="mx-auto max-w-7xl px-4">
                 <div class="max-w-2xl">
                     <h2 class="text-3xl font-bold tracking-tight">Optional Ads Packages (One-time setup)</h2>
@@ -381,30 +458,31 @@
                 </div>
 
                 <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="rounded-3xl border border-slate-200 p-6">
+                    <div class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-6 shadow-sm">
                         <h3 class="font-semibold">Google Ads Setup</h3>
                         <div class="mt-2 text-2xl font-bold">₹3,999</div>
                         <p class="mt-2 text-sm text-slate-600">Search ads + call/message tracking + 7-day launch
                             support.</p>
                     </div>
 
-                    <div class="rounded-3xl border border-slate-200 p-6">
+                    <div class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-6 shadow-sm">
                         <h3 class="font-semibold">Instagram Ads Setup</h3>
                         <div class="mt-2 text-2xl font-bold">₹2,999</div>
                         <p class="mt-2 text-sm text-slate-600">Local targeting + 2 creatives + WhatsApp/lead campaign.
                         </p>
                     </div>
 
-                    <div class="rounded-3xl border border-slate-200 p-6">
+                    <div class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-6 shadow-sm">
                         <h3 class="font-semibold">Facebook Ads Setup</h3>
                         <div class="mt-2 text-2xl font-bold">₹2,999</div>
                         <p class="mt-2 text-sm text-slate-600">Local audience + lead/message campaign + 2 creatives.</p>
                     </div>
 
-                    <div class="rounded-3xl border border-brand-blue bg-brand-offwhite p-6">
+                    <div
+                        class="bg-brand-deepblue/90 backdrop-blur-lg p-6 rounded-md text-white border border-brand-blue/50 shadow-lg">
                         <h3 class="font-semibold">Ads Combo Setup</h3>
                         <div class="mt-2 text-2xl font-bold">₹7,999</div>
-                        <p class="mt-2 text-sm text-slate-700">Google + Instagram + Facebook setup (best value).</p>
+                        <p class="mt-2 text-sm text-white/80">Google + Instagram + Facebook setup (best value).</p>
                     </div>
                 </div>
 
@@ -416,7 +494,7 @@
         </section>
 
         <!-- Process -->
-        <section id="process" class="py-24 bg-slate-50 border-y border-slate-200">
+        <section id="process" class="py-24 bg-brand-offwhite border-y border-slate-200/50">
             <div class="mx-auto max-w-7xl px-4">
                 <div class="max-w-2xl">
                     <h2 class="text-3xl font-bold tracking-tight">Simple delivery process</h2>
@@ -424,10 +502,11 @@
                 </div>
 
                 <div class="mt-10 grid md:grid-cols-4 gap-6">
-                    <div class="rounded-3xl bg-white border border-slate-200 p-8 hover:shadow-lg transition-shadow">
+                    <div
+                        class="rounded-md bg-white/60 backdrop-blur-lg border border-white/50 p-8 hover:shadow-lg transition-shadow shadow-sm">
                         <div class="text-xs font-bold tracking-wider text-brand-blue mb-4">STEP 01</div>
                         <div
-                            class="mb-4 text-brand-deepblue border border-emerald-100 bg-brand-offwhite w-12 h-12 rounded-xl grid place-items-center">
+                            class="mb-4 text-brand-deepblue border border-emerald-100 bg-brand-offwhite w-12 h-12 rounded-md grid place-items-center">
                             <i data-lucide="search" class="w-6 h-6"></i>
                         </div>
                         <h3 class="font-semibold text-lg">Free Audit</h3>
@@ -435,10 +514,11 @@
                             competition, and current
                             visibility.</p>
                     </div>
-                    <div class="rounded-3xl bg-white border border-slate-200 p-8 hover:shadow-lg transition-shadow">
+                    <div
+                        class="rounded-md bg-white/60 backdrop-blur-lg border border-white/50 p-8 hover:shadow-lg transition-shadow shadow-sm">
                         <div class="text-xs font-bold tracking-wider text-brand-blue mb-4">STEP 02</div>
                         <div
-                            class="mb-4 text-brand-deepblue border border-emerald-100 bg-brand-offwhite w-12 h-12 rounded-xl grid place-items-center">
+                            class="mb-4 text-brand-deepblue border border-emerald-100 bg-brand-offwhite w-12 h-12 rounded-md grid place-items-center">
                             <i data-lucide="file-text" class="w-6 h-6"></i>
                         </div>
                         <h3 class="font-semibold text-lg">Collect Details</h3>
@@ -446,10 +526,11 @@
                             doctor profile,
                             contact number.</p>
                     </div>
-                    <div class="rounded-3xl bg-white border border-slate-200 p-8 hover:shadow-lg transition-shadow">
+                    <div
+                        class="rounded-md bg-white/60 backdrop-blur-lg border border-white/50 p-8 hover:shadow-lg transition-shadow shadow-sm">
                         <div class="text-xs font-bold tracking-wider text-brand-blue mb-4">STEP 03</div>
                         <div
-                            class="mb-4 text-brand-deepblue border border-emerald-100 bg-brand-offwhite w-12 h-12 rounded-xl grid place-items-center">
+                            class="mb-4 text-brand-deepblue border border-emerald-100 bg-brand-offwhite w-12 h-12 rounded-md grid place-items-center">
                             <i data-lucide="rocket" class="w-6 h-6"></i>
                         </div>
                         <h3 class="font-semibold text-lg">Setup & Launch</h3>
@@ -457,10 +538,11 @@
                             set review
                             system.</p>
                     </div>
-                    <div class="rounded-3xl bg-white border border-slate-200 p-8 hover:shadow-lg transition-shadow">
+                    <div
+                        class="rounded-md bg-white/60 backdrop-blur-lg border border-white/50 p-8 hover:shadow-lg transition-shadow shadow-sm">
                         <div class="text-xs font-bold tracking-wider text-brand-blue mb-4">STEP 04</div>
                         <div
-                            class="mb-4 text-brand-deepblue border border-emerald-100 bg-brand-offwhite w-12 h-12 rounded-xl grid place-items-center">
+                            class="mb-4 text-brand-deepblue border border-emerald-100 bg-brand-offwhite w-12 h-12 rounded-md grid place-items-center">
                             <i data-lucide="headphones" class="w-6 h-6"></i>
                         </div>
                         <h3 class="font-semibold text-lg">Support (1 Year)</h3>
@@ -473,7 +555,7 @@
         </section>
 
         <!-- FAQ -->
-        <section id="faq" class="py-24">
+        <section id="faq" class="py-24 bg-brand-offwhite">
             <div class="mx-auto max-w-7xl px-4">
                 <div class="max-w-2xl">
                     <h2 class="text-3xl font-bold tracking-tight">FAQ</h2>
@@ -481,7 +563,7 @@
                 </div>
 
                 <div class="mt-10 grid lg:grid-cols-2 gap-6">
-                    <details class="rounded-3xl border border-slate-200 p-6 bg-white">
+                    <details class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-6 shadow-sm">
                         <summary class="font-semibold cursor-pointer">Is there any monthly fee?</summary>
                         <p class="mt-3 text-sm text-slate-600">
                             No. Our packages are one-time. Hosting + maintenance are free for 1 year. Domain is
@@ -489,7 +571,7 @@
                         </p>
                     </details>
 
-                    <details class="rounded-3xl border border-slate-200 p-6 bg-white">
+                    <details class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-6 shadow-sm">
                         <summary class="font-semibold cursor-pointer">Do you provide domain name?</summary>
                         <p class="mt-3 text-sm text-slate-600">
                             The clinic owner purchases the domain (usually ₹800–₹1,200/year). We connect it free of
@@ -497,7 +579,7 @@
                         </p>
                     </details>
 
-                    <details class="rounded-3xl border border-slate-200 p-6 bg-white">
+                    <details class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-6 shadow-sm">
                         <summary class="font-semibold cursor-pointer">What is included in maintenance?</summary>
                         <p class="mt-3 text-sm text-slate-600">
                             Minor text/image changes, contact updates, and technical support for your hosted site. Major
@@ -505,7 +587,7 @@
                         </p>
                     </details>
 
-                    <details class="rounded-3xl border border-slate-200 p-6 bg-white">
+                    <details class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-6 shadow-sm">
                         <summary class="font-semibold cursor-pointer">How does appointment booking work?</summary>
                         <p class="mt-3 text-sm text-slate-600">
                             Premium includes a booking form with date/time selection. Booking requests can go to
@@ -544,20 +626,20 @@
                     <div class="mt-8 flex flex-col sm:flex-row gap-3">
                         <a href="https://wa.me/919234525942?text=Hi%20CGP360%2C%20please%20audit%20my%20clinic.%20Clinic%20Name%3A%20____%20Location%3A%20____"
                             target="_blank" rel="noopener"
-                            class="inline-flex items-center justify-center rounded-xl bg-brand-blue px-5 py-3 text-base font-semibold text-white hover:bg-brand-blue/90">
+                            class="inline-flex items-center justify-center rounded-md bg-brand-blue px-5 py-3 text-base font-semibold text-white hover:bg-brand-blue/90">
                             WhatsApp Now
                         </a>
                         <a href="./contact.html"
-                            class="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/5 px-5 py-3 text-base font-semibold text-white hover:bg-white/10">
+                            class="inline-flex items-center justify-center rounded-md border border-white/20 bg-white/5 px-5 py-3 text-base font-semibold text-white hover:bg-white/10">
                             Email Us
                         </a>
                     </div>
                 </div>
 
                 <!-- Simple Form (front-end only) -->
-                <div class="rounded-3xl bg-white text-slate-900 p-6 sm:p-8 border border-white/10">
+                <div class="rounded-md bg-white/10 backdrop-blur-lg text-white p-6 sm:p-8 border border-white/20">
                     <h3 class="text-xl font-semibold">Quick enquiry</h3>
-                    <p class="mt-2 text-sm text-slate-600">
+                    <p class="mt-2 text-sm text-white/80">
                         This form is front-end only. Connect it to Formspree / Google Forms / your backend later.
                     </p>
 
@@ -566,14 +648,14 @@
                         <div>
                             <label class="text-sm font-medium" for="name">Your Name</label>
                             <input id="name" type="text" required
-                                class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue"
+                                class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue"
                                 placeholder="e.g., Dr. Sharma / Clinic Manager" />
                         </div>
 
                         <div>
                             <label class="text-sm font-medium" for="clinic">Clinic Name</label>
                             <input id="clinic" type="text" required
-                                class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue"
+                                class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue"
                                 placeholder="e.g., ABC Dental Clinic" />
                         </div>
 
@@ -581,13 +663,13 @@
                             <div>
                                 <label class="text-sm font-medium" for="city">City/Area</label>
                                 <input id="city" type="text" required
-                                    class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue"
+                                    class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue"
                                     placeholder="e.g., Indore" />
                             </div>
                             <div>
                                 <label class="text-sm font-medium" for="phone">Phone</label>
                                 <input id="phone" type="tel" required
-                                    class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue"
+                                    class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue"
                                     placeholder="+91 XXXXX XXXXX" />
                             </div>
                         </div>
@@ -595,7 +677,7 @@
                         <div>
                             <label class="text-sm font-medium" for="package">Interested Package</label>
                             <select id="package"
-                                class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue">
+                                class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue">
                                 <option>Basic (₹4,999)</option>
                                 <option>Standard (₹6,999)</option>
                                 <option>Premium (₹9,999)</option>
@@ -604,7 +686,7 @@
                         </div>
 
                         <button type="submit"
-                            class="w-full rounded-xl bg-brand-deepblue px-5 py-3 text-base font-semibold text-white hover:bg-slate-800">
+                            class="w-full rounded-md bg-brand-deepblue px-5 py-3 text-base font-semibold text-white hover:bg-slate-800">
                             Submit Enquiry
                         </button>
 

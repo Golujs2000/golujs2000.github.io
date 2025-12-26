@@ -49,12 +49,13 @@
     </div>
 
     <!-- Header -->
-    <header class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-slate-200">
+    <header class="sticky top-0 z-30 bg-white/60 backdrop-blur-xl border-b border-slate-200/50 shadow-sm">
         <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between gap-4">
             <a href="index.html" class="flex items-center gap-2">
                 <img src="./assets/logo.svg" alt="CGP360 Logo" class="h-10 w-auto object-contain" />
             </a>
             <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+                <a class="hover:text-slate-900" href="index.html">Home</a>
                 <a class="hover:text-slate-900 font-semibold text-brand-blue" href="services.html">Services</a>
                 <a class="hover:text-slate-900" href="packages.html">Packages</a>
                 <a class="hover:text-slate-900" href="contact.html">Contact</a>
@@ -62,15 +63,52 @@
             </nav>
             <div class="flex items-center gap-2">
                 <a href="contact.html"
-                    class="hidden sm:inline-flex items-center justify-center rounded-xl bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">Get
+                    class="hidden sm:inline-flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">Get
                     Free Audit</a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-brand-blue">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
             </div>
         </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-200/50 shadow-lg md:hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="index.html">Home</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="services.html">Services</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="packages.html">Packages</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="about.html">About</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="contact.html">Contact</a>
+                <div class="pt-4 border-t border-slate-200/50 flex flex-col gap-3">
+                    <a href="contact.html"
+                        class="flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-3 text-sm font-medium text-white hover:bg-slate-800">
+                        Get Free Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
+                mobileMenuBtn.innerHTML = `<i data-lucide="${icon}" class="w-6 h-6"></i>`;
+                lucide.createIcons();
+            });
+        </script>
     </header>
 
     <main>
         <!-- Services Section (Extracted from index.html) -->
-        <section id="services" class="py-24">
+        <section id="services" class="py-24 bg-brand-offwhite">
             <div class="mx-auto max-w-7xl px-4">
                 <div class="max-w-2xl">
                     <h1 class="text-4xl font-bold tracking-tight text-brand-deepblue">Services built for local clinics
@@ -83,8 +121,9 @@
 
                 <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- [Service Cards from index.html with new colors] -->
-                    <div class="rounded-3xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-                        <div class="h-12 w-12 rounded-2xl bg-brand-blue text-white grid place-items-center">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 rounded-md bg-brand-blue text-white grid place-items-center">
                             <i data-lucide="map-pin" class="w-6 h-6"></i>
                         </div>
                         <h3 class="mt-6 font-semibold text-xl">Google Business Optimization</h3>
@@ -92,25 +131,27 @@
                             posts—optimized to improve Maps visibility.</p>
                     </div>
                     <!-- ... (Other cards duplicated similarly) ... -->
-                    <div class="rounded-3xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-                        <div class="h-12 w-12 rounded-2xl bg-brand-deepblue text-white grid place-items-center">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 rounded-md bg-brand-deepblue text-white grid place-items-center">
                             <i data-lucide="star" class="w-6 h-6"></i>
                         </div>
                         <h3 class="mt-6 font-semibold text-xl">Reviews System Setup</h3>
                         <p class="mt-3 text-slate-600 leading-relaxed">Review link + QR code + WhatsApp templates +
                             staff script—so reviews come consistently.</p>
                     </div>
-                    <div class="rounded-3xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-                        <div class="h-12 w-12 rounded-2xl bg-brand-blue/10 text-brand-deepblue grid place-items-center">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 rounded-md bg-brand-blue/10 text-brand-deepblue grid place-items-center">
                             <i data-lucide="layout" class="w-6 h-6"></i>
                         </div>
                         <h3 class="mt-6 font-semibold text-xl">Clinic Website (Static)</h3>
                         <p class="mt-3 text-slate-600 leading-relaxed">Mobile-first site with click-to-call, WhatsApp
                             button, services, and Google Maps embed.</p>
                     </div>
-                    <div class="rounded-3xl border border-slate-200 p-8 hover:shadow-lg transition-shadow">
-                        <div
-                            class="h-12 w-12 rounded-2xl bg-brand-offwhite text-brand-deepblue grid place-items-center">
+                    <div
+                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="h-12 w-12 rounded-md bg-brand-offwhite text-brand-deepblue grid place-items-center">
                             <i data-lucide="megaphone" class="w-6 h-6"></i>
                         </div>
                         <h3 class="mt-6 font-semibold text-xl">Ads Setup (Optional)</h3>
@@ -127,10 +168,10 @@
                 <h2 class="text-3xl font-bold text-brand-deepblue">Ready to grow your clinic?</h2>
                 <div class="mt-8 flex justify-center gap-4">
                     <a href="packages.html"
-                        class="rounded-xl bg-brand-blue px-6 py-3 text-white font-semibold hover:bg-brand-blue/90">View
+                        class="rounded-md bg-brand-blue px-6 py-3 text-white font-semibold hover:bg-brand-blue/90">View
                         Packages</a>
                     <a href="contact.html"
-                        class="rounded-xl border border-slate-300 bg-white px-6 py-3 text-slate-900 font-semibold hover:bg-slate-50">Contact
+                        class="rounded-md border border-slate-300 bg-white px-6 py-3 text-slate-900 font-semibold hover:bg-slate-50">Contact
                         Us</a>
                 </div>
             </div>
