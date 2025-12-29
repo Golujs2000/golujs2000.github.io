@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Analytics Integration — CGP360</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <meta name="description"
+        content="Track your clinic's website performance with Google Analytics. Understand patient behavior, traffic sources, and conversion rates. Included in all CGP360 packages." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3754ED',
+                            offwhite: '#EEF3F7',
+                            deepblue: '#131B62',
+                            black: '#080E29',
+                            white: '#F7FDFF',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-slate-900">
+    <!-- Top Bar -->
+    <div class="bg-brand-deepblue text-white">
+        <div
+            class="mx-auto max-w-7xl px-4 py-2 text-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-brand-blue"></i>
+                <span>Included in ALL Packages • No Extra Cost</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a class="flex items-center gap-1.5 underline decoration-white/40 hover:decoration-white"
+                    href="tel:+919234525942">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call: +91 92345 25942
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-30 bg-white/60 backdrop-blur-xl border-b border-slate-200/50 shadow-sm">
+        <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between gap-4">
+            <a href="index.html"><img src="./assets/logo.svg" alt="CGP360 Logo"
+                    class="h-10 w-auto object-contain" /></a>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+                <a class="hover:text-slate-900" href="index.html">Home</a>
+                <a class="hover:text-slate-900" href="services.html">Services</a>
+                <a class="hover:text-slate-900" href="packages.html">Packages</a>
+                <a class="hover:text-slate-900" href="why-us.html">Why Us?</a>
+                <a class="hover:text-slate-900" href="about.html">About</a>
+                <a class="hover:text-slate-900" href="contact.html">Contact</a>
+            </nav>
+            <a href="packages.html"
+                class="hidden sm:inline-flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">
+                View Packages
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-brand-blue">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-200/50 shadow-lg md:hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="index.html">Home</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="services.html">Services</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="packages.html">Packages</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="why-us.html">Why Us?</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="about.html">About</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
+                mobileMenuBtn.innerHTML = `<i data-lucide="${icon}" class="w-6 h-6"></i>`;
+                lucide.createIcons();
+            });
+        </script>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative py-24 sm:py-32 overflow-hidden bg-brand-offwhite">
+            <div class="mx-auto max-w-7xl px-4 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="max-w-2xl">
+                        <div
+                            class="inline-flex items-center gap-2 rounded-full border border-orange-500/20 bg-orange-50 px-3 py-1 text-sm text-orange-600 mb-6">
+                            <i data-lucide="bar-chart-2" class="w-4 h-4"></i> Data-Driven Growth
+                        </div>
+                        <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-brand-deepblue leading-tight">
+                            Know Your Patients Better with <span class="text-orange-500">Google Analytics</span>
+                        </h1>
+                        <p class="mt-8 text-lg text-slate-600 leading-relaxed">
+                            Don't guess where your patients are coming from. We integrate professional Google Analytics
+                            4 (GA4) into every clinic website we build, so you can measure what matters.
+                        </p>
+                        <div class="mt-10 flex flex-wrap gap-4">
+                            <a href="#features"
+                                class="inline-flex items-center justify-center rounded-md bg-white border border-slate-300 px-6 py-3 text-base font-semibold text-slate-900 hover:bg-slate-50 transition-all shadow-sm">
+                                How It Works
+                            </a>
+                            <a href="packages.html"
+                                class="inline-flex items-center justify-center rounded-md bg-brand-blue px-6 py-3 text-base font-semibold text-white hover:bg-brand-blue/90 transition-all shadow-lg shadow-brand-blue/20">
+                                See Packages
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- CSS Dashboard Mockup -->
+                    <div class="relative">
+                        <!-- Main Window -->
+                        <div
+                            class="bg-white rounded-xl shadow-2xl border border-slate-200 overflow-hidden relative z-10 transform hover:scale-[1.01] transition-transform duration-500">
+                            <!-- Window Header -->
+                            <div class="bg-slate-50 border-b border-slate-200 px-4 py-3 flex items-center gap-2">
+                                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                                <div
+                                    class="ml-2 px-3 py-1 bg-white border border-slate-200 rounded text-xs text-slate-400 flex-1 text-center font-mono">
+                                    analytics.google.com</div>
+                            </div>
+                            <!-- Dashboard Content -->
+                            <div class="p-6">
+                                <div class="flex items-center justify-between mb-8">
+                                    <div class="font-bold text-slate-800 text-lg">Clinic Overview</div>
+                                    <div
+                                        class="text-xs text-slate-500 bg-slate-100 px-3 py-1.5 rounded-full font-medium">
+                                        Last 30 Days
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-2 gap-6 mb-8">
+                                    <div class="p-5 bg-blue-50 rounded-xl">
+                                        <div class="text-xs text-blue-600 font-bold uppercase tracking-wider">Users
+                                        </div>
+                                        <div class="text-3xl font-bold text-slate-900 mt-2">1,248</div>
+                                        <div class="text-sm text-green-600 mt-2 flex items-center gap-1 font-medium"><i
+                                                data-lucide="trending-up" class="w-4 h-4"></i> +12%</div>
+                                    </div>
+                                    <div class="p-5 bg-green-50 rounded-xl">
+                                        <div class="text-xs text-green-600 font-bold uppercase tracking-wider">
+                                            Conversions</div>
+                                        <div class="text-3xl font-bold text-slate-900 mt-2">86</div>
+                                        <div class="text-sm text-green-600 mt-2 flex items-center gap-1 font-medium"><i
+                                                data-lucide="trending-up" class="w-4 h-4"></i> +5%</div>
+                                    </div>
+                                </div>
+                                <!-- Fake Chart -->
+                                <div class="h-40 flex items-end justify-between gap-3 px-2">
+                                    <div class="w-full bg-blue-100 rounded-t-sm h-[40%]"></div>
+                                    <div class="w-full bg-blue-200 rounded-t-sm h-[60%]"></div>
+                                    <div class="w-full bg-blue-300 rounded-t-sm h-[50%]"></div>
+                                    <div class="w-full bg-blue-400 rounded-t-sm h-[80%]"></div>
+                                    <div class="w-full bg-blue-500 rounded-t-sm h-[70%]"></div>
+                                    <div
+                                        class="w-full bg-brand-blue rounded-t-sm h-[100%] shadow-lg shadow-blue-500/20">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Background Blob -->
+                        <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-orange-200/50 rounded-full blur-3xl z-0">
+                        </div>
+                        <div class="absolute -left-10 -top-10 w-48 h-48 bg-blue-200/50 rounded-full blur-3xl z-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You Get -->
+        <section id="features" class="py-32 bg-white">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="text-center max-w-2xl mx-auto mb-20">
+                    <h2 class="text-4xl font-bold tracking-tight text-brand-deepblue">What You will See</h2>
+                    <p class="mt-6 text-lg text-slate-600">
+                        We set up a dashboard that answers the most important questions about your clinic's online
+                        growth.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Card 1 -->
+                    <div
+                        class="group p-8 rounded-xl border border-slate-100 bg-brand-offwhite hover:bg-white hover:shadow-xl transition-all">
+                        <div
+                            class="w-14 h-14 bg-blue-600 text-white rounded-xl grid place-items-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="users" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Visitor Traffic</h3>
+                        <p class="text-slate-600 text-base leading-relaxed">
+                            See exactly how many people visit your website daily, weekly, and monthly. Track growth
+                            trends over time.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="group p-8 rounded-xl border border-slate-100 bg-brand-offwhite hover:bg-white hover:shadow-xl transition-all">
+                        <div
+                            class="w-14 h-14 bg-indigo-600 text-white rounded-xl grid place-items-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="map" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Traffic Sources</h3>
+                        <p class="text-slate-600 text-base leading-relaxed">
+                            Are patients coming from Google Maps, Facebook, or direct links? Know which marketing
+                            channel is working best.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="group p-8 rounded-xl border border-slate-100 bg-brand-offwhite hover:bg-white hover:shadow-xl transition-all">
+                        <div
+                            class="w-14 h-14 bg-pink-600 text-white rounded-xl grid place-items-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="smartphone" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Device Usage</h3>
+                        <p class="text-slate-600 text-base leading-relaxed">
+                            Check if your patients are using mobiles or laptops. (Spoiler: It's usually 90% mobile,
+                            which is why we build mobile-first).
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="group p-8 rounded-xl border border-slate-100 bg-brand-offwhite hover:bg-white hover:shadow-xl transition-all">
+                        <div
+                            class="w-14 h-14 bg-orange-600 text-white rounded-xl grid place-items-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="map-pin" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Location Data</h3>
+                        <p class="text-slate-600 text-base leading-relaxed">
+                            See which cities or local areas your visitors are from. Great for targeting ads to specific
+                            neighborhoods.
+                        </p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div
+                        class="group p-8 rounded-xl border border-slate-100 bg-brand-offwhite hover:bg-white hover:shadow-xl transition-all">
+                        <div
+                            class="w-14 h-14 bg-emerald-600 text-white rounded-xl grid place-items-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="mouse-pointer" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Behavior Flow</h3>
+                        <p class="text-slate-600 text-base leading-relaxed">
+                            Understand which pages they visit. Do they read about "Dental Implants" or "Root Canals"
+                            more?
+                        </p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div
+                        class="group p-8 rounded-xl border border-slate-100 bg-brand-offwhite hover:bg-white hover:shadow-xl transition-all">
+                        <div
+                            class="w-14 h-14 bg-cyan-600 text-white rounded-xl grid place-items-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="arrow-up-right" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900">Real-Time Data</h3>
+                        <p class="text-slate-600 text-base leading-relaxed">
+                            See who is on your site right now. Perfect for testing new campaigns or seasonal offers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why It Matters -->
+        <section class="py-24 bg-brand-deepblue text-white">
+            <div class="mx-auto max-w-7xl px-4 grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold tracking-tight">Why do clinics need this?</h2>
+                    <p class="mt-4 text-white/80 text-lg">
+                        A website without analytics is like a clinic without patient records. You need data to improve.
+                    </p>
+                    <ul class="mt-8 space-y-4">
+                        <li class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center shrink-0">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Measure ROI</h4>
+                                <p class="text-sm text-white/60 mt-1">Know if your Google Ads or Facebook posts are
+                                    actually bringing people to your site.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center shrink-0">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Optimize Services</h4>
+                                <p class="text-sm text-white/60 mt-1">If "Pediatric" page gets low views, maybe you need
+                                    to promote it more.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-blue flex items-center justify-center shrink-0">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Improve Conversions</h4>
+                                <p class="text-sm text-white/60 mt-1">See where people drop off. Do they leave at the
+                                    pricing page? Change it.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative bg-white/5 border border-white/10 rounded-xl p-8 backdrop-blur-sm">
+                    <div class="text-center">
+                        <i data-lucide="pie-chart" class="w-16 h-16 text-brand-blue mx-auto mb-4"></i>
+                        <h3 class="text-xl font-semibold">Included in ALL Packages</h3>
+                        <div class="text-4xl font-bold mt-4 text-white">₹0 <span
+                                class="text-base font-normal text-white/60">extra cost</span></div>
+                        <p class="mt-4 text-sm text-white/70">
+                            Most agencies charge ₹2-5k extra for setup. We include it because we want you to succeed.
+                        </p>
+                        <a href="packages.html"
+                            class="mt-8 block w-full rounded-md bg-white text-brand-deepblue py-3 font-bold hover:bg-slate-100 transition-colors">
+                            Choose Your Package
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Mini -->
+        <section class="py-24 bg-brand-offwhite">
+            <div class="mx-auto max-w-3xl px-4">
+                <h2 class="text-2xl font-bold text-center mb-10">Common Questions</h2>
+                <div class="space-y-4">
+                    <details class="group bg-white rounded-lg border border-slate-200 p-4">
+                        <summary class="flex items-center justify-between font-medium cursor-pointer list-none">
+                            <span>How do I access the data?</span>
+                            <span class="transition group-open:rotate-180"><i data-lucide="chevron-down"
+                                    class="w-5 h-5"></i></span>
+                        </summary>
+                        <p class="text-slate-600 mt-3 text-sm">
+                            We will give you access to the Google Analytics dashboard using your Gmail ID. You can check
+                            it anytime on your phone or laptop.
+                        </p>
+                    </details>
+                    <details class="group bg-white rounded-lg border border-slate-200 p-4">
+                        <summary class="flex items-center justify-between font-medium cursor-pointer list-none">
+                            <span>Does it slow down my website?</span>
+                            <span class="transition group-open:rotate-180"><i data-lucide="chevron-down"
+                                    class="w-5 h-5"></i></span>
+                        </summary>
+                        <p class="text-slate-600 mt-3 text-sm">
+                            Not noticeably. We use the latest Google tag (G4) which is optimized for speed and
+                            performance.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-10 text-center text-sm text-slate-500">
+        © <span id="year"></span> CGP360. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
