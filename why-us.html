@@ -57,6 +57,7 @@
                 <a class="hover:text-slate-900" href="index.html">Home</a>
                 <a class="hover:text-slate-900" href="services.html">Services</a>
                 <a class="hover:text-slate-900" href="packages.html">Packages</a>
+                <a class="hover:text-slate-900" href="portfolio.html">Portfolio</a>
                 <a class="hover:text-slate-900 text-brand-blue font-semibold" href="why-us.html">Why Us?</a>
                 <a class="hover:text-slate-900" href="about.html">About</a>
                 <a class="hover:text-slate-900" href="contact.html">Contact</a>
@@ -81,6 +82,8 @@
                     href="services.html">Services</a>
                 <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
                     href="packages.html">Packages</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="portfolio.html">Portfolio</a>
                 <a class="block text-sm font-medium text-brand-blue hover:text-brand-blue" href="why-us.html">Why
                     Us?</a>
                 <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="about.html">About</a>
@@ -276,7 +279,8 @@
                         </div>
                         <p class="text-slate-600 italic">
                             "I tried two other agencies before. CGP360 was the first one that actually understood how
-                            patients think. The 'No Monthly Fee' model saved me over ₹50,000 this year alone."
+                            patients think. The 'No Monthly Fee' model saved me over <span
+                                id="price-testimonial-savings">₹50,000</span> this year alone."
                         </p>
                         <div class="mt-4 flex gap-1 text-yellow-400">
                             <i data-lucide="star" class="w-4 h-4 fill-current"></i>
@@ -326,6 +330,7 @@
         document.getElementById("year").textContent = new Date().getFullYear();
         lucide.createIcons();
     </script>
+    <script src="./assets/js/pricing.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — CGP360</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3754ED',
+                            offwhite: '#EEF3F7',
+                            deepblue: '#131B62',
+                            black: '#080E29',
+                            white: '#F7FDFF',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-slate-900">
+    <!-- Top Bar -->
+    <div class="bg-brand-deepblue text-white">
+        <div
+            class="mx-auto max-w-7xl px-4 py-2 text-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-brand-blue"></i>
+                <span>One-time packages • No monthly fees</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a class="flex items-center gap-1.5 underline decoration-white/40 hover:decoration-white"
+                    href="tel:+919234525942">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call: +91 92345 25942
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-30 bg-white/60 backdrop-blur-xl border-b border-slate-200/50 shadow-sm">
+        <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between gap-4">
+            <a href="index.html"><img src="./assets/logo.svg" alt="CGP360 Logo"
+                    class="h-10 w-auto object-contain" /></a>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+                <a class="hover:text-slate-900" href="index.html">Home</a>
+                <a class="hover:text-slate-900" href="services.html">Services</a>
+                <a class="hover:text-slate-900" href="packages.html">Packages</a>
+                <a class="hover:text-slate-900 font-semibold text-brand-blue" href="portfolio.html">Portfolio</a>
+                <a class="hover:text-slate-900" href="why-us.html">Why Us?</a>
+                <a class="hover:text-slate-900" href="contact.html">Contact</a>
+                <a class="hover:text-slate-900" href="about.html">About</a>
+            </nav>
+            <a href="contact.html"
+                class="hidden sm:inline-flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">Get
+                Free Audit</a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-brand-blue">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-200/50 shadow-lg md:hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="index.html">Home</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="services.html">Services</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="packages.html">Packages</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="portfolio.html">Portfolio</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="why-us.html">Why Us?</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="about.html">About</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="contact.html">Contact</a>
+                <div class="pt-4 border-t border-slate-200/50 flex flex-col gap-3">
+                    <a href="contact.html"
+                        class="flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-3 text-sm font-medium text-white hover:bg-slate-800">
+                        Get Free Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
+                mobileMenuBtn.innerHTML = `<i data-lucide="${icon}" class="w-6 h-6"></i>`;
+                lucide.createIcons();
+            });
+        </script>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 bg-brand-offwhite text-center">
+            <div class="mx-auto max-w-7xl px-4">
+                <h1 class="text-4xl font-bold tracking-tight text-brand-deepblue sm:text-5xl">Our Work</h1>
+                <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
+                    Explore our collection of professional website designs tailored for medical practices.
+                    Choose a style that represents your clinic perfectly.
+                </p>
+            </div>
+        </section>
+
+        <!-- Starter Package Designs -->
+        <section class="py-20 bg-white">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="bg-brand-blue text-white p-2 rounded-lg">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-brand-deepblue">Starter Presence</h2>
+                        <p class="text-slate-600">Clean, single-page designs to get you started.</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <!-- Design 1 -->
+                    <div
+                        class="group rounded-lg border border-slate-200 overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="layout" class="w-12 h-12 text-slate-300"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white">
+                            <h3 class="font-semibold text-brand-deepblue">Modern Dental</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-brand-blue border border-brand-blue/20 rounded hover:bg-brand-blue hover:text-white transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 2 -->
+                    <div
+                        class="group rounded-lg border border-slate-200 overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="layout" class="w-12 h-12 text-slate-300"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white">
+                            <h3 class="font-semibold text-brand-deepblue">General Clinic</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-brand-blue border border-brand-blue/20 rounded hover:bg-brand-blue hover:text-white transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 3 -->
+                    <div
+                        class="group rounded-lg border border-slate-200 overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="layout" class="w-12 h-12 text-slate-300"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white">
+                            <h3 class="font-semibold text-brand-deepblue">Physio Care</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-brand-blue border border-brand-blue/20 rounded hover:bg-brand-blue hover:text-white transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 4 -->
+                    <div
+                        class="group rounded-lg border border-slate-200 overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="layout" class="w-12 h-12 text-slate-300"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white">
+                            <h3 class="font-semibold text-brand-deepblue">Eye Vision</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-brand-blue border border-brand-blue/20 rounded hover:bg-brand-blue hover:text-white transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 5 -->
+                    <div
+                        class="group rounded-lg border border-slate-200 overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="layout" class="w-12 h-12 text-slate-300"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4 bg-white">
+                            <h3 class="font-semibold text-brand-deepblue">Pediatric Plus</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-brand-blue border border-brand-blue/20 rounded hover:bg-brand-blue hover:text-white transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Standard Package Designs -->
+        <section class="py-20 bg-brand-offwhite">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="bg-brand-blue text-white p-2 rounded-lg">
+                        <i data-lucide="star" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-brand-deepblue">Standard</h2>
+                        <p class="text-slate-600">Multi-page sites with gallery and detailed service pages.</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <!-- Design 1 -->
+                    <div
+                        class="group rounded-lg border border-white/50 bg-white overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 shadow-sm">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="monitor" class="w-12 h-12 text-slate-300"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-brand-deepblue">Premium Oral Care</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-brand-blue border border-brand-blue/20 rounded hover:bg-brand-blue hover:text-white transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 2 -->
+                    <div
+                        class="group rounded-lg border border-white/50 bg-white overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 shadow-sm">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="monitor" class="w-12 h-12 text-slate-300"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-brand-deepblue">Wellness Center</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-brand-blue border border-brand-blue/20 rounded hover:bg-brand-blue hover:text-white transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 3 -->
+                    <div
+                        class="group rounded-lg border border-white/50 bg-white overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 shadow-sm">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="monitor" class="w-12 h-12 text-slate-300"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-brand-deepblue">Derma Glow</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-brand-blue border border-brand-blue/20 rounded hover:bg-brand-blue hover:text-white transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 4 -->
+                    <div
+                        class="group rounded-lg border border-white/50 bg-white overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 shadow-sm">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="monitor" class="w-12 h-12 text-slate-300"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-brand-deepblue">Ortho Pro</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-brand-blue border border-brand-blue/20 rounded hover:bg-brand-blue hover:text-white transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 5 -->
+                    <div
+                        class="group rounded-lg border border-white/50 bg-white overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 shadow-sm">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="monitor" class="w-12 h-12 text-slate-300"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-brand-deepblue">Cardio Heart</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-brand-blue border border-brand-blue/20 rounded hover:bg-brand-blue hover:text-white transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Premium Package Designs -->
+        <section class="py-20 bg-white">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="bg-brand-deepblue text-white p-2 rounded-lg">
+                        <i data-lucide="crown" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-brand-deepblue">Premium</h2>
+                        <p class="text-slate-600">Complete clinic automation with booking systems and advanced SEO
+                            structures.</p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                    <!-- Design 1 -->
+                    <div
+                        class="group rounded-lg border border-brand-deepblue/10 bg-gradient-to-b from-brand-offwhite to-white overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 shadow-md">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="layout-dashboard" class="w-12 h-12 text-brand-blue"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-brand-deepblue">Multi-Speciality Hospital</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-white bg-brand-deepblue rounded hover:bg-brand-blue transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 2 -->
+                    <div
+                        class="group rounded-lg border border-brand-deepblue/10 bg-gradient-to-b from-brand-offwhite to-white overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 shadow-md">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="layout-dashboard" class="w-12 h-12 text-brand-blue"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-brand-deepblue">Elite Cosmetic</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-white bg-brand-deepblue rounded hover:bg-brand-blue transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 3 -->
+                    <div
+                        class="group rounded-lg border border-brand-deepblue/10 bg-gradient-to-b from-brand-offwhite to-white overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 shadow-md">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="layout-dashboard" class="w-12 h-12 text-brand-blue"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-brand-deepblue">Advanced Hair Transplant</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-white bg-brand-deepblue rounded hover:bg-brand-blue transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 4 -->
+                    <div
+                        class="group rounded-lg border border-brand-deepblue/10 bg-gradient-to-b from-brand-offwhite to-white overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 shadow-md">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="layout-dashboard" class="w-12 h-12 text-brand-blue"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-brand-deepblue">IVF & Fertility</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-white bg-brand-deepblue rounded hover:bg-brand-blue transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                    <!-- Design 5 -->
+                    <div
+                        class="group rounded-lg border border-brand-deepblue/10 bg-gradient-to-b from-brand-offwhite to-white overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 shadow-md">
+                        <div
+                            class="bg-slate-100 aspect-[4/5] flex items-center justify-center group-hover:bg-slate-200 transition-colors relative overflow-hidden">
+                            <i data-lucide="layout-dashboard" class="w-12 h-12 text-brand-blue"></i>
+                            <div
+                                class="absolute inset-0 bg-brand-deepblue/0 group-hover:bg-brand-deepblue/10 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-brand-deepblue">Full Body MRI</h3>
+                            <a href="#"
+                                class="mt-3 block w-full py-2 text-center text-sm font-medium text-white bg-brand-deepblue rounded hover:bg-brand-blue transition-colors">View
+                                Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-20 bg-brand-deepblue text-white text-center">
+            <div class="mx-auto max-w-4xl px-4">
+                <h2 class="text-3xl font-bold">Ready to build your clinic's presence?</h2>
+                <p class="mt-4 text-white/80 text-lg">Select a package and let us handle the rest.</p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="packages.html"
+                        class="inline-block bg-brand-blue px-8 py-3 rounded-md font-semibold hover:bg-brand-blue/90">View
+                        Packages</a>
+                    <a href="contact.html"
+                        class="inline-block border border-white/30 px-8 py-3 rounded-md font-semibold hover:bg-white/10">Get
+                        Free Audit</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-10">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/logo.svg" alt="CGP360 Logo" class="h-8 w-auto object-contain" />
+                </div>
+
+                <div class="text-sm text-slate-600">
+                    © <span id="year"></span> CGP360. All rights reserved.
+                </div>
+            </div>
+
+            <div class="mt-6 text-xs text-slate-500">
+                Disclaimer: Results depend on location, competition, and clinic cooperation (photos, info, timely
+                responses).
+            </div>
+            <div class="flex gap-6 text-sm">
+                <a href="terms.html" class="text-slate-500 hover:text-brand-blue">Terms</a>
+                <a href="privacy.html" class="text-slate-500 hover:text-brand-blue">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
