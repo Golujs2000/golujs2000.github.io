@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luminous Skin & Aesthetic Clinic - Demo</title>
+    <meta name="description" content="Premium skin care and aesthetic treatments in your city." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    },
+                    colors: {
+                        lux: {
+                            cream: '#FDFBF7',
+                            stone: '#Eae7E2',
+                            gold: '#D4AF37',
+                            charcoal: '#2C2C2C',
+                            rose: '#E2C2C6',
+                            muted: '#8A8A8A'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-lux-cream text-lux-charcoal font-sans antialiased selection:bg-lux-rose selection:text-lux-charcoal">
+
+    <!-- Top Bar -->
+    <div class="bg-lux-charcoal text-white/90 text-xs py-2 tracking-widest uppercase">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <span>Premium Aesthetic Care</span>
+            <div class="flex gap-6">
+                <a href="tel:+919876543210" class="hover:text-lux-gold transition-colors">Call: +91 98765 43210</a>
+                <span class="opacity-50">|</span>
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3 h-3"></i> Mon-Sat: 10AM -
+                    7PM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-lux-cream/80 backdrop-blur-md border-b border-lux-stone">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div
+                    class="w-10 h-10 bg-lux-charcoal text-lux-gold rounded-full flex items-center justify-center font-serif text-2xl pt-1">
+                    L</div>
+                <div class="leading-tight">
+                    <h1 class="font-serif text-2xl font-bold tracking-tight text-lux-charcoal">LUMINOUS</h1>
+                    <p class="text-[0.65rem] tracking-[0.2em] uppercase text-lux-muted">Skin & Hair Clinic</p>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide uppercase">
+                <a href="index.html" class="hover:text-lux-gold transition-colors">Home</a>
+                <a href="about.html" class="hover:text-lux-gold transition-colors">About</a>
+                <a href="services.html" class="hover:text-lux-gold transition-colors">Treatments</a>
+                <a href="results.html" class="hover:text-lux-gold transition-colors">Results</a>
+                <a href="contact.html"
+                    class="px-6 py-2.5 bg-lux-charcoal text-white hover:bg-lux-gold transition-colors duration-300">Book
+                    Consult</a>
+            </div>
+
+            <button class="md:hidden text-lux-charcoal">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative min-h-[90vh] flex items-center bg-[#f4f1ed]">
+        <div class="absolute inset-0 overflow-hidden">
+            <!-- Placeholder Background -->
+            <div
+                class="absolute right-0 top-0 w-2/3 h-full bg-[url('https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-80 mix-blend-multiply mask-image-gradient">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#f4f1ed] via-[#f4f1ed]/90 to-transparent"></div>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2">
+            <div class="pt-20">
+                <span
+                    class="inline-block py-1 px-3 border border-lux-charcoal/20 rounded-full text-xs font-bold tracking-widest uppercase mb-6">Advanced
+                    Dermatology</span>
+                <h2 class="font-serif text-6xl md:text-7xl leading-[1.1] mb-8 text-lux-charcoal">
+                    Reveal Your <br />
+                    <i class="font-thin text-lux-gold">Natural</i> Glow
+                </h2>
+                <p class="text-lg md:text-xl text-lux-muted mb-10 max-w-md font-light leading-relaxed">
+                    Experience world-class skin and hair treatments tailored to your unique beauty by Dr. Ananya Sharma
+                    (MD, Dermatology).
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact"
+                        class="inline-flex items-center justify-center px-8 py-4 bg-lux-charcoal text-white hover:bg-lux-gold transition-all duration-300 tracking-wide uppercase text-sm font-semibold shadow-xl shadow-lux-charcoal/10">
+                        Book Appointment
+                    </a>
+                    <a href="#services"
+                        class="inline-flex items-center justify-center px-8 py-4 border border-lux-charcoal text-lux-charcoal hover:bg-lux-charcoal hover:text-white transition-all duration-300 tracking-wide uppercase text-sm font-semibold">
+                        View Treatments
+                    </a>
+                </div>
+
+                <div class="mt-16 flex flex-col md:flex-row gap-12 items-center">
+                    <div class="flex items-center gap-8 text-lux-muted">
+                        <div class="flex -space-x-4">
+                            <div class="w-12 h-12 rounded-full border-2 border-lux-cream bg-gray-200 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100"
+                                    class="w-full h-full object-cover"></div>
+                            <div class="w-12 h-12 rounded-full border-2 border-lux-cream bg-gray-300 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1554151228-14d9def656ec?auto=format&fit=crop&q=80&w=100"
+                                    class="w-full h-full object-cover"></div>
+                            <div
+                                class="w-12 h-12 rounded-full border-2 border-lux-cream bg-gray-400 flex items-center justify-center text-xs font-bold bg-lux-gold text-white">
+                                2k+</div>
+                        </div>
+                        <div class="text-sm">
+                            <div class="font-bold text-lux-charcoal text-lg">5.0 ★</div>
+                            <div class="font-light">Google Reviews</div>
+                        </div>
+                    </div>
+
+                    <!-- Stats Divider -->
+                    <div class="hidden md:block w-px h-12 bg-lux-charcoal/10"></div>
+
+                    <!-- Stats -->
+                    <div class="flex gap-12 text-center md:text-left">
+                        <div>
+                            <div class="font-serif text-3xl text-lux-gold">5000+</div>
+                            <div class="text-[0.6rem] uppercase tracking-widest text-lux-muted mt-1">Happy Patients
+                            </div>
+                        </div>
+                        <div>
+                            <div class="font-serif text-3xl text-lux-gold">10+</div>
+                            <div class="text-[0.6rem] uppercase tracking-widest text-lux-muted mt-1">Years Exp.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction / About -->
+    <section id="about" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="relative z-10 aspect-[4/5] bg-gray-100 overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80"
+                        alt="Dr. Ananya Sharma"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <!-- Image Card Overlay -->
+                    <div
+                        class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur p-6 border border-lux-stone shadow-lg">
+                        <div class="font-serif text-xl text-lux-charcoal">Dr. Ananya Sharma</div>
+                        <div class="text-xs text-lux-gold uppercase tracking-widest mt-1">MD Dermatology (Gold Medalist)
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -bottom-6 -right-6 w-2/3 aspect-square bg-lux-stone/30 -z-0"></div>
+                <div class="absolute -top-6 -left-6 w-2/3 aspect-square border border-lux-gold/30 -z-0"></div>
+            </div>
+
+            <div>
+                <h3 class="font-serif text-4xl mb-6">Science Meets Artistry</h3>
+                <p class="text-lux-muted mb-6 leading-loose font-light text-lg">
+                    At Luminous, we believe skincare is not just about correcting flaws—it's about enhancing your
+                    natural beauty. Led by Dr. Ananya Sharma, our clinic combines cutting-edge medical technology with a
+                    holistic approach to skin health.
+                </p>
+                <p class="text-lux-muted mb-8 leading-loose font-light text-sm">
+                    "I started Luminous with a simple vision: to provide ethical, effective, and elegant aesthetic
+                    solutions. We don't just treat skin; we build confidence."
+                </p>
+
+                <div class="grid grid-cols-2 gap-6 mb-10">
+                    <div class="p-6 bg-lux-cream border border-lux-stone">
+                        <div class="text-3xl text-lux-charcoal mb-2"><i data-lucide="users"
+                                class="w-6 h-6 text-lux-gold"></i></div>
+                        <div class="font-bold text-sm uppercase tracking-wider">Patient Centric</div>
+                        <div class="text-xs text-lux-muted mt-2">Customized plans for every skin type.</div>
+                    </div>
+                    <div class="p-6 bg-lux-cream border border-lux-stone">
+                        <div class="text-3xl text-lux-charcoal mb-2"><i data-lucide="award"
+                                class="w-6 h-6 text-lux-gold"></i></div>
+                        <div class="font-bold text-sm uppercase tracking-wider">Award Winning</div>
+                        <div class="text-xs text-lux-muted mt-2">Recognized for excellence in aesthetics.</div>
+                    </div>
+                </div>
+
+                <a href="about.html"
+                    class="text-lux-gold hover:text-lux-charcoal uppercase tracking-widest text-xs font-bold border-b border-lux-gold pb-1 transition-colors">Read
+                    More About Doctor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section (New) -->
+    <section class="py-24 bg-lux-cream border-t border-lux-stone">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="inline-flex gap-1 text-yellow-500 mb-4">
+                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                    <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                </div>
+                <h2 class="font-serif text-4xl mb-4">Loved by Our Patients</h2>
+                <p class="text-lux-muted">Rated 5.0/5.0 based on 200+ Google Reviews.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 border border-lux-stone hover:shadow-xl transition-shadow">
+                    <div class="flex gap-4 items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=100"
+                            class="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                            <div class="font-bold text-sm">Sneha Reddy</div>
+                            <div class="text-xs text-lux-muted">2 months ago</div>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                            class="h-4 ml-auto opacity-50">
+                    </div>
+                    <div class="flex gap-1 text-yellow-400 text-xs mb-4">
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star"
+                            class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i
+                            data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star"
+                            class="w-3 h-3 fill-current"></i>
+                    </div>
+                    <p class="text-lux-muted text-sm leading-relaxed">"The best skin clinic in the city! Dr. Ananya is
+                        so patient and knowledgeable. My acne scars have faded significantly after her treatment plan."
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 border border-lux-stone hover:shadow-xl transition-shadow">
+                    <div class="flex gap-4 items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=100"
+                            class="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                            <div class="font-bold text-sm">Rahul Mehta</div>
+                            <div class="text-xs text-lux-muted">1 month ago</div>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                            class="h-4 ml-auto opacity-50">
+                    </div>
+                    <div class="flex gap-1 text-yellow-400 text-xs mb-4">
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star"
+                            class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i
+                            data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star"
+                            class="w-3 h-3 fill-current"></i>
+                    </div>
+                    <p class="text-lux-muted text-sm leading-relaxed">"Went for hair loss treatment (GFC). Visible
+                        results in just 3 sessions. The staff is very professional and the clinic is super hygienic."
+                    </p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 border border-lux-stone hover:shadow-xl transition-shadow">
+                    <div class="flex gap-4 items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100"
+                            class="w-12 h-12 rounded-full object-cover" />
+                        <div>
+                            <div class="font-bold text-sm">Priya K.</div>
+                            <div class="text-xs text-lux-muted">3 weeks ago</div>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                            class="h-4 ml-auto opacity-50">
+                    </div>
+                    <div class="flex gap-1 text-yellow-400 text-xs mb-4">
+                        <i data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star"
+                            class="w-3 h-3 fill-current"></i><i data-lucide="star" class="w-3 h-3 fill-current"></i><i
+                            data-lucide="star" class="w-3 h-3 fill-current"></i><i data-lucide="star"
+                            class="w-3 h-3 fill-current"></i>
+                    </div>
+                    <p class="text-lux-muted text-sm leading-relaxed">"Highly recommend for anti-aging treatments. The
+                        Botox was done so naturally, no one could tell I had work done—just that I looked fresh!"</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-lux-charcoal hover:text-lux-gold transition-colors">See
+                    All Reviews on Google <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-lux-cream">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h3 class="font-serif text-4xl mb-4">Curated Treatments</h3>
+                <p class="text-lux-muted font-light">Customized solutions for glowing skin and healthy hair.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="group bg-white p-8 hover:shadow-2xl hover:shadow-lux-stone/50 transition-all duration-500 border border-transparent hover:border-lux-gold/20">
+                    <div class="mb-6 opacity-80 group-hover:opacity-100 transition-opacity">
+                        <i data-lucide="sparkles" class="w-10 h-10 stroke-1 text-lux-gold"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-3 group-hover:text-lux-gold transition-colors">Laser Toning</h4>
+                    <p class="text-sm text-lux-muted font-light leading-relaxed mb-6">
+                        Achieve even skin tone and texture with our advanced Q-Switch laser technology. Safe, effective,
+                        and zero downtime.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest opacity-60 group-hover:opacity-100 transition-all">Learn
+                        More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="group bg-white p-8 hover:shadow-2xl hover:shadow-lux-stone/50 transition-all duration-500 border border-transparent hover:border-lux-gold/20 relative top-0 md:-top-8 shadow-xl">
+                    <div class="mb-6 opacity-80 group-hover:opacity-100 transition-opacity">
+                        <i data-lucide="eraser" class="w-10 h-10 stroke-1 text-lux-gold"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-3 group-hover:text-lux-gold transition-colors">Anti-Aging</h4>
+                    <p class="text-sm text-lux-muted font-light leading-relaxed mb-6">
+                        Reduce fine lines and wrinkles with Botox, Fillers, and HIFU treatments. Restore your youthful
+                        radiance naturally.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest opacity-60 group-hover:opacity-100 transition-all">Learn
+                        More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="group bg-white p-8 hover:shadow-2xl hover:shadow-lux-stone/50 transition-all duration-500 border border-transparent hover:border-lux-gold/20">
+                    <div class="mb-6 opacity-80 group-hover:opacity-100 transition-opacity">
+                        <i data-lucide="zap" class="w-10 h-10 stroke-1 text-lux-gold"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-3 group-hover:text-lux-gold transition-colors">Hair Restoration
+                    </h4>
+                    <p class="text-sm text-lux-muted font-light leading-relaxed mb-6">
+                        Combat hair loss with PRP therapy and GFC treatments. stimulate growth factors for thicker,
+                        healthier hair.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest opacity-60 group-hover:opacity-100 transition-all">Learn
+                        More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="group bg-white p-8 hover:shadow-2xl hover:shadow-lux-stone/50 transition-all duration-500 border border-transparent hover:border-lux-gold/20">
+                    <div class="mb-6 opacity-80 group-hover:opacity-100 transition-opacity">
+                        <i data-lucide="droplet" class="w-10 h-10 stroke-1 text-lux-gold"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-3 group-hover:text-lux-gold transition-colors">Medical Facials
+                    </h4>
+                    <p class="text-sm text-lux-muted font-light leading-relaxed mb-6">
+                        Deep cleanse and hydrate with HydraFacial, Carbon Peels, and Chemical Peels for instant glow.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest opacity-60 group-hover:opacity-100 transition-all">Learn
+                        More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                </div>
+                <!-- Service 5 -->
+                <div
+                    class="group bg-white p-8 hover:shadow-2xl hover:shadow-lux-stone/50 transition-all duration-500 border border-transparent hover:border-lux-gold/20">
+                    <div class="mb-6 opacity-80 group-hover:opacity-100 transition-opacity">
+                        <i data-lucide="sun" class="w-10 h-10 stroke-1 text-lux-gold"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-3 group-hover:text-lux-gold transition-colors">Acne & Scarring
+                    </h4>
+                    <p class="text-sm text-lux-muted font-light leading-relaxed mb-6">
+                        Specialized protocols for active acne and scar reduction using MnRF and targeted peels.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest opacity-60 group-hover:opacity-100 transition-all">Learn
+                        More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                </div>
+                <!-- Service 6 -->
+                <div
+                    class="group bg-white p-8 hover:shadow-2xl hover:shadow-lux-stone/50 transition-all duration-500 border border-transparent hover:border-lux-gold/20">
+                    <div class="mb-6 opacity-80 group-hover:opacity-100 transition-opacity">
+                        <i data-lucide="scissors" class="w-10 h-10 stroke-1 text-lux-gold"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-3 group-hover:text-lux-gold transition-colors">Laser Hair
+                        Reduction</h4>
+                    <p class="text-sm text-lux-muted font-light leading-relaxed mb-6">
+                        Pain-free, full-body laser hair reduction using US-FDA approved diode laser technology.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest opacity-60 group-hover:opacity-100 transition-all">Learn
+                        More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-lux-stone/30">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <i data-lucide="quote" class="w-12 h-12 text-lux-gold mx-auto mb-8 opacity-50"></i>
+            <h3 class="font-serif text-3xl md:text-5xl leading-tight mb-10 text-lux-charcoal">
+                "I have never felt more confident in my skin. Dr. Ananya's approach is truly transformative."
+            </h3>
+            <div class="flex items-center justify-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-gray-300"></div>
+                <div class="text-left">
+                    <div class="font-bold text-sm uppercase tracking-wide">Priya Kapoor</div>
+                    <div class="text-xs text-lux-muted">Laser Toning Patient</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Booking -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
+            <div>
+                <h3 class="font-serif text-5xl mb-6">Begin Your Journey</h3>
+                <p class="text-lux-muted mb-10 font-light text-lg">
+                    Ready to glow? Fill out the form or visit our clinic. We look forward to welcoming you.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-12 h-12 flex items-center justify-center border border-lux-stone bg-lux-cream text-lux-gold shrink-0">
+                            <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm uppercase tracking-widest mb-1">Visit Us</h4>
+                            <p class="text-lux-muted font-light">123, Jubilee Hills, Near Metro Station,<br />Hyderabad,
+                                Telangana 500033</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-12 h-12 flex items-center justify-center border border-lux-stone bg-lux-cream text-lux-gold shrink-0">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-sm uppercase tracking-widest mb-1">Contact</h4>
+                            <p class="text-lux-muted font-light">+91 98765 43210<br />hello@luminousclinic.in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-lux-cream p-10 shadow-2xl shadow-lux-stone/50 relative">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-lux-gold via-lux-rose to-lux-gold">
+                </div>
+                <h4 class="font-serif text-2xl mb-6">Request Consultation</h4>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="First Name"
+                            class="w-full bg-white border-0 px-4 py-3 text-sm focus:ring-1 focus:ring-lux-gold outline-none placeholder:text-lux-muted/50" />
+                        <input type="text" placeholder="Last Name"
+                            class="w-full bg-white border-0 px-4 py-3 text-sm focus:ring-1 focus:ring-lux-gold outline-none placeholder:text-lux-muted/50" />
+                    </div>
+                    <input type="tel" placeholder="Phone Number"
+                        class="w-full bg-white border-0 px-4 py-3 text-sm focus:ring-1 focus:ring-lux-gold outline-none placeholder:text-lux-muted/50" />
+                    <select
+                        class="w-full bg-white border-0 px-4 py-3 text-sm focus:ring-1 focus:ring-lux-gold outline-none text-lux-muted">
+                        <option>Select Treatment</option>
+                        <option>Acne Treatment</option>
+                        <option>Laser Hair Removal</option>
+                        <option>Anti-Aging</option>
+                        <option>Other</option>
+                    </select>
+                    <button
+                        class="w-full bg-lux-charcoal text-white py-4 uppercase tracking-widest text-xs font-bold hover:bg-lux-gold transition-colors duration-300">
+                        Confirm Request
+                    </button>
+                    <p class="text-center text-xs text-lux-muted pt-2 opacity-60">No payment required now. Clinic will
+                        confirm availability.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-lux-charcoal text-white/40 py-12 text-sm border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div
+                    class="w-8 h-8 border border-white/20 rounded-full flex items-center justify-center font-serif text-lux-gold">
+                    L</div>
+                <span class="font-serif tracking-widest text-white/90">LUMINOUS</span>
+            </div>
+
+            <div class="flex gap-6 text-xs uppercase tracking-wider">
+                <a href="#" class="hover:text-lux-gold">Privacy</a>
+                <a href="#" class="hover:text-lux-gold">Terms</a>
+                <a href="#" class="hover:text-lux-gold">Instagram</a>
+            </div>
+
+            <div class="text-xs">
+                © 2024 Luminous Clinic. Demo by CGP360.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results - Luminous Skin & Aesthetic Clinic</title>
+    <meta name="description" content="See the transformation stories of our happy patients." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    },
+                    colors: {
+                        lux: {
+                            cream: '#FDFBF7',
+                            stone: '#Eae7E2',
+                            gold: '#D4AF37',
+                            charcoal: '#2C2C2C',
+                            rose: '#E2C2C6',
+                            muted: '#8A8A8A'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-lux-cream text-lux-charcoal font-sans antialiased selection:bg-lux-rose selection:text-lux-charcoal">
+
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-lux-cream/80 backdrop-blur-md border-b border-lux-stone">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div
+                    class="w-10 h-10 bg-lux-charcoal text-lux-gold rounded-full flex items-center justify-center font-serif text-2xl pt-1">
+                    L</div>
+                <div class="leading-tight">
+                    <h1 class="font-serif text-2xl font-bold tracking-tight text-lux-charcoal">LUMINOUS</h1>
+                    <p class="text-[0.65rem] tracking-[0.2em] uppercase text-lux-muted">Skin & Hair Clinic</p>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide uppercase">
+                <a href="index.html" class="hover:text-lux-gold transition-colors">Home</a>
+                <a href="about.html" class="hover:text-lux-gold transition-colors">About</a>
+                <a href="services.html" class="hover:text-lux-gold transition-colors">Treatments</a>
+                <a href="results.html" class="text-lux-gold font-bold">Results</a>
+                <a href="contact.html"
+                    class="px-6 py-2.5 bg-lux-charcoal text-white hover:bg-lux-gold transition-colors duration-300">Book
+                    Consult</a>
+            </div>
+            <button class="md:hidden text-lux-charcoal">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-20 bg-lux-stone/30">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-xs font-bold tracking-widest uppercase text-lux-muted mb-3">Transformations</p>
+            <h1 class="font-serif text-5xl md:text-6xl text-lux-charcoal">Real Results</h1>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-12">
+
+                <!-- Result 1 -->
+                <div class="space-y-6">
+                    <div class="relative group cursor-pointer">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors z-10"></div>
+                        <div class="grid grid-cols-2 gap-1">
+                            <div class="relative">
+                                <span
+                                    class="absolute top-4 left-4 bg-lux-charcoal/80 text-white text-[0.6rem] uppercase tracking-wider px-2 py-1">Before</span>
+                                <img src="https://images.unsplash.com/photo-1554151228-14d9def656ec?auto=format&fit=crop&q=80"
+                                    class="w-full aspect-square object-cover bg-gray-100" />
+                            </div>
+                            <div class="relative">
+                                <span
+                                    class="absolute top-4 left-4 bg-lux-gold text-white text-[0.6rem] uppercase tracking-wider px-2 py-1">After</span>
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80"
+                                    class="w-full aspect-square object-cover bg-gray-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl mb-2">Acne Scar Reduction</h3>
+                        <p class="text-lux-muted text-sm border-l-2 border-lux-gold pl-4">"After just 4 sessions of MnRF
+                            and peels, my texture is completely smooth. I can finally go out without makeup!"</p>
+                    </div>
+                </div>
+
+                <!-- Result 2 -->
+                <div class="space-y-6">
+                    <div class="relative group cursor-pointer">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors z-10"></div>
+                        <div class="grid grid-cols-2 gap-1">
+                            <div class="relative">
+                                <span
+                                    class="absolute top-4 left-4 bg-lux-charcoal/80 text-white text-[0.6rem] uppercase tracking-wider px-2 py-1">Before</span>
+                                <img src="https://images.unsplash.com/photo-1563178406-44ca4d2e5b9f?auto=format&fit=crop&q=80"
+                                    class="w-full aspect-square object-cover bg-gray-100" />
+                            </div>
+                            <div class="relative">
+                                <span
+                                    class="absolute top-4 left-4 bg-lux-gold text-white text-[0.6rem] uppercase tracking-wider px-2 py-1">After</span>
+                                <img src="https://images.unsplash.com/photo-1629431422784-0a8277259169?auto=format&fit=crop&q=80"
+                                    class="w-full aspect-square object-cover bg-gray-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl mb-2">Anti-Aging Lift</h3>
+                        <p class="text-lux-muted text-sm border-l-2 border-lux-gold pl-4">"Dr. Sharma's filler technique
+                            is magic. Look at my jawline! It looks 10 years younger."</p>
+                    </div>
+                </div>
+
+                <!-- Result 3 -->
+                <div class="space-y-6">
+                    <div class="relative group cursor-pointer">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors z-10"></div>
+                        <div class="grid grid-cols-2 gap-1">
+                            <div class="relative">
+                                <span
+                                    class="absolute top-4 left-4 bg-lux-charcoal/80 text-white text-[0.6rem] uppercase tracking-wider px-2 py-1">Before</span>
+                                <img src="https://images.unsplash.com/photo-1506956191951-7a88da4435e5?auto=format&fit=crop&q=80"
+                                    class="w-full aspect-square object-cover bg-gray-100" />
+                            </div>
+                            <div class="relative">
+                                <span
+                                    class="absolute top-4 left-4 bg-lux-gold text-white text-[0.6rem] uppercase tracking-wider px-2 py-1">After</span>
+                                <img src="https://images.unsplash.com/photo-1519011985187-444d62641929?auto=format&fit=crop&q=80"
+                                    class="w-full aspect-square object-cover bg-gray-100" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl mb-2">Hair Regrowth (GFC)</h3>
+                        <p class="text-lux-muted text-sm border-l-2 border-lux-gold pl-4">"I had lost hope, but 6 months
+                            of treatment here and my crown area is full again."</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-20 text-center">
+                <p class="text-lux-muted italic text-sm mb-6">Results vary from person to person. A consultation is
+                    required to assess your suitability.</p>
+                <a href="contact.html"
+                    class="inline-flex items-center justify-center px-10 py-4 bg-lux-charcoal text-white hover:bg-lux-gold transition-all duration-300 tracking-wide uppercase text-sm font-semibold shadow-xl shadow-lux-charcoal/10">
+                    Get Your Own Assessment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-lux-charcoal text-white/40 py-12 text-sm border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div
+                    class="w-8 h-8 border border-white/20 rounded-full flex items-center justify-center font-serif text-lux-gold">
+                    L</div>
+                <span class="font-serif tracking-widest text-white/90">LUMINOUS</span>
+            </div>
+            <div class="text-xs">
+                © 2024 Luminous Clinic. Demo by CGP360.
+            </div>
+        </div>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

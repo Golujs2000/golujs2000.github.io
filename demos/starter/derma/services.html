@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treatments - Luminous Skin & Aesthetic Clinic</title>
+    <meta name="description" content="Explore our range of skin, hair, and laser treatments." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    },
+                    colors: {
+                        lux: {
+                            cream: '#FDFBF7',
+                            stone: '#Eae7E2',
+                            gold: '#D4AF37',
+                            charcoal: '#2C2C2C',
+                            rose: '#E2C2C6',
+                            muted: '#8A8A8A'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-lux-cream text-lux-charcoal font-sans antialiased selection:bg-lux-rose selection:text-lux-charcoal">
+
+    <!-- Navbar (Same as index) -->
+    <nav class="sticky top-0 z-50 bg-lux-cream/80 backdrop-blur-md border-b border-lux-stone">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div
+                    class="w-10 h-10 bg-lux-charcoal text-lux-gold rounded-full flex items-center justify-center font-serif text-2xl pt-1">
+                    L</div>
+                <div class="leading-tight">
+                    <h1 class="font-serif text-2xl font-bold tracking-tight text-lux-charcoal">LUMINOUS</h1>
+                    <p class="text-[0.65rem] tracking-[0.2em] uppercase text-lux-muted">Skin & Hair Clinic</p>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide uppercase">
+                <a href="index.html" class="hover:text-lux-gold transition-colors">Home</a>
+                <a href="about.html" class="hover:text-lux-gold transition-colors">About</a>
+                <a href="services.html" class="text-lux-gold font-bold">Treatments</a>
+                <a href="results.html" class="hover:text-lux-gold transition-colors">Results</a>
+                <a href="contact.html"
+                    class="px-6 py-2.5 bg-lux-charcoal text-white hover:bg-lux-gold transition-colors duration-300">Book
+                    Consult</a>
+            </div>
+            <button class="md:hidden text-lux-charcoal">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-20 bg-lux-stone/30">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-xs font-bold tracking-widest uppercase text-lux-muted mb-3">Our Expertise</p>
+            <h1 class="font-serif text-5xl md:text-6xl text-lux-charcoal">Curated Treatments</h1>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="py-12 border-b border-lux-stone bg-white sticky top-[73px] z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 flex gap-8 overflow-x-auto no-scrollbar justify-center">
+            <a href="#skin"
+                class="whitespace-nowrap uppercase text-xs font-bold tracking-widest text-lux-charcoal hover:text-lux-gold">Skin
+                Rejuvenation</a>
+            <a href="#hair"
+                class="whitespace-nowrap uppercase text-xs font-bold tracking-widest text-lux-muted hover:text-lux-gold">Hair
+                Restoration</a>
+            <a href="#laser"
+                class="whitespace-nowrap uppercase text-xs font-bold tracking-widest text-lux-muted hover:text-lux-gold">Laser
+                Treatments</a>
+            <a href="#clinical"
+                class="whitespace-nowrap uppercase text-xs font-bold tracking-widest text-lux-muted hover:text-lux-gold">Clinical
+                Dermatology</a>
+        </div>
+    </section>
+
+    <!-- Procedures -->
+    <section id="skin" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2
+                class="font-serif text-4xl mb-12 text-center decoration-lux-gold decoration-1 underline underline-offset-8">
+                Skin Rejuvenation</h2>
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-16">
+                <!-- Item -->
+                <div class="flex flex-col md:flex-row gap-8 items-start border-b border-lux-stone pb-12 last:border-0">
+                    <div class="w-full md:w-1/3 aspect-[4/3] bg-lux-stone shrink-0 overflow-hidden relative group">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <div
+                            class="absolute top-4 left-4 bg-white/90 px-3 py-1 text-[0.6rem] font-bold uppercase tracking-widest text-lux-charcoal">
+                            Most Popular</div>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h3 class="font-serif text-3xl mb-3 text-lux-charcoal">HydraFacial Elite</h3>
+                        <p class="text-lux-muted text-sm leading-relaxed mb-6 font-light">
+                            The HydraFacial is a non-invastive treatment that detoxifies, rejuvenates, and protects your
+                            skin for immediate results with no downtime. It removes dead skin cells and extracts
+                            impurities while simultaneously bathing the new skin with cleansing, hydrating, and
+                            moisturizing serums.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-bold text-xs uppercase tracking-widest mb-2 text-lux-gold">Ideal For
+                                </h4>
+                                <ul class="text-xs text-lux-muted space-y-1">
+                                    <li>• Dull & Dehydrated Skin</li>
+                                    <li>• Clogged Pores</li>
+                                    <li>• Instant Glow (Pre-event)</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs uppercase tracking-widest mb-2 text-lux-gold">Procedure
+                                </h4>
+                                <ul class="text-xs text-lux-muted space-y-1">
+                                    <li>• Cleanse & Peel</li>
+                                    <li>• Extract & Hydrate</li>
+                                    <li>• Fuse & Protect</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-lux-charcoal">
+                            <span class="flex items-center gap-2"><i data-lucide="clock"
+                                    class="w-4 h-4 text-lux-gold"></i> 60 Mins</span>
+                            <span class="flex items-center gap-2"><i data-lucide="activity"
+                                    class="w-4 h-4 text-lux-gold"></i> No Downtime</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="flex flex-col md:flex-row gap-8 items-start border-b border-lux-stone pb-12 last:border-0">
+                    <div class="w-full md:w-1/3 aspect-[4/3] bg-lux-stone shrink-0 overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1608248596669-8e42095f4039?auto=format&fit=crop&q=80"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h3 class="font-serif text-3xl mb-3 text-lux-charcoal">Advanced Chemical Peels</h3>
+                        <p class="text-lux-muted text-sm leading-relaxed mb-6 font-light">
+                            We use medical-grade peels (Glycolic, Salicylic, TCP) customized to your skin sensitivity. A
+                            chemical solution is applied to the skin that causes it to exfoliate and eventually peel
+                            off, revealing fresh, new skin that is smoother and less wrinkled.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-bold text-xs uppercase tracking-widest mb-2 text-lux-gold">Target
+                                    Concerns</h4>
+                                <ul class="text-xs text-lux-muted space-y-1">
+                                    <li>• Acne & Acne Scars</li>
+                                    <li>• Pigmentation / Melasma</li>
+                                    <li>• Fine Lines</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs uppercase tracking-widest mb-2 text-lux-gold">Expectations
+                                </h4>
+                                <ul class="text-xs text-lux-muted space-y-1">
+                                    <li>• Mild tingling sensation</li>
+                                    <li>• 2-3 days of skin shedding</li>
+                                    <li>• New skin in 5-7 days</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-lux-charcoal">
+                            <span class="flex items-center gap-2"><i data-lucide="clock"
+                                    class="w-4 h-4 text-lux-gold"></i> 30-45 Mins</span>
+                            <span class="flex items-center gap-2"><i data-lucide="activity"
+                                    class="w-4 h-4 text-lux-gold"></i> Minimal Peeling</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="flex flex-col md:flex-row gap-8 items-start border-b border-lux-stone pb-12 last:border-0">
+                    <div class="w-full md:w-1/3 aspect-[4/3] bg-lux-stone shrink-0 overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9281da27f3?auto=format&fit=crop&q=80"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h3 class="font-serif text-3xl mb-3 text-lux-charcoal">Botox & Dermal Fillers</h3>
+                        <p class="text-lux-muted text-sm leading-relaxed mb-6 font-light">
+                            Restore volume and smooth out dynamic wrinkles with our FDA-approved injectables. Dr. Sharma
+                            specializes in the "Natural Look"—enhancements that are subtle and undetectable.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-bold text-xs uppercase tracking-widest mb-2 text-lux-gold">Areas Treated
+                                </h4>
+                                <ul class="text-xs text-lux-muted space-y-1">
+                                    <li>• Crow's feet & Forehead lines</li>
+                                    <li>• Lip augmentation</li>
+                                    <li>• Cheek volume loss</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs uppercase tracking-widest mb-2 text-lux-gold">Longevity
+                                </h4>
+                                <ul class="text-xs text-lux-muted space-y-1">
+                                    <li>• Botox: 4-6 Months</li>
+                                    <li>• Fillers: 9-18 Months</li>
+                                    <li>• Instant visible change</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-lux-charcoal">
+                            <span class="flex items-center gap-2"><i data-lucide="clock"
+                                    class="w-4 h-4 text-lux-gold"></i> 45 Mins</span>
+                            <span class="flex items-center gap-2"><i data-lucide="activity"
+                                    class="w-4 h-4 text-lux-gold"></i> Mild Swelling</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="flex flex-col md:flex-row gap-8 items-start border-b border-lux-stone pb-12 last:border-0">
+                    <div class="w-full md:w-1/3 aspect-[4/3] bg-lux-stone shrink-0 overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <h3 class="font-serif text-3xl mb-3 text-lux-charcoal">Vampire Facial (PRP)</h3>
+                        <p class="text-lux-muted text-sm leading-relaxed mb-6 font-light">
+                            Platelet-Rich Plasma (PRP) therapy uses injections of a concentration of a patient's own
+                            platelets to accelerate the healing of injured tendons, ligaments, muscles and joints. In
+                            aesthetics, we use it to boost collagen and rejuvenate the skin.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-bold text-xs uppercase tracking-widest mb-2 text-lux-gold">Benefits</h4>
+                                <ul class="text-xs text-lux-muted space-y-1">
+                                    <li>• Improves skin texture</li>
+                                    <li>• Reduces fine lines</li>
+                                    <li>• Treats under-eye dark circles</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs uppercase tracking-widest mb-2 text-lux-gold">Process</h4>
+                                <ul class="text-xs text-lux-muted space-y-1">
+                                    <li>• Blood draw (10ml)</li>
+                                    <li>• Centrifugation</li>
+                                    <li>• Microneedling / Injection</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center gap-6 text-xs font-bold uppercase tracking-widest text-lux-charcoal">
+                            <span class="flex items-center gap-2"><i data-lucide="clock"
+                                    class="w-4 h-4 text-lux-gold"></i> 60 Mins</span>
+                            <span class="flex items-center gap-2"><i data-lucide="activity"
+                                    class="w-4 h-4 text-lux-gold"></i> 1 Day Redness</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hair Section -->
+    <section id="hair" class="py-24 bg-lux-cream">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2
+                class="font-serif text-4xl mb-12 text-center decoration-lux-gold decoration-1 underline underline-offset-8">
+                Hair Restoration</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 border border-lux-stone">
+                    <h3 class="font-serif text-2xl mb-4">GFC Therapy</h3>
+                    <p class="text-lux-muted mb-6">Growth Factor Concentrate therapy uses concentrated growth factors
+                        from your own blood to reduce hair fall and stimulate regrowth. superior to traditional PRP.</p>
+                    <a href="contact.html"
+                        class="text-xs font-bold uppercase tracking-widest border-b border-lux-charcoal pb-1">Book
+                        Consultation</a>
+                </div>
+                <div class="bg-white p-8 border border-lux-stone">
+                    <h3 class="font-serif text-2xl mb-4">Hair Transplant</h3>
+                    <p class="text-lux-muted mb-6">Advanced FUE technique for natural-looking hairline restoration.
+                        Minimally invasive with permanent results.</p>
+                    <a href="contact.html"
+                        class="text-xs font-bold uppercase tracking-widest border-b border-lux-charcoal pb-1">Book
+                        Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-lux-charcoal text-white/40 py-12 text-sm border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div
+                    class="w-8 h-8 border border-white/20 rounded-full flex items-center justify-center font-serif text-lux-gold">
+                    L</div>
+                <span class="font-serif tracking-widest text-white/90">LUMINOUS</span>
+            </div>
+            <div class="text-xs">
+                © 2024 Luminous Clinic. Demo by CGP360.
+            </div>
+        </div>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

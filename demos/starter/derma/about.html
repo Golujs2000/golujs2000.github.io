@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Luminous Skin & Aesthetic Clinic</title>
+    <meta name="description" content="Meet Dr. Ananya Sharma and the team at Luminous Clinic." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    },
+                    colors: {
+                        lux: {
+                            cream: '#FDFBF7',
+                            stone: '#Eae7E2',
+                            gold: '#D4AF37',
+                            charcoal: '#2C2C2C',
+                            rose: '#E2C2C6',
+                            muted: '#8A8A8A'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-lux-cream text-lux-charcoal font-sans antialiased selection:bg-lux-rose selection:text-lux-charcoal">
+
+    <!-- Top Bar -->
+    <div class="bg-lux-charcoal text-white/90 text-xs py-2 tracking-widest uppercase">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <span>Premium Aesthetic Care</span>
+            <div class="flex gap-6">
+                <a href="tel:+919876543210" class="hover:text-lux-gold transition-colors">Call: +91 98765 43210</a>
+                <span class="opacity-50">|</span>
+                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3 h-3"></i> Mon-Sat: 10AM -
+                    7PM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-lux-cream/80 backdrop-blur-md border-b border-lux-stone">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <div
+                    class="w-10 h-10 bg-lux-charcoal text-lux-gold rounded-full flex items-center justify-center font-serif text-2xl pt-1">
+                    L</div>
+                <div class="leading-tight">
+                    <h1 class="font-serif text-2xl font-bold tracking-tight text-lux-charcoal">LUMINOUS</h1>
+                    <p class="text-[0.65rem] tracking-[0.2em] uppercase text-lux-muted">Skin & Hair Clinic</p>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide uppercase">
+                <a href="index.html" class="hover:text-lux-gold transition-colors">Home</a>
+                <a href="about.html" class="text-lux-gold font-bold">About</a>
+                <a href="services.html" class="hover:text-lux-gold transition-colors">Treatments</a>
+                <a href="results.html" class="hover:text-lux-gold transition-colors">Results</a>
+                <a href="contact.html"
+                    class="px-6 py-2.5 bg-lux-charcoal text-white hover:bg-lux-gold transition-colors duration-300">Book
+                    Consult</a>
+            </div>
+
+            <button class="md:hidden text-lux-charcoal">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-20 bg-lux-stone/30">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-xs font-bold tracking-widest uppercase text-lux-muted mb-3">Our Story</p>
+            <h1 class="font-serif text-5xl md:text-6xl text-lux-charcoal">Meet The Experts</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-start">
+            <div class="relative">
+                <div class="aspect-[4/5] bg-gray-100 overflow-hidden relative z-10">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80"
+                        alt="Dr Ananya Sharma" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-10 -left-10 w-full h-full border border-lux-gold/30 -z-0 hidden md:block">
+                </div>
+
+                <div class="mt-8 grid grid-cols-3 gap-4 text-center">
+                    <div class="p-4 bg-lux-cream border border-lux-stone">
+                        <div class="font-serif text-2xl text-lux-gold">10+</div>
+                        <div class="text-[0.6rem] uppercase tracking-wider mt-1">Years Exp.</div>
+                    </div>
+                    <div class="p-4 bg-lux-cream border border-lux-stone">
+                        <div class="font-serif text-2xl text-lux-gold">5k+</div>
+                        <div class="text-[0.6rem] uppercase tracking-wider mt-1">Patients</div>
+                    </div>
+                    <div class="p-4 bg-lux-cream border border-lux-stone">
+                        <div class="font-serif text-2xl text-lux-gold">15+</div>
+                        <div class="text-[0.6rem] uppercase tracking-wider mt-1">Awards</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="font-serif text-4xl mb-6">Dr. Ananya Sharma</h2>
+                <div class="text-xs font-bold tracking-widest uppercase text-lux-gold mb-6">MD, Dermatology (Gold
+                    Medalist) • Medical Director</div>
+
+                <div class="space-y-6 text-lux-muted leading-relaxed font-light text-lg">
+                    <p>
+                        Dr. Ananya Sharma is a renowned dermatologist and aesthetic physician with over a decade of
+                        experience in transforming skin and hair health. Her journey began at one of India's premier
+                        medical institutes, where she not only excelled academically but developed a deep passion for
+                        clinical dermatology.
+                    </p>
+                    <p>
+                        She believes that every skin story is unique. "There is no one-size-fits-all in skincare," she
+                        says. "My goal is to listen to your concerns, understand your lifestyle, and craft a treatment
+                        plan that delivers real, sustainable results."
+                    </p>
+                    <p>
+                        After completing her MD from AIIMS New Delhi, she pursued advanced fellowship training in lasers
+                        and aesthetic medicine in South Korea, mastering techniques that are minimally invasive yet
+                        maximally effective.
+                    </p>
+
+                    <!-- Education / Timeline -->
+                    <div class="my-8 pt-8 border-t border-lux-stone">
+                        <h4 class="font-serif text-xl mb-4">Education & Qualifications</h4>
+                        <ul class="space-y-4 text-base">
+                            <li class="flex gap-4">
+                                <span class="font-bold text-lux-charcoal shrink-0 w-16">2012</span>
+                                <div>
+                                    <div class="font-semibold text-lux-charcoal">MBBS</div>
+                                    <div class="text-sm">Maulana Azad Medical College, New Delhi</div>
+                                </div>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="font-bold text-lux-charcoal shrink-0 w-16">2016</span>
+                                <div>
+                                    <div class="font-semibold text-lux-charcoal">MD - Dermatology, Venereology & Leprosy
+                                    </div>
+                                    <div class="text-sm">AIIMS, New Delhi (Gold Medalist)</div>
+                                </div>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="font-bold text-lux-charcoal shrink-0 w-16">2018</span>
+                                <div>
+                                    <div class="font-semibold text-lux-charcoal">Fellowship in Aesthetic Medicine</div>
+                                    <div class="text-sm">Seoul, South Korea</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        At Luminous, Dr. Sharma leads a team of trained professionals dedicated to providing the highest
+                        standard of care in a safe, hygienic, and luxurious environment.
+                    </p>
+                </div>
+
+                <!-- Values -->
+                <div class="mt-12 grid grid-cols-2 gap-4">
+                    <div class="bg-lux-cream p-5 border border-lux-stone">
+                        <h5 class="font-serif text-lg mb-2">Integrity</h5>
+                        <p class="text-xs text-lux-muted">We only recommend treatments you actually need.</p>
+                    </div>
+                    <div class="bg-lux-cream p-5 border border-lux-stone">
+                        <h5 class="font-serif text-lg mb-2">Safety</h5>
+                        <p class="text-xs text-lux-muted">Top-tier sterilization and US-FDA approved tech.</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-12 border-t border-lux-stone">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Signature_sample.svg" alt="Signature"
+                        class="h-10 opacity-40">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-lux-charcoal text-white/40 py-12 text-sm border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div
+                    class="w-8 h-8 border border-white/20 rounded-full flex items-center justify-center font-serif text-lux-gold">
+                    L</div>
+                <span class="font-serif tracking-widest text-white/90">LUMINOUS</span>
+            </div>
+
+            <div class="flex gap-6 text-xs uppercase tracking-wider">
+                <a href="#" class="hover:text-lux-gold">Privacy</a>
+                <a href="#" class="hover:text-lux-gold">Terms</a>
+            </div>
+
+            <div class="text-xs">
+                © 2024 Luminous Clinic. Demo by CGP360.
+            </div>
+        </div>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
