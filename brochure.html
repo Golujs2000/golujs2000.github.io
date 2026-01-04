@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGP360 - Package Brochure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3754ED',
+                            offwhite: '#EEF3F7',
+                            deepblue: '#131B62',
+                        }
+                    },
+                    screens: {
+                        'print': { 'raw': 'print' },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+        }
+
+        .a4-page {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            padding: 10mm;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-100 text-slate-900 print:bg-white">
+
+    <!-- Screen-only controls -->
+    <div class="no-print fixed top-4 right-4 z-50 flex gap-4">
+        <a href="index.html" class="px-4 py-2 bg-slate-700 text-white rounded shadow hover:bg-slate-600">Back to
+            Website</a>
+        <button onclick="window.print()"
+            class="px-4 py-2 bg-brand-blue text-white rounded shadow hover:bg-blue-600 font-bold flex items-center gap-2">
+            <i data-lucide="printer" class="w-4 h-4"></i> Download PDF
+        </button>
+    </div>
+
+    <div class="a4-page shadow-xl print:shadow-none">
+
+        <!-- Header -->
+        <header class="flex justify-between items-end border-b-4 border-brand-blue pb-6 mb-8">
+            <div>
+                <img src="./assets/logo.svg" alt="CGP360" class="h-12 mb-2">
+                <h1 class="text-xl font-bold text-brand-deepblue">Your Clinic Growth Partner</h1>
+            </div>
+            <div class="text-right text-sm text-slate-600">
+                <p>+91 92345 25942</p>
+                <p>www.cgp360.com</p>
+            </div>
+        </header>
+
+        <!-- Intro -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-center text-brand-deepblue mb-2">Web Design & Growth Packages</h2>
+            <p class="text-center text-slate-600">Transparent Pricing. One-time Setup Fees. No Monthly Subscriptions.
+            </p>
+        </div>
+
+        <!-- Detailed Packages Grid (Restored) -->
+        <div class="grid grid-cols-3 gap-4 mb-8">
+            <!-- Starter -->
+            <div class="border border-slate-300 rounded-lg p-4 bg-slate-50">
+                <div class="text-center mb-4 border-b border-slate-200 pb-2">
+                    <h3 class="text-lg font-bold text-slate-800">Starter Presence</h3>
+                    <div class="text-2xl font-bold text-brand-blue mt-1">₹6,999</div>
+                    <div class="text-xs text-slate-500">One-time</div>
+                </div>
+                <div class="mb-4">
+                    <h4 class="font-bold text-xs uppercase text-slate-500 mb-2">What's Included:</h4>
+                    <ul class="space-y-1.5 text-xs text-slate-800">
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            5 Page Website</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            Mobile Responsive</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            Professional Gallery</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            Services & Q&A</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            Basic SEO Setup</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            WhatsApp Chat</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            Google Map Setup</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            <strong>1 Year Free Hosting & Maintenance</strong>
+                        </li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            30 Days Free Content Updates</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Standard -->
+            <div class="border-2 border-brand-blue rounded-lg p-4 bg-white relative shadow-lg print:shadow-none">
+                <div
+                    class="absolute top-0 right-0 bg-brand-blue text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded-bl">
+                    Popular</div>
+                <div class="text-center mb-4 border-b border-slate-200 pb-2">
+                    <h3 class="text-lg font-bold text-slate-800">Standard</h3>
+                    <div class="text-2xl font-bold text-brand-blue mt-1">₹9,999</div>
+                    <div class="text-xs text-slate-500">One-time</div>
+                </div>
+                <div class="mb-4">
+                    <h4 class="font-bold text-xs uppercase text-slate-500 mb-2">What's Included:</h4>
+                    <ul class="space-y-1.5 text-xs text-slate-800">
+                        <li class="flex gap-1.5 font-bold"><i data-lucide="check"
+                                class="w-3.5 h-3.5 text-brand-blue shrink-0"></i> Up to 10 Pages</li>
+                        <li class="flex gap-1.5 font-bold"><i data-lucide="check"
+                                class="w-3.5 h-3.5 text-brand-blue shrink-0"></i> Direct Appointment Form</li>
+                        <li class="flex gap-1.5 font-bold"><i data-lucide="check"
+                                class="w-3.5 h-3.5 text-brand-blue shrink-0"></i> On-site Doctor Calendar</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            Mobile Responsive</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            Gallery & Services</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            Google Map Setup</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            <strong>1 Year Free Hosting & Maintenance</strong>
+                        </li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            30 Days Free Content Updates</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Premium -->
+            <div class="border border-slate-300 rounded-lg p-4 bg-slate-50">
+                <div class="text-center mb-4 border-b border-slate-200 pb-2">
+                    <h3 class="text-lg font-bold text-slate-800">Premium</h3>
+                    <div class="text-2xl font-bold text-brand-blue mt-1">₹14,999</div>
+                    <div class="text-xs text-slate-500">One-time</div>
+                </div>
+                <div class="mb-4">
+                    <h4 class="font-bold text-xs uppercase text-slate-500 mb-2">What's Included:</h4>
+                    <ul class="space-y-1.5 text-xs text-slate-800">
+                        <li class="flex gap-1.5 font-bold"><i data-lucide="check"
+                                class="w-3.5 h-3.5 text-brand-blue shrink-0"></i> Everything in Standard</li>
+                        <li class="flex gap-1.5 font-bold"><i data-lucide="check"
+                                class="w-3.5 h-3.5 text-brand-blue shrink-0"></i> Private Admin Panel</li>
+                        <li class="flex gap-1.5 font-bold"><i data-lucide="check"
+                                class="w-3.5 h-3.5 text-brand-blue shrink-0"></i> Dynamic Blog System</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            Post/Edit/Delete Blogs</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            View Appointments in Admin</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            Advanced SEO (Rank Booster)</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            Priority Phone Support</li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            <strong>1 Year Free Hosting & Maintenance</strong>
+                        </li>
+                        <li class="flex gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-green-600 shrink-0"></i>
+                            30 Days Free Content Updates</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-xs uppercase text-slate-500 mb-2">Perfect For:</h4>
+                    <p class="text-xs text-slate-600">Clinics that want to grow organic traffic through content/blogs
+                        and need full control.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ads Pricing Section -->
+        <div class="bg-slate-50 border border-slate-200 p-4 mb-6 rounded-lg">
+            <h3 class="text-brand-deepblue font-bold text-sm mb-3">Optional Ads Setup (One-Time)</h3>
+            <div class="grid grid-cols-3 gap-4 text-xs">
+                <div class="bg-white p-2 rounded border border-slate-100">
+                    <div class="font-bold text-slate-800">Google Ads Setup</div>
+                    <div class="text-brand-blue font-bold text-base">₹3,999</div>
+                    <div class="text-[10px] text-slate-500">Search Ads + Tracking</div>
+                </div>
+                <div class="bg-white p-2 rounded border border-slate-100">
+                    <div class="font-bold text-slate-800">Instagram Ads Setup</div>
+                    <div class="text-brand-blue font-bold text-base">₹2,999</div>
+                    <div class="text-[10px] text-slate-500">Local Targeting + Post</div>
+                </div>
+                <div class="bg-white p-2 rounded border border-slate-100">
+                    <div class="font-bold text-slate-800">Social Combo Setup</div>
+                    <div class="text-brand-blue font-bold text-base">₹7,999</div>
+                    <div class="text-[10px] text-slate-500">Google + Insta + FB</div>
+                </div>
+            </div>
+            <div class="mt-2 text-[10px] text-slate-500 italic">* Ad daily budget (e.g., ₹500/day) is paid directly by
+                clinic to Google/Meta.</div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- Detailed Comparison Table -->
+        <h2 class="text-xl font-bold text-brand-deepblue mb-4 mt-8">Side-by-Side Comparison</h2>
+        <div class="mb-8 border border-slate-200 rounded-lg overflow-hidden">
+            <table class="w-full text-sm text-left">
+                <thead class="bg-brand-deepblue text-white">
+                    <tr>
+                        <th class="px-4 py-3 w-1/3">Feature</th>
+                        <th class="px-4 py-3 text-center w-1/6 bg-white/10">Starter</th>
+                        <th class="px-4 py-3 text-center w-1/6 bg-brand-blue">Standard</th>
+                        <th class="px-4 py-3 text-center w-1/6 bg-white/10">Premium</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200">
+                    <!-- Core -->
+                    <tr>
+                        <td class="px-4 py-3 font-semibold text-slate-700">Website Costs</td>
+                        <td class="px-4 py-3 text-center font-bold">₹6,999</td>
+                        <td class="px-4 py-3 text-center font-bold text-brand-blue">₹9,999</td>
+                        <td class="px-4 py-3 text-center font-bold">₹14,999</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-slate-600">Appointment Booking</td>
+                        <td class="px-4 py-3 text-center"><i data-lucide="x" class="text-slate-300 w-5 h-5 mx-auto"></i>
+                        </td>
+                        <td class="px-4 py-3 text-center"><i data-lucide="check"
+                                class="text-xs text-green-600 w-5 h-5 mx-auto"></i></td>
+                        <td class="px-4 py-3 text-center"><i data-lucide="check"
+                                class="text-xs text-green-600 w-5 h-5 mx-auto"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 text-slate-600">Blog & Admin Panel</td>
+                        <td class="px-4 py-3 text-center"><i data-lucide="x" class="text-slate-300 w-5 h-5 mx-auto"></i>
+                        </td>
+                        <td class="px-4 py-3 text-center"><i data-lucide="x" class="text-slate-300 w-5 h-5 mx-auto"></i>
+                        </td>
+                        <td class="px-4 py-3 text-center"><i data-lucide="check"
+                                class="text-xs text-green-600 w-5 h-5 mx-auto"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- IMPORTANT DOMAIN NOTE -->
+        <div class="bg-amber-50 border-l-4 border-amber-500 p-4 mb-6 rounded-r">
+            <h3 class="text-amber-800 font-bold text-sm mb-1 flex items-center gap-2">
+                <i data-lucide="alert-circle" class="w-4 h-4"></i> Important: Domain Name Ownership
+            </h3>
+            <p class="text-xs text-amber-900">
+                <strong>The Clinic Owner (You) must purchase the domain name</strong> (e.g., yourclinic.com).
+                We do NOT sell domains. This costs approximately <strong>₹800 - ₹1,000 per year</strong> and is paid
+                directly by you to providers like GoDaddy or BigRock.
+            </p>
+        </div>
+
+        <!-- Renewals -->
+        <div class="bg-brand-offwhite rounded-lg p-5 border border-slate-200">
+            <h3 class="text-sm font-bold text-brand-deepblue mb-3">After 1st Year Costs (Yearly Renewals)</h3>
+            <div class="flex justify-between items-start text-xs">
+                <div class="w-1/2 pr-4">
+                    <p class="font-bold text-slate-900">Hosting & Maintenance</p>
+                    <p class="text-brand-blue font-bold text-lg">₹2,999<span class="text-xs font-normal text-slate-500">
+                            / year</span></p>
+                </div>
+                <div class="w-1/2 pl-4 border-l border-slate-300">
+                    <p class="font-bold text-slate-900">Content Updates</p>
+                    <p class="text-brand-blue font-bold text-lg">₹899<span class="text-xs font-normal text-slate-500"> /
+                            request</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="absolute bottom-6 left-10 right-10 text-center border-t border-slate-200 pt-4">
+            <div class="text-[10px] text-slate-400">
+                © 2026 CGP360. Pricing subject to change.
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

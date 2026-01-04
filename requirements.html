@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGP360 - Onboarding Checklist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3754ED',
+                            offwhite: '#EEF3F7',
+                            deepblue: '#131B62',
+                        }
+                    },
+                    screens: {
+                        'print': { 'raw': 'print' },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+
+        .a4-page {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            padding: 10mm;
+        }
+
+        .checkbox-box {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #cbd5e1;
+            border-radius: 4px;
+            margin-right: 12px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-100 text-slate-900 print:bg-white">
+
+    <!-- Screen-only controls -->
+    <div class="no-print fixed top-4 right-4 z-50 flex gap-4">
+        <a href="index.html" class="px-4 py-2 bg-slate-700 text-white rounded shadow hover:bg-slate-600">Back to
+            Website</a>
+        <button onclick="window.print()"
+            class="px-4 py-2 bg-brand-blue text-white rounded shadow hover:bg-blue-600 font-bold flex items-center gap-2">
+            <i data-lucide="printer" class="w-4 h-4"></i> Download PDF
+        </button>
+    </div>
+
+    <div class="a4-page shadow-xl print:shadow-none">
+
+        <!-- Header -->
+        <header class="flex justify-between items-end border-b-4 border-brand-blue pb-6 mb-8">
+            <div>
+                <img src="./assets/logo.svg" alt="CGP360" class="h-12 mb-2">
+                <h1 class="text-xl font-bold text-brand-deepblue">New Client Onboarding</h1>
+            </div>
+            <div class="text-right text-sm text-slate-600">
+                <p>+91 92345 25942</p>
+                <p>www.cgp360.com</p>
+            </div>
+        </header>
+
+        <!-- Intro -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-center text-brand-deepblue mb-2">Website Content Checklist</h2>
+            <p class="text-center text-slate-600 text-sm">Please provide the following details to help us build your
+                professional clinic website faster.</p>
+        </div>
+
+        <div class="grid gap-8">
+
+            <!-- Section 1: Business Details -->
+            <div class="bg-brand-offwhite/50 border border-slate-200 rounded-lg p-5">
+                <h3 class="flex items-center gap-2 font-bold text-brand-deepblue mb-4 text-lg">
+                    <i data-lucide="building-2" class="w-5 h-5 text-brand-blue"></i>
+                    1. Clinic Details
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">Official Clinic Name</span>
+                            <p class="text-xs text-slate-500">Exactly as it should appear on the website.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">Full Address + Google Map Link</span>
+                            <p class="text-xs text-slate-500">So patients can find you easily.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">Contact Number & Email</span>
+                            <p class="text-xs text-slate-500">For appointments and inquiries.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">Clinic Timings</span>
+                            <p class="text-xs text-slate-500">Opening/Closing hours for all days.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section 2: Doctor Profile -->
+            <div class="bg-brand-offwhite/50 border border-slate-200 rounded-lg p-5">
+                <h3 class="flex items-center gap-2 font-bold text-brand-deepblue mb-4 text-lg">
+                    <i data-lucide="user-circle" class="w-5 h-5 text-brand-blue"></i>
+                    2. Doctor Profiles
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">Doctor Name & Qualifications</span>
+                            <p class="text-xs text-slate-500">e.g., Dr. Rajesh Kumar, MBBS, MD (Dermatology)</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">Short Bio / Introduction</span>
+                            <p class="text-xs text-slate-500">Years of experience, specializations, university
+                                (optional).</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">High-Quality Headshot Photo</span>
+                            <p class="text-xs text-slate-500">Professional photo of the doctor (Very Important).</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section 3: Services & Visuals -->
+            <div class="bg-brand-offwhite/50 border border-slate-200 rounded-lg p-5">
+                <h3 class="flex items-center gap-2 font-bold text-brand-deepblue mb-4 text-lg">
+                    <i data-lucide="image" class="w-5 h-5 text-brand-blue"></i>
+                    3. Services & Photos
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">List of Treatments/Services</span>
+                            <p class="text-xs text-slate-500">e.g., Root Canal, Acne Treatment, Full Body Checkup.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">Clinic Photos (Interior & Exterior)</span>
+                            <p class="text-xs text-slate-500">Reception, Waiting Area, Treatment Room, Building Front.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">Logo File (If available)</span>
+                            <p class="text-xs text-slate-500">In PNG or PDF format.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section 4: Clinic Milestones -->
+            <div class="bg-brand-offwhite/50 border border-slate-200 rounded-lg p-5">
+                <h3 class="flex items-center gap-2 font-bold text-brand-deepblue mb-4 text-lg">
+                    <i data-lucide="trophy" class="w-5 h-5 text-brand-blue"></i>
+                    4. Key Achievements (Optional)
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">Patient Count & Success Stats</span>
+                            <p class="text-xs text-slate-500">e.g., "5000+ Happy Patients", "10+ Years Experience", "98%
+                                Success Rate".</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="checkbox-box print:border-slate-400"></div>
+                        <div>
+                            <span class="font-semibold text-sm">Awards or Recognitions</span>
+                            <p class="text-xs text-slate-500">Any gold medals, city awards, or certificates.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section 5: Domain Name -->
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r mt-2">
+                <h3 class="text-amber-800 font-bold text-sm mb-1 flex items-center gap-2">
+                    <i data-lucide="globe" class="w-4 h-4"></i>
+                    5. Domain Name (Website Address)
+                </h3>
+                <div class="mt-2 text-sm text-amber-900 space-y-2">
+                    <div class="flex items-center gap-2">
+                        <div class="checkbox-box border-amber-400 bg-white"></div>
+                        <span>I have already purchased my domain (e.g., myclinic.com)</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="checkbox-box border-amber-400 bg-white"></div>
+                        <span>I need to buy one (We will guide you on how to buy from GoDaddy)</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="absolute bottom-10 left-10 right-10 text-center border-t border-slate-200 pt-6">
+            <p class="text-sm font-semibold text-brand-deepblue mb-1">Send these details via WhatsApp or Email</p>
+            <p class="text-sm text-brand-blue font-bold">contact@cgp360.com &nbsp;|&nbsp; +91 92345 25942</p>
+        </div>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
