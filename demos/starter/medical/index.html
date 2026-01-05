@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Dental Care - Advanced Dentistry</title>
+    <meta name="description" content="State-of-the-art dental care for the whole family." />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        medical: {
+                            blue: '#0284C7', // Sky 600
+                            dark: '#0C4A6E', // Sky 900
+                            light: '#E0F2FE', // Sky 100
+                            surface: '#F8FAFC', // Slate 50
+                            text: '#334155', // Slate 700
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-medical-text font-sans antialiased">
+    <!-- Top Bar -->
+    <div class="bg-medical-dark text-white py-2 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex gap-6 text-xs md:text-sm">
+                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-medical-blue"></i>
+                    123 Health Street, Tech City</span>
+                <span class="flex items-center gap-2 hidden sm:flex"><i data-lucide="mail"
+                        class="w-4 h-4 text-medical-blue"></i> care@moderndental.com</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-medical-light"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                <a href="#" class="hover:text-medical-light"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div
+                    class="w-10 h-10 bg-gradient-to-br from-medical-blue to-medical-dark rounded-lg flex items-center justify-center text-white shadow-lg group-hover:shadow-medical-blue/30 transition-all">
+                    <i data-lucide="smile" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl text-medical-dark tracking-tight leading-none">Modern<span
+                            class="text-medical-blue">Dental</span></h1>
+                    <p class="text-[0.65rem] text-slate-400 font-medium tracking-wide uppercase">Family & Cosmetic
+                        Dentistry</p>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="index.html" class="text-medical-blue">Home</a>
+                <a href="services.html" class="hover:text-medical-blue transition-colors">Treatments</a>
+                <a href="gallery.html" class="hover:text-medical-blue transition-colors">Gallery</a>
+                <a href="about.html" class="hover:text-medical-blue transition-colors">Our Team</a>
+                <a href="contact.html" class="hover:text-medical-blue transition-colors">Contact</a>
+                <a href="contact.html"
+                    class="px-5 py-2.5 bg-medical-blue text-white rounded-full hover:bg-medical-dark transition-all shadow-lg shadow-medical-blue/20">Book
+                    Appointment</a>
+            </div>
+
+            <button class="md:hidden text-medical-dark">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-medical-light/30 min-h-[600px] flex items-center overflow-hidden py-24 md:py-32">
+        <div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-medical-light to-transparent -z-10"></div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div class="order-2 md:order-1 pt-12 md:pt-0">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wide mb-8">
+                    <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span> Accepting New Patients
+                </div>
+                <h2 class="text-5xl md:text-6xl lg:text-7xl font-bold text-medical-dark mb-8 leading-tight">
+                    Your Smile is Our <br /><span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-medical-blue to-teal-400">Top
+                        Priority</span>
+                </h2>
+                <p class="text-lg text-slate-500 mb-10 leading-relaxed max-w-lg">
+                    Experience pain-free, state-of-the-art dentistry in a relaxing environment. From routine checkups to
+                    complete smile makeovers.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="contact.html"
+                        class="px-8 py-4 bg-medical-blue text-white font-bold rounded-lg shadow-xl shadow-medical-blue/20 hover:bg-medical-dark transition-all text-center">
+                        Schedule Visit
+                    </a>
+                    <a href="services.html"
+                        class="px-8 py-4 bg-white text-medical-dark border border-slate-200 font-bold rounded-lg hover:border-medical-blue hover:text-medical-blue transition-all text-center flex items-center justify-center gap-2">
+                        View Services <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+                <div class="mt-12 flex items-center gap-4 text-sm text-slate-500 font-medium">
+                    <div class="flex -space-x-4">
+                        <img class="w-12 h-12 rounded-full border-4 border-white object-cover"
+                            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100" />
+                        <img class="w-12 h-12 rounded-full border-4 border-white object-cover"
+                            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=100" />
+                        <img class="w-12 h-12 rounded-full border-4 border-white object-cover"
+                            src="https://images.unsplash.com/photo-1573496359-7013ac2bebb4?auto=format&fit=crop&q=80&w=100" />
+                    </div>
+                    <p class="ml-2">Trusted by 2,000+ Happy Patients</p>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 relative">
+                <div class="aspect-square rounded-full bg-white p-2 md:p-6 shadow-2xl relative z-10">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
+                        alt="Smiling Patient" class="w-full h-full object-cover rounded-full">
+
+                    <!-- Floating Card -->
+                    <div
+                        class="absolute bottom-10 -left-6 bg-white p-5 rounded-xl shadow-lg border border-slate-100 flex items-center gap-4 animate-bounce duration-[3000ms]">
+                        <div
+                            class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                            <i data-lucide="check-circle" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400 font-bold uppercase">Google Rating</div>
+                            <div class="font-bold text-lg text-medical-dark">4.9/5 Average</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decor -->
+                <div class="absolute top-0 right-0 w-72 h-72 bg-medical-blue/10 rounded-full blur-3xl -z-10"></div>
+                <div class="absolute bottom-0 left-0 w-72 h-72 bg-teal-400/10 rounded-full blur-3xl -z-10"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 md:gap-12 relative -mt-24 z-20">
+            <!-- Feature 1 -->
+            <div
+                class="bg-white p-10 rounded-2xl shadow-xl border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-16 h-16 bg-blue-50 text-medical-blue rounded-2xl flex items-center justify-center mb-8">
+                    <i data-lucide="shield-check" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-bold text-xl text-medical-dark mb-4">Sterile & Safe</h3>
+                <p class="text-slate-500 leading-loose text-sm">We follow WHO & CDC specified sterilization protocols.
+                    Your safety is our #1 promise.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div
+                class="bg-white p-10 rounded-2xl shadow-xl border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-16 h-16 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center mb-8">
+                    <i data-lucide="calendar-clock" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-bold text-xl text-medical-dark mb-4">No Wait Policy</h3>
+                <p class="text-slate-500 leading-loose text-sm">We respect your time. Pre-booked appointments are
+                    honored with zero waiting time.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div
+                class="bg-white p-10 rounded-2xl shadow-xl border border-slate-100 hover:-translate-y-2 transition-transform duration-300">
+                <div class="w-16 h-16 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center mb-8">
+                    <i data-lucide="heart-pulse" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-bold text-xl text-medical-dark mb-4">Painless Care</h3>
+                <p class="text-slate-500 leading-loose text-sm">Advanced anesthetics and gentle techniques ensure you
+                    are comfortable throughout.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section id="services" class="py-32 bg-medical-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-sm font-bold text-medical-blue uppercase tracking-widest mb-3">Our Solutions</h2>
+                <h3 class="text-4xl md:text-5xl font-bold text-medical-dark">Comprehensive Dental Care</h3>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Item -->
+                <div class="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all group">
+                    <div class="aspect-[4/3] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=400"
+                            alt="Root Canal"
+                            class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-medical-dark/10 group-hover:bg-medical-dark/0 transition-colors">
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h4 class="font-bold text-xl text-medical-dark mb-3">Root Canals</h4>
+                        <p class="text-sm text-slate-500 mb-6 leading-relaxed line-clamp-2">Save your natural tooth with
+                            our advanced microscopic root canal treatments.</p>
+                        <a href="services.html"
+                            class="text-medical-blue text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">Learn
+                            More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all group">
+                    <div class="aspect-[4/3] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=400"
+                            alt="Teeth Whitening"
+                            class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="font-bold text-xl text-medical-dark mb-3">Teeth Whitening</h4>
+                        <p class="text-sm text-slate-500 mb-6 leading-relaxed line-clamp-2">Get a brighter smile in just
+                            45 minutes with our laser whitening technology.</p>
+                        <a href="services.html"
+                            class="text-medical-blue text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">Learn
+                            More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all group">
+                    <div class="aspect-[4/3] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1598256989494-026307681ec3?auto=format&fit=crop&q=80&w=400"
+                            alt="Dental Implants"
+                            class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="font-bold text-xl text-medical-dark mb-3">Dental Implants</h4>
+                        <p class="text-sm text-slate-500 mb-6 leading-relaxed line-clamp-2">The permanent solution for
+                            missing teeth. Look, feel, and eat like natural.</p>
+                        <a href="services.html"
+                            class="text-medical-blue text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">Learn
+                            More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-all group">
+                    <div class="aspect-[4/3] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=400"
+                            alt="Braces"
+                            class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <h4 class="font-bold text-xl text-medical-dark mb-3">Aligners & Braces</h4>
+                        <p class="text-sm text-slate-500 mb-6 leading-relaxed line-clamp-2">Invisible aligners and
+                            ceramic
+                            braces for the perfect smile at any age.</p>
+                        <a href="services.html"
+                            class="text-medical-blue text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all">Learn
+                            More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="services.html"
+                    class="inline-flex items-center justify-center px-10 py-5 border-2 border-medical-dark text-medical-dark font-bold rounded-lg hover:bg-medical-dark hover:text-white transition-all">
+                    View Full Price List
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
+                    class="rounded-3xl shadow-2xl relative z-10 w-full max-w-lg mx-auto md:mr-auto" alt="Dr. Gupta">
+                <div
+                    class="absolute top-12 -left-12 w-full h-full rounded-3xl border-2 border-medical-blue/20 -z-0 hidden md:block">
+                </div>
+                <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-medical-light rounded-full blur-3xl -z-10"></div>
+            </div>
+            <div>
+                <h2 class="text-sm font-bold text-medical-blue uppercase tracking-widest mb-3">Meet The Expert</h2>
+                <h3 class="text-4xl md:text-5xl font-bold text-medical-dark mb-8">Dr. Rajesh Gupta <span
+                        class="text-xl font-normal text-slate-500 block mt-2">BDS, MDS (Orthodontics)</span></h3>
+                <p class="text-slate-500 leading-loose mb-8 text-lg">
+                    With over 15 years of clinical experience, Dr. Gupta is a leading name in aesthetic dentistry. He
+                    believes in a patient-first approach, ensuring every procedure is transparent and comfortable.
+                </p>
+                <div class="grid grid-cols-2 gap-8 mb-10">
+                    <div>
+                        <div class="text-4xl font-bold text-medical-blue mb-2">15+</div>
+                        <div class="text-xs text-slate-400 font-bold uppercase tracking-wider">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-medical-blue mb-2">5k+</div>
+                        <div class="text-xs text-slate-400 font-bold uppercase tracking-wider">Smiles Fixed</div>
+                    </div>
+                </div>
+                <a href="about.html"
+                    class="text-medical-blue font-bold border-b-2 border-medical-blue/30 hover:text-medical-dark hover:border-medical-dark transition-all pb-1">Read
+                    Full Bio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section -->
+    <section class="py-32 bg-medical-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <div class="inline-flex items-center justify-center gap-2 mb-4">
+                    <span class="text-yellow-400">
+                        <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    </span>
+                    <span class="text-yellow-400">
+                        <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    </span>
+                    <span class="text-yellow-400">
+                        <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    </span>
+                    <span class="text-yellow-400">
+                        <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    </span>
+                    <span class="text-yellow-400">
+                        <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    </span>
+                </div>
+                <h2 class="text-4xl font-bold text-medical-dark mb-6">Patient Stories</h2>
+                <p class="text-slate-500 text-lg">Rated 4.9/5 based on 500+ Google Reviews</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-10 rounded-2xl shadow-xl shadow-slate-200 border border-slate-50">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=100"
+                            class="w-16 h-16 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-lg text-medical-dark">Rahul Mehta</h4>
+                            <div class="text-xs text-slate-400">2 months ago</div>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                            class="h-6 ml-auto opacity-50" alt="Google">
+                    </div>
+                    <div class="flex text-yellow-400 gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed italic">"Dr. Gupta is a magician! I was terrified of the
+                        root canal procedure, but he made it completely painless. The clinic is so hygienic and the
+                        staff is very polite. Highly recommended!"</p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-10 rounded-2xl shadow-xl shadow-slate-200 border border-slate-50">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=100"
+                            class="w-16 h-16 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-lg text-medical-dark">Sonia Kapoor</h4>
+                            <div class="text-xs text-slate-400">1 month ago</div>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                            class="h-6 ml-auto opacity-50" alt="Google">
+                    </div>
+                    <div class="flex text-yellow-400 gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed italic">"Got my Invisalign treatment done here. The results
+                        are amazing! My smile has completely transformed in just 8 months. Very transparent pricing and
+                        great follow-up care."</p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-10 rounded-2xl shadow-xl shadow-slate-200 border border-slate-50">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100"
+                            class="w-16 h-16 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-lg text-medical-dark">Amit Verma</h4>
+                            <div class="text-xs text-slate-400">3 weeks ago</div>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                            class="h-6 ml-auto opacity-50" alt="Google">
+                    </div>
+                    <div class="flex text-yellow-400 gap-1 mb-4">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed italic">"The best dental clinic in the city. I went for
+                        teeth whitening and a general checkup. The ambience is very relaxing and not like a typical
+                        hospital. 5 stars for the service!"</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <a href="#"
+                    class="inline-flex items-center gap-2 text-medical-blue font-bold hover:text-medical-dark transition-colors">
+                    Read All 500+ Reviews on Google <i data-lucide="external-link" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-medical-dark text-white py-24">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 bg-medical-blue rounded flex items-center justify-center">
+                        <i data-lucide="smile" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-bold text-xl">ModernDental</span>
+                </div>
+                <p class="text-blue-200 text-sm leading-relaxed mb-6">
+                    Providing world-class dental care with a gentle touch. We are committed to keeping your smile
+                    healthy and bright.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Quick Links</h4>
+                <ul class="space-y-3 text-sm text-blue-200">
+                    <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-white">Treatments</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Services</h4>
+                <ul class="space-y-3 text-sm text-blue-200">
+                    <li><a href="#" class="hover:text-white">Root Canal</a></li>
+                    <li><a href="#" class="hover:text-white">Implantology</a></li>
+                    <li><a href="#" class="hover:text-white">Teeth Whitening</a></li>
+                    <li><a href="#" class="hover:text-white">Invisalign</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Contact</h4>
+                <ul class="space-y-4 text-sm text-blue-200">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-medical-blue shrink-0"></i>
+                        123 Health Street, Tech City, <br />NY 10001
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-medical-blue shrink-0"></i>
+                        (555) 123-4567
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-medical-blue shrink-0"></i>
+                        care@moderndental.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-blue-800 text-center text-xs text-blue-400">
+            © 2024 Modern Dental. All rights reserved. Demo by CGP360.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

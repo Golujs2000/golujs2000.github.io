@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Smiles - Nova Dental Care</title>
+    <meta name="description" content="View our gallery of smile transformations and hear from our happy patients." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['"Inter"', 'sans-serif'],
+                        sans: ['"DM Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        nova: {
+                            blue: '#0077B6',        // Ocean Blue
+                            teal: '#00B4D8',        // Cyan Accent
+                            slate: '#1E293B',       // Slate Text
+                            white: '#FFFFFF',       // White BG
+                            surface: '#F8FAFC'      // Light Gray BG
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-nova-white text-nova-slate font-sans antialiased selection:bg-nova-teal/20 selection:text-nova-blue">
+
+    <!-- Top Bar -->
+    <div class="bg-nova-blue text-white text-xs py-2.5 font-medium tracking-wide">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="flex gap-6">
+                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3.5 h-3.5 opacity-80"></i> 123
+                    Tech Park, Cyber City</span>
+                <span class="hidden sm:flex items-center gap-2"><i data-lucide="mail"
+                        class="w-3.5 h-3.5 opacity-80"></i> happy@novadental.com</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-nova-teal transition-colors"><i data-lucide="facebook"
+                        class="w-3.5 h-3.5"></i></a>
+                <a href="#" class="hover:text-nova-teal transition-colors"><i data-lucide="instagram"
+                        class="w-3.5 h-3.5"></i></a>
+                <a href="#" class="hover:text-nova-teal transition-colors"><i data-lucide="linkedin"
+                        class="w-3.5 h-3.5"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation (Sticky Glass) -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2.5 group">
+                <div
+                    class="w-10 h-10 bg-gradient-to-br from-nova-blue to-nova-teal text-white rounded-xl flex items-center justify-center shadow-lg shadow-nova-blue/20 group-hover:scale-105 transition-transform">
+                    <i data-lucide="smile" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h1 class="font-heading text-2xl font-bold text-nova-slate leading-none tracking-tight">NOVA<span
+                            class="text-nova-blue">.</span></h1>
+                    <p class="text-[0.65rem] font-bold tracking-widest uppercase text-gray-400">Dental Care</p>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+                <a href="index.html" class="hover:text-nova-blue transition-colors">Home</a>
+                <a href="about.html" class="hover:text-nova-blue transition-colors">About Us</a>
+                <a href="services.html" class="hover:text-nova-blue transition-colors">Services</a>
+                <a href="results.html" class="text-nova-blue font-bold">Smiles</a>
+                <a href="contact.html" class="hover:text-nova-blue transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="hidden md:flex items-center gap-2 px-6 py-2.5 bg-nova-slate text-white rounded-lg text-sm font-bold hover:bg-nova-blue transition-all shadow-md shadow-nova-slate/20">
+                    <i data-lucide="calendar" class="w-4 h-4"></i>
+                    <span>Book Visit</span>
+                </a>
+                <button class="md:hidden text-gray-600">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-20 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-xs font-bold tracking-widest uppercase text-nova-blue mb-3">Real Stories</p>
+            <h1 class="font-heading text-4xl md:text-5xl font-bold text-nova-slate">Smile Gallery</h1>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Result 1 -->
+                <div class="space-y-4">
+                    <div
+                        class="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <div class="grid grid-cols-2">
+                            <div class="relative">
+                                <span
+                                    class="absolute top-2 left-2 bg-black/60 backdrop-blur text-white text-[0.6rem] uppercase tracking-wider px-2 py-1 rounded">Before</span>
+                                <img src="https://images.unsplash.com/photo-1616817293529-6799015b6302?auto=format&fit=crop&q=80&w=400"
+                                    class="w-full aspect-[4/5] object-cover" />
+                            </div>
+                            <div class="relative">
+                                <span
+                                    class="absolute top-2 right-2 bg-nova-blue text-white text-[0.6rem] uppercase tracking-wider px-2 py-1 rounded">After</span>
+                                <img src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=400"
+                                    class="w-full aspect-[4/5] object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-heading text-lg font-bold text-nova-slate">Invisalign® Journey</h3>
+                        <p class="text-gray-500 text-xs italic">"12 months of aligners and my gap is completely gone. So
+                            worth it!"</p>
+                    </div>
+                </div>
+
+                <!-- Result 2 -->
+                <div class="space-y-4">
+                    <div
+                        class="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <div class="grid grid-cols-2">
+                            <div class="relative">
+                                <span
+                                    class="absolute top-2 left-2 bg-black/60 backdrop-blur text-white text-[0.6rem] uppercase tracking-wider px-2 py-1 rounded">Before</span>
+                                <img src="https://images.unsplash.com/photo-1485230405346-71acb9518d9c?auto=format&fit=crop&q=80&w=400"
+                                    class="w-full aspect-[4/5] object-cover grayscale" />
+                            </div>
+                            <div class="relative">
+                                <span
+                                    class="absolute top-2 right-2 bg-nova-blue text-white text-[0.6rem] uppercase tracking-wider px-2 py-1 rounded">After</span>
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=400"
+                                    class="w-full aspect-[4/5] object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-heading text-lg font-bold text-nova-slate">Porcelain Veneers</h3>
+                        <p class="text-gray-500 text-xs italic">"6 veneers on my upper teeth. I can't stop smiling now!"
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Result 3 -->
+                <div class="space-y-4">
+                    <div
+                        class="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <div class="grid grid-cols-2">
+                            <div class="relative">
+                                <span
+                                    class="absolute top-2 left-2 bg-black/60 backdrop-blur text-white text-[0.6rem] uppercase tracking-wider px-2 py-1 rounded">Before</span>
+                                <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&q=80&w=400"
+                                    class="w-full aspect-[4/5] object-cover" />
+                            </div>
+                            <div class="relative">
+                                <span
+                                    class="absolute top-2 right-2 bg-nova-blue text-white text-[0.6rem] uppercase tracking-wider px-2 py-1 rounded">After</span>
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400"
+                                    class="w-full aspect-[4/5] object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-heading text-lg font-bold text-nova-slate">Teeth Whitening</h3>
+                        <p class="text-gray-500 text-xs italic">"One session of Zoom Whitening before my wedding.
+                            Amazing results."</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-20 text-center">
+                <p class="text-gray-400 text-xs italic mb-8 max-w-lg mx-auto">*Results vary from patient to patient.
+                    Images are illustrative of typical outcomes with our advanced cosmetic procedures.</p>
+                <div class="grid place-content-center">
+                    <a href="contact.html" class="flex flex-col items-center gap-2 group">
+                        <div
+                            class="w-16 h-16 rounded-full bg-nova-blue text-white flex items-center justify-center shadow-lg shadow-nova-blue/30 group-hover:scale-110 transition-transform">
+                            <i data-lucide="camera" class="w-8 h-8"></i>
+                        </div>
+                        <span
+                            class="font-bold text-nova-slate uppercase tracking-widest text-xs group-hover:text-nova-blue transition-colors">Start
+                            Your Transformation</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel (Simple) -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <i data-lucide="quote" class="w-10 h-10 text-nova-teal mx-auto mb-6 opacity-50"></i>
+            <h2 class="font-heading text-2xl md:text-3xl font-bold text-nova-slate mb-8 leading-relaxed">
+                "I was terrified of dentists until I found Nova. Dr. Sarah explained everything so clearly and the
+                procedure was completely painless. I'm finally proud of my smile."
+            </h2>
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 rounded-full bg-gray-200 overflow-hidden mb-2">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=100"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="font-bold text-nova-slate">Emily R.</div>
+                <div class="text-xs text-nova-blue font-bold uppercase tracking-wide">Invisalign Patient</div>
+            </div>
+
+            <div class="flex justify-center gap-2 mt-8">
+                <div class="w-2 h-2 rounded-full bg-nova-blue"></div>
+                <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+                <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Clean Grid) -->
+    <footer class="bg-gray-50 pt-20 pb-10 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-1">
+                <a href="index.html" class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 bg-nova-blue text-white rounded-lg flex items-center justify-center">
+                        <i data-lucide="smile" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-heading text-xl font-bold text-nova-slate">NOVA.</span>
+                </a>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                    Redefining dental care with a focus on comfort, technology, and long-term oral health.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:text-nova-blue hover:border-nova-blue transition-all"><i
+                            data-lucide="facebook" class="w-4 h-4"></i></a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:text-nova-blue hover:border-nova-blue transition-all"><i
+                            data-lucide="instagram" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-nova-slate mb-6">Quick Links</h4>
+                <ul class="space-y-3 text-sm text-gray-500">
+                    <li><a href="index.html" class="hover:text-nova-blue transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-nova-blue transition-colors">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-nova-blue transition-colors">Treatments</a></li>
+                    <li><a href="results.html" class="hover:text-nova-blue transition-colors">Smile Gallery</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-nova-slate mb-6">Treatments</h4>
+                <ul class="space-y-3 text-sm text-gray-500">
+                    <li><a href="#" class="hover:text-nova-blue transition-colors">Whitening</a></li>
+                    <li><a href="#" class="hover:text-nova-blue transition-colors">Invisalign</a></li>
+                    <li><a href="#" class="hover:text-nova-blue transition-colors">Root Canals</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-nova-slate mb-6">Contact</h4>
+                <ul class="space-y-3 text-sm text-gray-500">
+                    <li class="flex gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-nova-blue shrink-0"></i>
+                        <span>123 Tech Park, Cyber City,<br>Hyderabad, 500081</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-nova-blue shrink-0"></i>
+                        <span>+91 98765 43210</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-gray-200 text-center text-xs text-gray-400">
+            &copy; 2024 Nova Dental Care. Demo by CGP360.
+        </div>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

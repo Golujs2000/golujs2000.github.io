@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Treatments - Modern Dental Care</title>
+    <meta name="description"
+        content="Comprehensive dental services including implants, braces, and cosmetic dentistry." />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        medical: {
+                            blue: '#0284C7', // Sky 600
+                            dark: '#0C4A6E', // Sky 900
+                            light: '#E0F2FE', // Sky 100
+                            surface: '#F8FAFC', // Slate 50
+                            text: '#334155', // Slate 700
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-medical-text font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div
+                    class="w-10 h-10 bg-gradient-to-br from-medical-blue to-medical-dark rounded-lg flex items-center justify-center text-white shadow-lg group-hover:shadow-medical-blue/30 transition-all">
+                    <i data-lucide="smile" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl text-medical-dark tracking-tight leading-none">Modern<span
+                            class="text-medical-blue">Dental</span></h1>
+                    <p class="text-[0.65rem] text-slate-400 font-medium tracking-wide uppercase">Family & Cosmetic
+                        Dentistry</p>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <a href="index.html" class="hover:text-medical-blue transition-colors">Home</a>
+                <a href="services.html" class="text-medical-blue">Treatments</a>
+                <a href="gallery.html" class="hover:text-medical-blue transition-colors">Gallery</a>
+                <a href="about.html" class="hover:text-medical-blue transition-colors">Our Team</a>
+                <a href="contact.html" class="hover:text-medical-blue transition-colors">Contact</a>
+                <a href="contact.html"
+                    class="px-5 py-2.5 bg-medical-blue text-white rounded-full hover:bg-medical-dark transition-all shadow-lg shadow-medical-blue/20">Book
+                    Appointment</a>
+            </div>
+
+            <button class="md:hidden text-medical-dark">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-medical-surface py-20 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-block p-3 rounded-full bg-blue-100 text-medical-blue mb-4">
+                <i data-lucide="stethoscope" class="w-8 h-8"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-medical-dark mb-6">World-Class Treatments</h1>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto">
+                We use the latest technology to ensure your treatment is precise, effective, and as comfortable as
+                possible.
+            </p>
+        </div>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Category: General Dentistry -->
+            <div class="mb-20">
+                <h2 class="text-2xl font-bold text-medical-dark border-l-4 border-medical-blue pl-4 mb-8">General
+                    Dentistry
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- S1 -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-xl overflow-hidden shadow-lg shadow-medical-blue/5 hover:border-medical-blue/50 transition-all group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                            <div
+                                class="absolute inset-0 bg-medical-dark/10 group-hover:bg-medical-dark/0 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-medical-dark">Comprehensive Checkups</h3>
+                            <p class="text-sm text-slate-500 mb-4">Full mouth X-rays, cavity detection, and gum health
+                                assessment using intraoral cameras.</p>
+                            <div class="font-bold text-medical-dark text-sm">Takes: 30-45 mins</div>
+                        </div>
+                    </div>
+                    <!-- S2 -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-xl overflow-hidden shadow-lg shadow-medical-blue/5 hover:border-medical-blue/50 transition-all group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&q=80&w=400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                            <div
+                                class="absolute inset-0 bg-medical-dark/10 group-hover:bg-medical-dark/0 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-medical-dark">Cleaning & Polishing</h3>
+                            <p class="text-sm text-slate-500 mb-4">Professional scaling to remove plaque and tartar
+                                buildup,
+                                ensuring healthy gums and fresh breath.</p>
+                            <div class="font-bold text-medical-dark text-sm">Takes: 45 mins</div>
+                        </div>
+                    </div>
+                    <!-- S3 -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-xl overflow-hidden shadow-lg shadow-medical-blue/5 hover:border-medical-blue/50 transition-all group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1445527697940-6170001a2911?auto=format&fit=crop&q=80&w=400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                            <div
+                                class="absolute inset-0 bg-medical-dark/10 group-hover:bg-medical-dark/0 transition-colors">
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-medical-dark">Fillings & Restorations</h3>
+                            <p class="text-sm text-slate-500 mb-4">Tooth-colored composite fillings to repair cavities
+                                and
+                                restore the natural look of your teeth.</p>
+                            <div class="font-bold text-medical-dark text-sm">Takes: 30-60 mins</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Cosmetic -->
+            <div class="mb-20">
+                <h2 class="text-2xl font-bold text-medical-dark border-l-4 border-medical-blue pl-4 mb-8">Cosmetic &
+                    Orthodontics</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- S4 -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-xl overflow-hidden shadow-lg shadow-medical-blue/5 hover:border-medical-blue/50 transition-all group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-medical-dark">Teeth Whitening</h3>
+                            <p class="text-sm text-slate-500 mb-4">Zoom® Laser Whitening for instant results. Up to 8
+                                shades
+                                lighter in a single visit.</p>
+                            <div class="font-bold text-medical-dark text-sm">Takes: 1 hr</div>
+                        </div>
+                    </div>
+                    <!-- S5 -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-xl overflow-hidden shadow-lg shadow-medical-blue/5 hover:border-medical-blue/50 transition-all group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1598256989494-026307681ec3?auto=format&fit=crop&q=80&w=400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-medical-dark">Invisalign (Clear Aligners)</h3>
+                            <p class="text-sm text-slate-500 mb-4">Straighten your teeth discreetly without metal
+                                braces.
+                                Custom-made clear trays.</p>
+                            <div class="font-bold text-medical-dark text-sm">Duration: 6-12 Months</div>
+                        </div>
+                    </div>
+                    <!-- S6 -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-xl overflow-hidden shadow-lg shadow-medical-blue/5 hover:border-medical-blue/50 transition-all group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1542887800-cb0c085ac16e?auto=format&fit=crop&q=80&w=400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-medical-dark">Veneers & Laminates</h3>
+                            <p class="text-sm text-slate-500 mb-4">Thin porcelain shells to cover chipped, stained, or
+                                uneven teeth for a celebrity smile.</p>
+                            <div class="font-bold text-medical-dark text-sm">Takes: 2-3 Visits</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Surgical -->
+            <div class="mb-20">
+                <h2 class="text-2xl font-bold text-medical-dark border-l-4 border-medical-blue pl-4 mb-8">Surgical &
+                    Restorative</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- S7 -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-xl overflow-hidden shadow-lg shadow-medical-blue/5 hover:border-medical-blue/50 transition-all group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-medical-dark">Root Canal Treatment</h3>
+                            <p class="text-sm text-slate-500 mb-4">Advanced rotary endodontics to save infected teeth.
+                                Carried out under local anesthesia.</p>
+                        </div>
+                    </div>
+                    <!-- S8 -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-xl overflow-hidden shadow-lg shadow-medical-blue/5 hover:border-medical-blue/50 transition-all group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-medical-dark">Dental Implants</h3>
+                            <p class="text-sm text-slate-500 mb-4">Titanium posts surgically placed in the jawbone to
+                                replace missing tooth roots.</p>
+                        </div>
+                    </div>
+                    <!-- S9 -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-xl overflow-hidden shadow-lg shadow-medical-blue/5 hover:border-medical-blue/50 transition-all group">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1546919256-4299b9cf94c0?auto=format&fit=crop&q=80&w=400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2 text-medical-dark">Wisdom Tooth Extraction</h3>
+                            <p class="text-sm text-slate-500 mb-4">Safe removal of impacted wisdom teeth with minimal
+                                downtime and pain management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="bg-medical-dark rounded-2xl p-12 text-center text-white">
+                <h2 class="text-3xl font-bold mb-4">Not sure what you need?</h2>
+                <p class="text-blue-200 mb-8 max-w-xl mx-auto">Book a consultation with our experts. We will assess your
+                    oral health and recommend the best treatment plan for you.</p>
+                <a href="contact.html"
+                    class="inline-block px-8 py-4 bg-white text-medical-dark font-bold rounded-lg hover:bg-medical-blue hover:text-white transition-all">Book
+                    Consultation</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-medical-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-8 h-8 bg-medical-blue rounded flex items-center justify-center">
+                        <i data-lucide="smile" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-bold text-xl">ModernDental</span>
+                </div>
+                <p class="text-blue-200 text-sm leading-relaxed mb-6">
+                    Providing world-class dental care with a gentle touch. We are committed to keeping your smile
+                    healthy and bright.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Quick Links</h4>
+                <ul class="space-y-3 text-sm text-blue-200">
+                    <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-white">Treatments</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Services</h4>
+                <ul class="space-y-3 text-sm text-blue-200">
+                    <li><a href="#" class="hover:text-white">Root Canal</a></li>
+                    <li><a href="#" class="hover:text-white">Implantology</a></li>
+                    <li><a href="#" class="hover:text-white">Teeth Whitening</a></li>
+                    <li><a href="#" class="hover:text-white">Invisalign</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Contact</h4>
+                <ul class="space-y-4 text-sm text-blue-200">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-medical-blue shrink-0"></i>
+                        123 Health Street, Tech City, <br />NY 10001
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-medical-blue shrink-0"></i>
+                        (555) 123-4567
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-medical-blue shrink-0"></i>
+                        care@moderndental.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-blue-800 text-center text-xs text-blue-400">
+            © 2024 Modern Dental. All rights reserved. Demo by CGP360.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
