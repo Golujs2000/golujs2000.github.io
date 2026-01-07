@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Verde Aesthetics</title>
+    <meta name="description" content="Book your consultation." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"DM Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        verde: {
+                            base: '#FAFCF9',
+                            text: '#1B3C29',
+                            sage: '#4A6C58',
+                            sageDark: '#2D4A3A',
+                            leaf: '#E8F5E9',
+                            sand: '#D4A373',
+                            muted: '#6B8E78'
+                        }
+                    },
+                    borderRadius: {
+                        'organic-1': '50% 50% 50% 50% / 60% 60% 40% 40%',
+                        'organic-2': '30% 70% 70% 30% / 30% 30% 70% 70%',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-verde-base text-verde-text font-sans antialiased h-screen overflow-hidden">
+
+    <!-- Sidebar -->
+    <aside
+        class="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-white/50 backdrop-blur-md border-r border-verde-sage/10 flex-col justify-between py-12 px-8 z-50">
+        <div>
+            <div class="font-serif text-3xl font-bold tracking-tight mb-1 text-verde-sageDark"><a
+                    href="index.html">VERDE.</a></div>
+            <p class="text-[0.6rem] tracking-[0.3em] uppercase text-verde-muted">Aesthetics</p>
+        </div>
+        <nav class="flex flex-col gap-6 font-medium text-sm tracking-wide">
+            <a href="index.html" class="text-verde-muted hover:text-verde-sage transition-colors">Home</a>
+            <a href="index.html#philosophy"
+                class="text-verde-muted hover:text-verde-sage transition-colors">Philosophy</a>
+            <a href="services.html" class="text-verde-muted hover:text-verde-sage transition-colors">Treatments</a>
+            <a href="results.html" class="text-verde-muted hover:text-verde-sage transition-colors">Stories</a>
+            <a href="about.html" class="text-verde-muted hover:text-verde-sage transition-colors">Our Doctor</a>
+        </nav>
+        <div>
+            <div class="mt-6 flex gap-4 justify-center text-verde-muted">
+                <i data-lucide="instagram" class="w-4 h-4 hover:text-verde-sage cursor-pointer"></i>
+                <i data-lucide="facebook" class="w-4 h-4 hover:text-verde-sage cursor-pointer"></i>
+            </div>
+        </div>
+    </aside>
+
+    <header
+        class="lg:hidden fixed top-0 w-full bg-verde-base/90 backdrop-blur-md z-50 border-b border-verde-sage/10 px-6 py-4 flex justify-between items-center">
+        <div class="font-serif text-2xl font-bold text-verde-sageDark"><a href="index.html">VERDE.</a></div>
+        <button id="menu-btn" class="text-verde-text">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-verde-base z-[60] flex-col p-6">
+        <div class="flex justify-between items-center mb-12">
+            <div class="font-serif text-2xl font-bold text-verde-sageDark">VERDE.</div>
+            <button id="close-menu" class="text-verde-text">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-8 text-2xl font-serif text-verde-sageDark items-center">
+            <a href="index.html" class="hover:text-verde-sage">Home</a>
+            <a href="services.html" class="hover:text-verde-sage">Treatments</a>
+            <a href="results.html" class="hover:text-verde-sage">Stories</a>
+            <a href="about.html" class="hover:text-verde-sage">Our Doctor</a>
+            <a href="contact.html"
+                class="mt-8 px-8 py-3 bg-verde-sageDark text-white text-sm font-sans font-bold uppercase tracking-widest rounded-tl-2xl rounded-br-2xl">Book
+                Visit</a>
+        </nav>
+    </div>
+
+    <main class="lg:pl-64 h-full pt-20 lg:pt-0 overflow-y-auto">
+        <div class="grid lg:grid-cols-2 h-full min-h-[800px]">
+
+            <!-- Left: Form -->
+            <div class="p-8 lg:p-16 flex flex-col justify-center bg-white">
+                <h1 class="font-serif text-4xl lg:text-5xl text-verde-sageDark mb-2">Begin Your Journey</h1>
+                <p class="text-verde-muted mb-8">We'll get back to you within 24 hours.</p>
+
+                <form class="space-y-6 max-w-md">
+                    <div>
+                        <label
+                            class="block text-xs font-bold uppercase tracking-widest text-verde-sage mb-2">Name</label>
+                        <input type="text"
+                            class="w-full bg-verde-leaf/20 border-b border-verde-sage/30 p-3 focus:outline-none focus:border-verde-sage focus:bg-verde-leaf/50 transition-colors rounded-t-lg"
+                            placeholder="Jane Doe">
+                    </div>
+                    <div>
+                        <label
+                            class="block text-xs font-bold uppercase tracking-widest text-verde-sage mb-2">Phone</label>
+                        <input type="tel"
+                            class="w-full bg-verde-leaf/20 border-b border-verde-sage/30 p-3 focus:outline-none focus:border-verde-sage focus:bg-verde-leaf/50 transition-colors rounded-t-lg"
+                            placeholder="+91 98765 00000">
+                    </div>
+                    <div>
+                        <label
+                            class="block text-xs font-bold uppercase tracking-widest text-verde-sage mb-2">Interest</label>
+                        <select
+                            class="w-full bg-verde-leaf/20 border-b border-verde-sage/30 p-3 focus:outline-none focus:border-verde-sage focus:bg-verde-leaf/50 transition-colors rounded-t-lg text-verde-text">
+                            <option>General Consultation</option>
+                            <option>Acne & Scars</option>
+                            <option>Anti-Aging</option>
+                            <option>Hair Treatment</option>
+                        </select>
+                    </div>
+                    <button
+                        class="w-full py-4 bg-verde-sageDark text-white rounded-full font-bold uppercase tracking-widest text-xs hover:bg-verde-sage transition-all shadow-xl shadow-verde-sage/20">
+                        Request Appointment
+                    </button>
+                </form>
+
+                <div class="mt-12 flex gap-8 text-verde-muted text-sm">
+                    <div>
+                        <strong class="block text-verde-sageDark uppercase tracking-widest text-xs mb-1">Call</strong>
+                        +91 98765 43210
+                    </div>
+                    <div>
+                        <strong class="block text-verde-sageDark uppercase tracking-widest text-xs mb-1">Visit</strong>
+                        Jubilee Hills, Hyderabad
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Map/Image -->
+            <div class="relative bg-verde-leaf/50 hidden lg:block">
+                <img src="images/clinic-interior-2.png"
+                    class="w-full h-full object-cover opacity-80 mix-blend-multiply">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-verde-sageDark/50 to-transparent flex items-end p-16">
+                    <p class="text-white text-2xl font-serif italic max-w-sm">
+                        "The most beautiful thing you can wear is confidence."
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-menu');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        }
+
+        if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+        if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+    </script>
+</body>
+
+</html>

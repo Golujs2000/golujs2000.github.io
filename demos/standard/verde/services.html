@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treatments - Verde Aesthetics</title>
+    <meta name="description" content="Holistic skin and hair treatments." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"DM Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        verde: {
+                            base: '#FAFCF9',
+                            text: '#1B3C29',
+                            sage: '#4A6C58',
+                            sageDark: '#2D4A3A',
+                            leaf: '#E8F5E9',
+                            sand: '#D4A373',
+                            muted: '#6B8E78'
+                        }
+                    },
+                    borderRadius: {
+                        'organic-1': '50% 50% 50% 50% / 60% 60% 40% 40%',
+                        'organic-2': '30% 70% 70% 30% / 30% 30% 70% 70%',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-verde-base text-verde-text font-sans antialiased">
+
+    <!-- Sidebar (Same as Index) -->
+    <aside
+        class="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-white/50 backdrop-blur-md border-r border-verde-sage/10 flex-col justify-between py-12 px-8 z-50">
+        <div>
+            <div class="font-serif text-3xl font-bold tracking-tight mb-1 text-verde-sageDark"><a
+                    href="index.html">VERDE.</a></div>
+            <p class="text-[0.6rem] tracking-[0.3em] uppercase text-verde-muted">Aesthetics</p>
+        </div>
+        <nav class="flex flex-col gap-6 font-medium text-sm tracking-wide">
+            <a href="index.html" class="text-verde-muted hover:text-verde-sage transition-colors">Home</a>
+            <a href="index.html#philosophy"
+                class="text-verde-muted hover:text-verde-sage transition-colors">Philosophy</a>
+            <a href="services.html" class="text-verde-text font-bold text-verde-sage">Treatments</a>
+            <a href="results.html" class="text-verde-muted hover:text-verde-sage transition-colors">Stories</a>
+            <a href="about.html" class="text-verde-muted hover:text-verde-sage transition-colors">Our Doctor</a>
+        </nav>
+        <div>
+            <a href="contact.html"
+                class="block w-full text-center py-3 border border-verde-sage text-verde-sage hover:bg-verde-sage hover:text-white transition-all bg-transparent text-xs font-bold uppercase tracking-widest rounded-tl-2xl rounded-br-2xl">
+                Book Visit
+            </a>
+            <div class="mt-6 flex gap-4 justify-center text-verde-muted">
+                <i data-lucide="instagram" class="w-4 h-4 hover:text-verde-sage cursor-pointer"></i>
+                <i data-lucide="facebook" class="w-4 h-4 hover:text-verde-sage cursor-pointer"></i>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header
+        class="lg:hidden fixed top-0 w-full bg-verde-base/90 backdrop-blur-md z-50 border-b border-verde-sage/10 px-6 py-4 flex justify-between items-center">
+        <div class="font-serif text-2xl font-bold text-verde-sageDark"><a href="index.html">VERDE.</a></div>
+        <button id="menu-btn" class="text-verde-text">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-verde-base z-[60] flex-col p-6">
+        <div class="flex justify-between items-center mb-12">
+            <div class="font-serif text-2xl font-bold text-verde-sageDark">VERDE.</div>
+            <button id="close-menu" class="text-verde-text">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-8 text-2xl font-serif text-verde-sageDark items-center">
+            <a href="index.html" class="hover:text-verde-sage">Home</a>
+            <a href="services.html" class="hover:text-verde-sage">Treatments</a>
+            <a href="results.html" class="hover:text-verde-sage">Stories</a>
+            <a href="about.html" class="hover:text-verde-sage">Our Doctor</a>
+            <a href="contact.html"
+                class="mt-8 px-8 py-3 bg-verde-sageDark text-white text-sm font-sans font-bold uppercase tracking-widest rounded-tl-2xl rounded-br-2xl">Book
+                Visit</a>
+        </nav>
+    </div>
+
+    <main class="lg:pl-64 pt-20 lg:pt-0">
+
+        <!-- Header -->
+        <section class="py-20 lg:py-32 px-6 lg:px-16 bg-gradient-to-br from-verde-leaf/30 to-transparent">
+            <div class="max-w-3xl">
+                <span class="text-xs font-bold uppercase tracking-widest text-verde-sage mb-4 block">Our Menu</span>
+                <h1 class="font-serif text-5xl lg:text-7xl text-verde-sageDark mb-8">Conscious Care.</h1>
+                <p class="text-lg text-verde-muted max-w-xl leading-relaxed">
+                    Treatments designed to work with your skin's biology, not against it. We combine advanced lasers
+                    with soothing botanicals.
+                </p>
+            </div>
+        </section>
+
+        <!-- Menu Grid -->
+        <section class="py-24 px-6 lg:px-16">
+
+            <div class="grid lg:grid-cols-2 gap-16">
+
+                <!-- Category: Face -->
+                <div class="space-y-12">
+                    <div class="flex items-end gap-4 border-b border-verde-sage/20 pb-4 mb-8">
+                        <h2 class="font-serif text-3xl text-verde-text">Face & Skin</h2>
+                        <span class="text-xs font-bold text-verde-sage uppercase tracking-widest mb-1">Rituals</span>
+                    </div>
+
+                    <!-- Item 1 -->
+                    <div class="group">
+                        <div class="flex flex-col md:flex-row gap-6 mb-4">
+                            <div class="w-24 h-24 rounded-full overflow-hidden shrink-0 border border-verde-sage/20">
+                                <img src="images/service-acne.png" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-serif text-2xl text-verde-sageDark mb-2 group-hover:text-verde-sage transition-colors">
+                                    Balance Facial</h3>
+                                <p class="text-sm text-verde-muted leading-relaxed mb-3">
+                                    For acne-prone or congested skin. A deep cleanse using salicylic acid and blue LED
+                                    therapy to calm inflammation without stripping moisture.
+                                </p>
+                                <a href="contact.html"
+                                    class="text-xs font-bold uppercase tracking-widest text-verde-sage hover:underline">Book
+                                    • 60 min</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="group">
+                        <div class="flex flex-col md:flex-row gap-6 mb-4">
+                            <div class="w-24 h-24 rounded-[30px] overflow-hidden shrink-0 border border-verde-sage/20">
+                                <img src="images/service-pigmentation.png" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-serif text-2xl text-verde-sageDark mb-2 group-hover:text-verde-sage transition-colors">
+                                    Luminous Peel</h3>
+                                <p class="text-sm text-verde-muted leading-relaxed mb-3">
+                                    Target pigmentation and dullness. Uses natural fruit enzymes and Vitamin C to gently
+                                    resurface and reveal a glow.
+                                </p>
+                                <a href="contact.html"
+                                    class="text-xs font-bold uppercase tracking-widest text-verde-sage hover:underline">Book
+                                    • 45 min</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="group">
+                        <div class="flex flex-col md:flex-row gap-6 mb-4">
+                            <div class="w-24 h-24 rounded-full overflow-hidden shrink-0 border border-verde-sage/20">
+                                <img src="images/service-anti-aging.png" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-serif text-2xl text-verde-sageDark mb-2 group-hover:text-verde-sage transition-colors">
+                                    Ageless Lift</h3>
+                                <p class="text-sm text-verde-muted leading-relaxed mb-3">
+                                    Non-surgical tightening. Uses ultrasound technology to stimulate collagen deep
+                                    within the skin layers. Natural and lasting.
+                                </p>
+                                <a href="contact.html"
+                                    class="text-xs font-bold uppercase tracking-widest text-verde-sage hover:underline">Book
+                                    • 90 min</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category: Laser & Hair -->
+                <div class="space-y-12">
+                    <div class="flex items-end gap-4 border-b border-verde-sage/20 pb-4 mb-8">
+                        <h2 class="font-serif text-3xl text-verde-text">Laser & Hair</h2>
+                        <span class="text-xs font-bold text-verde-sage uppercase tracking-widest mb-1">Technology</span>
+                    </div>
+
+                    <!-- Item 1 -->
+                    <div class="group">
+                        <div class="flex flex-col md:flex-row gap-6 mb-4">
+                            <div
+                                class="w-24 h-24 rounded-tl-[40px] rounded-br-[40px] overflow-hidden shrink-0 border border-verde-sage/20">
+                                <img src="images/service-laser-hair.png" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-serif text-2xl text-verde-sageDark mb-2 group-hover:text-verde-sage transition-colors">
+                                    Silken Laser</h3>
+                                <p class="text-sm text-verde-muted leading-relaxed mb-3">
+                                    Painless hair reduction. Our cooling technology ensures comfort while effectively
+                                    targeting hair follicles. Safe for all skin tones.
+                                </p>
+                                <a href="contact.html"
+                                    class="text-xs font-bold uppercase tracking-widest text-verde-sage hover:underline">Book
+                                    • Varies</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="group">
+                        <div class="flex flex-col md:flex-row gap-6 mb-4">
+                            <div class="w-24 h-24 rounded-full overflow-hidden shrink-0 border border-verde-sage/20">
+                                <img src="images/service-hair.png" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-serif text-2xl text-verde-sageDark mb-2 group-hover:text-verde-sage transition-colors">
+                                    Root Revival</h3>
+                                <p class="text-sm text-verde-muted leading-relaxed mb-3">
+                                    For thinning hair. We use your body's own growth factors (GFC) to re-energize
+                                    dormant hair roots and improve density.
+                                </p>
+                                <a href="contact.html"
+                                    class="text-xs font-bold uppercase tracking-widest text-verde-sage hover:underline">Book
+                                    • 60 min</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="group">
+                        <div class="flex flex-col md:flex-row gap-6 mb-4">
+                            <div class="w-24 h-24 rounded-[30px] overflow-hidden shrink-0 border border-verde-sage/20">
+                                <img src="images/service-laser.png" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h3
+                                    class="font-serif text-2xl text-verde-sageDark mb-2 group-hover:text-verde-sage transition-colors">
+                                    Scar Refine</h3>
+                                <p class="text-sm text-verde-muted leading-relaxed mb-3">
+                                    Fractional laser resurfacing to smooth acne scars and texture irregularities.
+                                    Minimal downtime with maximum results.
+                                </p>
+                                <a href="contact.html"
+                                    class="text-xs font-bold uppercase tracking-widest text-verde-sage hover:underline">Book
+                                    • 45 min</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-verde-base py-12 px-6 lg:px-16 border-t border-verde-sage/10 text-center lg:text-left">
+            <div class="text-xs text-verde-muted/50">
+                © 2024 Verde Aesthetics.
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-menu');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        }
+
+        if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+        if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+    </script>
+</body>
+
+</html>

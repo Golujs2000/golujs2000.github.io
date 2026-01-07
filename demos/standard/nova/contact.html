@@ -4,110 +4,125 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Nova Dental Care</title>
-    <meta name="description" content="Book your dental appointment or visit our clinic in Hyderabad." />
+    <title>Contact - Nova Dental Care</title>
+    <meta name="description" content="Book your visit or get in touch with us." />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Inter:wght@400;600;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Outfit:wght@400;500;700;800&display=swap"
         rel="stylesheet">
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        heading: ['"Inter"', 'sans-serif'],
+                        heading: ['"Outfit"', 'sans-serif'],
                         sans: ['"DM Sans"', 'sans-serif'],
                     },
                     colors: {
                         nova: {
-                            blue: '#0077B6',        // Ocean Blue
-                            teal: '#00B4D8',        // Cyan Accent
-                            slate: '#1E293B',       // Slate Text
-                            white: '#FFFFFF',       // White BG
-                            surface: '#F8FAFC'      // Light Gray BG
+                            blue: '#0B4F6C',        // Deep Ocean Blue
+                            cyan: '#01BAEF',        // Vibrant Cyan
+                            slate: '#202C39',       // Dark Slate Text
+                            white: '#FFFFFF',
+                            surface: '#FBFBFF',     // Ghost White
+                            accent: '#20BF55'       // Fresh Green
                         }
                     }
                 }
             }
         }
     </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
 </head>
 
-<body class="bg-nova-white text-nova-slate font-sans antialiased selection:bg-nova-teal/20 selection:text-nova-blue">
+<body class="bg-nova-surface text-nova-slate font-sans antialiased selection:bg-nova-cyan/30 selection:text-nova-blue">
 
-    <!-- Top Bar -->
-    <div class="bg-nova-blue text-white text-xs py-2.5 font-medium tracking-wide">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <div class="flex gap-6">
-                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3.5 h-3.5 opacity-80"></i> 123
-                    Tech Park, Cyber City</span>
-                <span class="hidden sm:flex items-center gap-2"><i data-lucide="mail"
-                        class="w-3.5 h-3.5 opacity-80"></i> happy@novadental.com</span>
-            </div>
-            <div class="flex gap-4">
-                <a href="#" class="hover:text-nova-teal transition-colors"><i data-lucide="facebook"
-                        class="w-3.5 h-3.5"></i></a>
-                <a href="#" class="hover:text-nova-teal transition-colors"><i data-lucide="instagram"
-                        class="w-3.5 h-3.5"></i></a>
-                <a href="#" class="hover:text-nova-teal transition-colors"><i data-lucide="linkedin"
-                        class="w-3.5 h-3.5"></i></a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Navigation (Sticky Glass) -->
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2.5 group">
-                <div
-                    class="w-10 h-10 bg-gradient-to-br from-nova-blue to-nova-teal text-white rounded-xl flex items-center justify-center shadow-lg shadow-nova-blue/20 group-hover:scale-105 transition-transform">
-                    <i data-lucide="smile" class="w-6 h-6"></i>
-                </div>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="images/nova-logo.png" alt="Nova Dental Logo"
+                    class="w-14 h-14 rounded-2xl shadow-xl shadow-nova-blue/20 group-hover:rotate-12 transition-transform duration-500 bg-white p-1">
                 <div>
                     <h1 class="font-heading text-2xl font-bold text-nova-slate leading-none tracking-tight">NOVA<span
-                            class="text-nova-blue">.</span></h1>
-                    <p class="text-[0.65rem] font-bold tracking-widest uppercase text-gray-400">Dental Care</p>
+                            class="text-nova-cyan">.</span></h1>
+                    <p
+                        class="text-[0.65rem] font-bold tracking-[0.2em] uppercase text-gray-400 group-hover:text-nova-cyan transition-colors">
+                        Dental</p>
                 </div>
             </a>
 
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-                <a href="index.html" class="hover:text-nova-blue transition-colors">Home</a>
-                <a href="about.html" class="hover:text-nova-blue transition-colors">About Us</a>
-                <a href="services.html" class="hover:text-nova-blue transition-colors">Services</a>
-                <a href="results.html" class="hover:text-nova-blue transition-colors">Smiles</a>
-                <a href="contact.html" class="text-nova-blue font-bold">Contact</a>
+            <!-- Desktop Menu -->
+            <div
+                class="hidden md:flex items-center gap-1 bg-white/50 p-1.5 rounded-full border border-gray-200/50 backdrop-blur-sm shadow-sm">
+                <a href="index.html"
+                    class="px-6 py-2.5 rounded-full text-gray-600 font-medium text-sm hover:bg-white hover:text-nova-blue transition-all">Home</a>
+                <a href="about.html"
+                    class="px-6 py-2.5 rounded-full text-gray-600 font-medium text-sm hover:bg-white hover:text-nova-blue transition-all">About</a>
+                <a href="services.html"
+                    class="px-6 py-2.5 rounded-full text-gray-600 font-medium text-sm hover:bg-white hover:text-nova-blue transition-all">Services</a>
+                <a href="results.html"
+                    class="px-6 py-2.5 rounded-full text-gray-600 font-medium text-sm hover:bg-white hover:text-nova-blue transition-all">Smiles</a>
+                <a href="contact.html"
+                    class="px-6 py-2.5 rounded-full bg-nova-blue text-white font-bold text-sm shadow-md transition-all">Contact</a>
             </div>
 
+            <!-- CTA -->
             <div class="flex items-center gap-4">
-                <a href="contact.html"
-                    class="hidden md:flex items-center gap-2 px-6 py-2.5 bg-nova-slate text-white rounded-lg text-sm font-bold hover:bg-nova-blue transition-all shadow-md shadow-nova-slate/20">
-                    <i data-lucide="calendar" class="w-4 h-4"></i>
-                    <span>Book Visit</span>
+                <a href="#booking"
+                    class="hidden md:flex items-center gap-2 px-7 py-3.5 bg-nova-slate text-white rounded-2xl text-sm font-bold hover:bg-nova-blue hover:-translate-y-1 hover:shadow-lg hover:shadow-nova-blue/30 transition-all duration-300">
+                    <span>Book Now</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
-                <button class="md:hidden text-gray-600">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
+                <button id="mobile-menu-btn"
+                    class="md:hidden w-12 h-12 flex items-center justify-center bg-white rounded-2xl text-nova-slate shadow-sm hover:bg-gray-50 transition-colors">
+                    <i data-lucide="menu-2" class="w-6 h-6"></i>
                 </button>
+            </div>
+
+            <!-- Mobile Menu Overlay -->
+            <div id="mobile-menu"
+                class="hidden absolute top-24 left-0 w-full bg-white border-t border-gray-100 p-8 flex-col gap-6 shadow-2xl z-50">
+                <a href="index.html" class="text-xl font-medium text-gray-500">Home</a>
+                <a href="about.html" class="text-xl font-medium text-gray-500">About</a>
+                <a href="services.html" class="text-xl font-medium text-gray-500">Services</a>
+                <a href="results.html" class="text-xl font-medium text-gray-500">Smiles</a>
+                <a href="contact.html" class="text-xl font-bold text-nova-blue">Contact</a>
+                <a href="#booking"
+                    class="w-full text-center px-6 py-4 bg-nova-blue text-white rounded-xl font-bold shadow-lg shadow-nova-blue/20">Book
+                    Appointment</a>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <section class="py-20 bg-gray-50 border-b border-gray-100">
+    <!-- Header -->
+    <header class="pt-40 pb-20 bg-white">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <p class="text-xs font-bold tracking-widest uppercase text-nova-blue mb-3">Get in Touch</p>
-            <h1 class="font-heading text-4xl md:text-5xl font-bold text-nova-slate">Ready to Smile?</h1>
+            <h1 class="font-heading text-4xl md:text-6xl font-bold text-nova-slate mb-6">Get In Touch</h1>
+            <p class="text-lg text-gray-500 max-w-xl mx-auto">We're here to help. Whether you have a question or need to
+                book an urgent visit.</p>
         </div>
-    </section>
+    </header>
 
-    <!-- Content -->
-    <section class="py-24 bg-white">
+    <section class="pb-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-
             <!-- Contact Info -->
             <div class="space-y-12">
-                <h2 class="font-heading text-3xl font-bold text-nova-slate">Visit Our Clinic</h2>
-                <div class="space-y-8">
+                <h2 class="font-heading text-3xl font-bold text-nova-slate border-l-4 border-nova-cyan pl-6">Visit Our
+                    Clinic</h2>
+                <div class="space-y-8 pl-6">
                     <div class="flex items-start gap-6">
                         <div
                             class="w-12 h-12 flex items-center justify-center rounded-xl bg-blue-50 text-nova-blue shrink-0">
@@ -115,15 +130,11 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-nova-slate text-sm uppercase tracking-widest mb-2">Location</h4>
-                            <p class="text-gray-500 font-light leading-relaxed">
+                            <p class="text-gray-500 leading-relaxed font-medium">
                                 Nova Dental Care<br>
                                 1st Floor, Tech Park,<br>
-                                Cyber City, Hitech City,<br>
-                                Hyderabad, Telangana 500081
+                                Cyber City, Hyderabad 500081
                             </p>
-                            <a href="#"
-                                class="inline-block mt-3 text-xs font-bold uppercase tracking-wide text-nova-blue hover:text-nova-teal transition-colors">Get
-                                Directions -></a>
                         </div>
                     </div>
 
@@ -134,12 +145,11 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-nova-slate text-sm uppercase tracking-widest mb-2">Call Us</h4>
-                            <p class="text-gray-500 font-light leading-relaxed mb-4">
-                                +91 98765 43210<br>
-                                +91 40 1234 5678
+                            <p class="text-gray-500 leading-relaxed font-medium mb-4">
+                                +91 98765 43210
                             </p>
                             <a href="https://wa.me/919876543210"
-                                class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide bg-[#25D366] text-white px-4 py-2 rounded-lg hover:bg-[#20bd5a] transition-colors shadow-md shadow-green-200">
+                                class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wide bg-[#25D366] text-white px-5 py-3 rounded-xl hover:bg-[#20bd5a] transition-all shadow-lg hover:shadow-green-500/30">
                                 <i data-lucide="message-circle" class="w-4 h-4"></i> Chat on WhatsApp
                             </a>
                         </div>
@@ -151,8 +161,8 @@
                             <i data-lucide="clock" class="w-6 h-6"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-nova-slate text-sm uppercase tracking-widest mb-2">Timings</h4>
-                            <p class="text-gray-500 font-light leading-relaxed">
+                            <h4 class="font-bold text-nova-slate text-sm uppercase tracking-widest mb-2">Hours</h4>
+                            <p class="text-gray-500 leading-relaxed font-medium">
                                 Mon - Sat: 10:00 AM - 08:00 PM<br>
                                 Sunday: 10:00 AM - 02:00 PM
                             </p>
@@ -161,113 +171,99 @@
                 </div>
             </div>
 
-            <!-- Form -->
-            <div
-                class="bg-gray-50 p-10 rounded-3xl border border-gray-100 hover:border-nova-blue/20 transition-colors shadow-lg shadow-gray-200/50">
+            <!-- Booking Form -->
+            <div id="booking"
+                class="bg-nova-surface p-10 rounded-[2.5rem] border border-gray-100 shadow-2xl shadow-nova-blue/5">
                 <h2 class="font-heading text-2xl font-bold text-nova-slate mb-8">Request Appointment</h2>
-                <form class="space-y-6">
+                <form action="https://formsubmit.co/your@email.com" method="POST" class="space-y-6">
+                    <input type="hidden" name="_subject" value="New Inquiry - Nova">
                     <div class="grid grid-cols-2 gap-6">
-                        <div>
-                            <label
-                                class="block text-xs uppercase tracking-wider font-bold mb-2 text-gray-500">Name</label>
-                            <input type="text"
-                                class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm focus:border-nova-blue focus:ring-1 focus:ring-nova-blue outline-none transition-all"
-                                placeholder="John Doe" />
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-gray-500 uppercase tracking-wider">Name</label>
+                            <input type="text" name="name" required
+                                class="w-full bg-white border border-gray-100 rounded-xl px-4 py-3 text-sm focus:border-nova-blue focus:ring-1 focus:ring-nova-blue outline-none transition-all"
+                                placeholder="John Doe">
                         </div>
-                        <div>
-                            <label
-                                class="block text-xs uppercase tracking-wider font-bold mb-2 text-gray-500">Phone</label>
-                            <input type="tel"
-                                class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm focus:border-nova-blue focus:ring-1 focus:ring-nova-blue outline-none transition-all"
-                                placeholder="+91..." />
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold text-gray-500 uppercase tracking-wider">Phone</label>
+                            <input type="tel" name="phone" required
+                                class="w-full bg-white border border-gray-100 rounded-xl px-4 py-3 text-sm focus:border-nova-blue focus:ring-1 focus:ring-nova-blue outline-none transition-all"
+                                placeholder="+91...">
                         </div>
                     </div>
-                    <div>
-                        <label class="block text-xs uppercase tracking-wider font-bold mb-2 text-gray-500">Reason for
-                            Visit</label>
-                        <select
-                            class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm focus:border-nova-blue focus:ring-1 focus:ring-nova-blue outline-none text-gray-600 transition-all">
-                            <option>General Consultation / Checkup</option>
-                            <option>Toothache (Emergency)</option>
-                            <option>Teeth Cleaning</option>
-                            <option>Whitening</option>
-                            <option>Implants</option>
-                            <option>Braces / Invisalign</option>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-500 uppercase tracking-wider">Reason</label>
+                        <select name="reason"
+                            class="w-full bg-white border border-gray-100 rounded-xl px-4 py-3 text-sm focus:border-nova-blue focus:ring-1 focus:ring-nova-blue outline-none text-gray-600 transition-all">
+                            <option>General Checkup</option>
+                            <option>Tooth Pain</option>
+                            <option>Cosmetic Inquiry</option>
+                            <option>Other</option>
                         </select>
                     </div>
-                    <div>
-                        <label class="block text-xs uppercase tracking-wider font-bold mb-2 text-gray-500">Message
-                            (Optional)</label>
-                        <textarea rows="4"
-                            class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm focus:border-nova-blue focus:ring-1 focus:ring-nova-blue outline-none transition-all"
-                            placeholder="Any specific concerns?"></textarea>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-500 uppercase tracking-wider">Message</label>
+                        <textarea name="message" rows="3"
+                            class="w-full bg-white border border-gray-100 rounded-xl px-4 py-3 text-sm focus:border-nova-blue focus:ring-1 focus:ring-nova-blue outline-none transition-all"
+                            placeholder="How can we help?"></textarea>
                     </div>
-                    <button
-                        class="w-full bg-nova-slate text-white py-4 rounded-lg uppercase tracking-widest text-xs font-bold hover:bg-nova-blue transition-colors duration-300 shadow-lg shadow-nova-slate/30">
-                        Confirm Booking
+                    <button type="submit"
+                        class="w-full bg-nova-slate text-white py-4 rounded-xl font-bold uppercase tracking-wider text-xs hover:bg-nova-blue transition-all shadow-lg hover:shadow-nova-blue/30 mt-4">
+                        Send Request
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Map Embed (Placeholder) -->
-    <div class="w-full h-96 bg-gray-200 grayscale hover:grayscale-0 transition-all duration-700">
+    <!-- Map -->
+    <div class="w-full h-96 bg-gray-200 grayscale hover:grayscale-0 transition-all duration-1000">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.867272214953!2d78.40546531487676!3d17.41818798805972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9158f201b205%3A0x11bbe7be7792411b!2sJubilee%20Hills%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1623345678901!5m2!1sen!2sin"
             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
-    <!-- Footer (Clean Grid) -->
-    <footer class="bg-gray-50 pt-20 pb-10 border-t border-gray-200">
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 pt-20 pb-10">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
             <div class="md:col-span-1">
                 <a href="index.html" class="flex items-center gap-2 mb-6">
-                    <div class="w-8 h-8 bg-nova-blue text-white rounded-lg flex items-center justify-center">
-                        <i data-lucide="smile" class="w-5 h-5"></i>
-                    </div>
+                    <img src="images/nova-logo.png" alt="Nova Dental" class="w-8 h-8 rounded-lg bg-white p-0.5">
                     <span class="font-heading text-xl font-bold text-nova-slate">NOVA.</span>
                 </a>
                 <p class="text-gray-500 text-sm leading-relaxed mb-6">
                     Redefining dental care with a focus on comfort, technology, and long-term oral health.
                 </p>
-                <div class="flex gap-4">
-                    <a href="#"
-                        class="w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:text-nova-blue hover:border-nova-blue transition-all"><i
-                            data-lucide="facebook" class="w-4 h-4"></i></a>
-                    <a href="#"
-                        class="w-8 h-8 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:text-nova-blue hover:border-nova-blue transition-all"><i
-                            data-lucide="instagram" class="w-4 h-4"></i></a>
-                </div>
             </div>
 
             <div>
                 <h4 class="font-bold text-nova-slate mb-6">Quick Links</h4>
-                <ul class="space-y-3 text-sm text-gray-500">
+                <ul class="space-y-4 text-sm text-gray-500">
                     <li><a href="index.html" class="hover:text-nova-blue transition-colors">Home</a></li>
                     <li><a href="about.html" class="hover:text-nova-blue transition-colors">About Us</a></li>
-                    <li><a href="services.html" class="hover:text-nova-blue transition-colors">Treatments</a></li>
-                    <li><a href="results.html" class="hover:text-nova-blue transition-colors">Smile Gallery</a></li>
+                    <li><a href="services.html" class="hover:text-nova-blue transition-colors">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-nova-blue transition-colors">Contact</a></li>
                 </ul>
             </div>
-
             <div>
-                <h4 class="font-bold text-nova-slate mb-6">Treatments</h4>
-                <ul class="space-y-3 text-sm text-gray-500">
-                    <li><a href="#" class="hover:text-nova-blue transition-colors">Whitening</a></li>
-                    <li><a href="#" class="hover:text-nova-blue transition-colors">Invisalign</a></li>
-                    <li><a href="#" class="hover:text-nova-blue transition-colors">Root Canals</a></li>
-                </ul>
+                <h4 class="font-bold text-nova-slate mb-6">Socials</h4>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-nova-blue hover:text-white transition-all"><i
+                            data-lucide="facebook" class="w-4 h-4"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-nova-blue hover:text-white transition-all"><i
+                            data-lucide="instagram" class="w-4 h-4"></i></a>
+                </div>
             </div>
-
-            <div>
+            <div class="col-span-2 md:col-span-1">
                 <h4 class="font-bold text-nova-slate mb-6">Contact</h4>
-                <ul class="space-y-3 text-sm text-gray-500">
-                    <li class="flex gap-3">
-                        <i data-lucide="map-pin" class="w-5 h-5 text-nova-blue shrink-0"></i>
-                        <span>123 Tech Park, Cyber City,<br>Hyderabad, 500081</span>
+                <ul class="space-y-4 text-sm text-gray-500">
+                    <li class="flex gap-3 items-start">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-nova-blue shrink-0 mt-0.5"></i>
+                        <span>123 Technology Park,<br>Cyber City, Hyderabad</span>
                     </li>
-                    <li class="flex gap-3">
+                    <li class="flex gap-3 items-center">
                         <i data-lucide="phone" class="w-5 h-5 text-nova-blue shrink-0"></i>
                         <span>+91 98765 43210</span>
                     </li>
@@ -278,7 +274,18 @@
             &copy; 2024 Nova Dental Care. Demo by CGP360.
         </div>
     </footer>
-    <script>lucide.createIcons();</script>
+
+    <script>
+        lucide.createIcons();
+        // Mobile Menu
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+    </script>
 </body>
 
 </html>

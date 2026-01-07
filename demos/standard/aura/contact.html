@@ -59,9 +59,27 @@
                     Book Now
                 </a>
 
-                <button class="md:hidden text-lux-charcoal">
+                <button id="mobile-menu-btn" class="md:hidden text-lux-charcoal">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden absolute top-full left-6 right-6 mt-4 bg-white/95 backdrop-blur-xl border border-white/50 rounded-2xl p-6 shadow-xl flex-col gap-4 text-center">
+                <a href="about.html"
+                    class="block py-2 text-xs font-bold tracking-widest uppercase text-lux-charcoal hover:text-lux-gold transition-colors">Our
+                    Story</a>
+                <a href="services.html"
+                    class="block py-2 text-xs font-bold tracking-widest uppercase text-lux-charcoal hover:text-lux-gold transition-colors">Treatments</a>
+                <a href="results.html"
+                    class="block py-2 text-xs font-bold tracking-widest uppercase text-lux-charcoal hover:text-lux-gold transition-colors">Real
+                    Results</a>
+                <a href="contact.html"
+                    class="block py-2 text-xs font-bold tracking-widest uppercase text-lux-charcoal hover:text-lux-gold transition-colors">Contact</a>
+                <a href="contact.html"
+                    class="block mt-2 px-6 py-3 bg-lux-gold text-white rounded-full text-xs font-bold tracking-widest uppercase hover:bg-lux-charcoal transition-colors">Book
+                    Now</a>
             </div>
         </div>
     </nav>
@@ -213,7 +231,20 @@
             </div>
         </div>
     </footer>
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                menu.classList.toggle('flex');
+            });
+        }
+    </script>
 </body>
 
 </html>

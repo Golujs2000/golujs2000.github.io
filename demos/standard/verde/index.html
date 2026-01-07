@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verde Aesthetics - Holistic Skin & Hair Clinic</title>
+    <meta name="description" content="Nature-inspired dermatological care." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"DM Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        verde: {
+                            base: '#FAFCF9',       // Off-white/Mint tint
+                            text: '#1B3C29',       // Deep Forest Green
+                            sage: '#4A6C58',       // Accent
+                            sageDark: '#2D4A3A',   // Active/Hover
+                            leaf: '#E8F5E9',       // Light Green Cards
+                            sand: '#D4A373',       // Warm accent
+                            muted: '#6B8E78'       // Muted text
+                        }
+                    },
+                    borderRadius: {
+                        'organic-1': '50% 50% 50% 50% / 60% 60% 40% 40%',
+                        'organic-2': '30% 70% 70% 30% / 30% 30% 70% 70%',
+                        'leaf-top-right': '0 50px 0 50px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #FAFCF9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #4A6C58;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="bg-verde-base text-verde-text font-sans antialiased">
+
+    <!-- Desktop Sidebar (Visible on LG+) -->
+    <aside
+        class="hidden lg:flex fixed left-0 top-0 bottom-0 w-64 bg-white/50 backdrop-blur-md border-r border-verde-sage/10 flex-col justify-between py-12 px-8 z-50">
+        <!-- Logo -->
+        <div>
+            <div class="font-serif text-3xl font-bold tracking-tight mb-1 text-verde-sageDark">VERDE.</div>
+            <p class="text-[0.6rem] tracking-[0.3em] uppercase text-verde-muted">Aesthetics</p>
+        </div>
+
+        <!-- Nav -->
+        <nav class="flex flex-col gap-6 font-medium text-sm tracking-wide">
+            <a href="#home" class="text-verde-text hover:text-verde-sage transition-colors">Home</a>
+            <a href="#philosophy" class="text-verde-muted hover:text-verde-sage transition-colors">Philosophy</a>
+            <a href="services.html" class="text-verde-muted hover:text-verde-sage transition-colors">Treatments</a>
+            <a href="results.html" class="text-verde-muted hover:text-verde-sage transition-colors">Stories</a>
+            <a href="about.html" class="text-verde-muted hover:text-verde-sage transition-colors">Our Doctor</a>
+        </nav>
+
+        <!-- CTA -->
+        <div>
+            <a href="contact.html"
+                class="block w-full text-center py-3 border border-verde-sage text-verde-sage hover:bg-verde-sage hover:text-white transition-all bg-transparent text-xs font-bold uppercase tracking-widest rounded-tl-2xl rounded-br-2xl">
+                Book Visit
+            </a>
+            <div class="mt-6 flex gap-4 justify-center text-verde-muted">
+                <i data-lucide="instagram" class="w-4 h-4 hover:text-verde-sage cursor-pointer"></i>
+                <i data-lucide="facebook" class="w-4 h-4 hover:text-verde-sage cursor-pointer"></i>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header
+        class="lg:hidden fixed top-0 w-full bg-verde-base/90 backdrop-blur-md z-50 border-b border-verde-sage/10 px-6 py-4 flex justify-between items-center">
+        <div class="font-serif text-2xl font-bold text-verde-sageDark"><a href="index.html"></a>VERDE.</a></div>
+        <button id="menu-btn" class="text-verde-text">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-verde-base z-[60] flex-col p-6">
+        <div class="flex justify-between items-center mb-12">
+            <div class="font-serif text-2xl font-bold text-verde-sageDark">VERDE.</div>
+            <button id="close-menu" class="text-verde-text">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-8 text-2xl font-serif text-verde-sageDark items-center">
+            <a href="index.html" class="hover:text-verde-sage">Home</a>
+            <a href="services.html" class="hover:text-verde-sage">Treatments</a>
+            <a href="results.html" class="hover:text-verde-sage">Stories</a>
+            <a href="about.html" class="hover:text-verde-sage">Our Doctor</a>
+            <a href="contact.html" class="mt-8 px-8 py-3 bg-verde-sageDark text-white text-sm font-sans font-bold uppercase tracking-widest rounded-tl-2xl rounded-br-2xl">Book Visit</a>
+        </nav>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <main class="lg:pl-64">
+
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen relative flex items-center pt-20 lg:pt-0 overflow-hidden">
+            <div class="container mx-auto px-6 lg:px-16 grid lg:grid-cols-2 gap-12 items-center">
+
+                <!-- Text Content -->
+                <div class="relative z-10 order-2 lg:order-1">
+                    <span
+                        class="inline-block py-1 px-3 bg-verde-leaf text-verde-sageDark rounded-full text-[0.65rem] font-bold tracking-widest uppercase mb-6">
+                        Holistic Dermatology
+                    </span>
+                    <h1 class="font-serif text-5xl lg:text-7xl leading-[1.1] mb-8 text-verde-sageDark">
+                        Science <span class="italic text-verde-sage">meets</span><br> Nature.
+                    </h1>
+                    <p class="text-lg text-verde-muted mb-10 leading-relaxed max-w-md">
+                        We believe in restoring your skin’s natural balance through clinically proven treatments and
+                        gentle, organic care.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="services.html"
+                            class="px-8 py-4 bg-verde-sageDark text-white rounded-tl-3xl rounded-br-3xl hover:bg-verde-sage transition-all shadow-xl shadow-verde-sage/20 text-xs font-bold uppercase tracking-widest">
+                            Explore Treatments
+                        </a>
+                        <a href="#philosophy"
+                            class="px-8 py-4 border border-verde-sageDark text-verde-sageDark rounded-tl-3xl rounded-br-3xl hover:bg-verde-leaf transition-all text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                            <i data-lucide="play-circle" class="w-4 h-4"></i> Our Story
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="relative order-1 lg:order-2 h-[50vh] lg:h-auto">
+                    <!-- Abstract Organic Background Shape -->
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-verde-leaf/50 rounded-full blur-3xl -z-10">
+                    </div>
+
+                    <div
+                        class="relative w-full aspect-[4/5] rounded-t-[100px] rounded-b-[40px] overflow-hidden shadow-2xl shadow-verde-sage/10">
+                        <img src="images/hero-bg.png"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-[2s]"
+                            alt="Radiant Skin">
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white p-6 rounded-tr-3xl rounded-bl-3xl shadow-xl max-w-[200px]">
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-verde-leaf border-2 border-white"></div>
+                                <div class="w-8 h-8 rounded-full bg-verde-sage/20 border-2 border-white"></div>
+                            </div>
+                            <span class="font-serif italic text-lg">4.9</span>
+                        </div>
+                        <p class="text-xs text-verde-muted leading-tight">"The most calming clinic experience I've ever
+                            had."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee / Ticker -->
+        <div class="bg-verde-sageDark text-white/80 py-4 overflow-hidden whitespace-nowrap">
+            <div class="animate-marquee inline-block">
+                <span class="mx-8 text-xs font-bold uppercase tracking-[0.3em]">Organic Peels</span> •
+                <span class="mx-8 text-xs font-bold uppercase tracking-[0.3em]">Laser Technology</span> •
+                <span class="mx-8 text-xs font-bold uppercase tracking-[0.3em]">Holistic Fillers</span> •
+                <span class="mx-8 text-xs font-bold uppercase tracking-[0.3em]">Hair Restoration</span> •
+                <span class="mx-8 text-xs font-bold uppercase tracking-[0.3em]">Mindful Aesthetics</span> •
+                <span class="mx-8 text-xs font-bold uppercase tracking-[0.3em]">Organic Peels</span> •
+                <span class="mx-8 text-xs font-bold uppercase tracking-[0.3em]">Laser Technology</span> •
+            </div>
+        </div>
+
+        <!-- Services Preview (Masonry-ish) -->
+        <section class="py-24 px-6 lg:px-16">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="font-serif text-4xl lg:text-5xl text-verde-text mb-4">Curated for You</h2>
+                    <p class="text-verde-muted">We don't do "menus". We create tailored protocols for your unique skin
+                        ecosystem.</p>
+                </div>
+                <a href="services.html"
+                    class="text-verde-sage font-bold border-b border-verde-sage pb-1 hover:text-verde-sageDark transition-colors">View
+                    All Treatments</a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="group relative md:mt-12">
+                    <div class="aspect-[3/4] rounded-t-[80px] rounded-b-2xl overflow-hidden mb-6 relative">
+                        <div
+                            class="absolute inset-0 bg-verde-SageDark/10 group-hover:bg-transparent transition-colors z-10">
+                        </div>
+                        <img src="images/service-acne.png"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <h3 class="font-serif text-2xl text-verde-text mb-2">Clarity & Balance</h3>
+                    <p class="text-sm text-verde-muted mb-4">Acne, Scars & Texture</p>
+                    <span
+                        class="inline-block w-8 h-8 rounded-full border border-verde-sage/30 flex items-center justify-center text-verde-sage group-hover:bg-verde-sage group-hover:text-white transition-all">
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </span>
+                    <a href="services.html" class="absolute inset-0 z-20"></a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative">
+                    <div
+                        class="aspect-[3/4] rounded-full overflow-hidden mb-6 relative border-4 border-white shadow-lg">
+                        <div
+                            class="absolute inset-0 bg-verde-SageDark/10 group-hover:bg-transparent transition-colors z-10">
+                        </div>
+                        <img src="images/service-anti-aging.png"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="font-serif text-2xl text-verde-text mb-2">Lift & Restore</h3>
+                        <p class="text-sm text-verde-muted mb-4">Anti-Aging & Volume</p>
+                        <span
+                            class="inline-block mx-auto w-8 h-8 rounded-full border border-verde-sage/30 flex items-center justify-center text-verde-sage group-hover:bg-verde-sage group-hover:text-white transition-all">
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </span>
+                    </div>
+                    <a href="services.html" class="absolute inset-0 z-20"></a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative md:mt-24">
+                    <div class="aspect-[3/4] rounded-t-2xl rounded-b-[80px] overflow-hidden mb-6 relative">
+                        <div
+                            class="absolute inset-0 bg-verde-SageDark/10 group-hover:bg-transparent transition-colors z-10">
+                        </div>
+                        <img src="images/service-hair.png"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                    <h3 class="font-serif text-2xl text-verde-text mb-2">Growth & vitality</h3>
+                    <p class="text-sm text-verde-muted mb-4">Hair Restoration & Care</p>
+                    <span
+                        class="inline-block w-8 h-8 rounded-full border border-verde-sage/30 flex items-center justify-center text-verde-sage group-hover:bg-verde-sage group-hover:text-white transition-all">
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </span>
+                    <a href="services.html" class="absolute inset-0 z-20"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Philosophy Section -->
+        <section id="philosophy" class="py-24 bg-verde-text text-verde-base relative overflow-hidden">
+            <!-- Decorative Plant Shadow -->
+            <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+                <img src="images/hero-bg.png" class="w-full h-full object-cover mix-blend-overlay grayscale">
+                <!-- Using hero-bg as a texture placeholder for now -->
+            </div>
+
+            <div class="container mx-auto px-6 lg:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+                <div>
+                    <div class="w-full aspect-square rounded-[100px] overflow-hidden border border-verde-sage/30 p-2">
+                        <div class="w-full h-full rounded-[90px] overflow-hidden">
+                            <img src="images/dr-sharma-portrait.png"
+                                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="font-serif text-4xl lg:text-5xl mb-8 leading-tight">
+                        "Beauty is the visible <br><span class="italic text-verde-sage">reflection</span> of health."
+                    </h2>
+                    <p class="text-verde-base/70 text-lg font-light leading-relaxed mb-8">
+                        At Verde, we move away from the 'perfection' mindset. Instead, we focus on skin health, barrier
+                        repair, and natural enhancement. Dr. Ananya Sharma combines modern dermatology with a holistic
+                        lifestyle approach.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-8 mb-10 border-t border-verde-sage/20 pt-8">
+                        <div>
+                            <div class="text-3xl font-serif text-verde-sage mb-1">10+</div>
+                            <div class="text-xs uppercase tracking-widest text-verde-base/50">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-serif text-verde-sage mb-1">Top 1%</div>
+                            <div class="text-xs uppercase tracking-widest text-verde-base/50">In Aesthetic Tech</div>
+                        </div>
+                    </div>
+
+                    <a href="about.html"
+                        class="inline-block border-b border-verde-sage pb-1 hover:text-verde-sage transition-colors">Meet
+                        Dr. Sharma</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-verde-base py-12 px-6 lg:px-16 border-t border-verde-sage/10">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="font-serif text-2xl font-bold text-verde-sageDark mb-4">VERDE.</div>
+                    <p class="text-verde-muted max-w-sm">A sanctuary for your skin in the heart of the city. Join us for
+                        a journey back to yourself.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-verde-text uppercase tracking-widest text-xs mb-6">Contact</h4>
+                    <p class="text-verde-muted text-sm mb-2">123 Green Valley, Eco Park,<br>Hyderabad</p>
+                    <p class="text-verde-muted text-sm">+91 98765 43210</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-verde-text uppercase tracking-widest text-xs mb-6">Links</h4>
+                    <div class="flex flex-col gap-2 text-sm text-verde-muted">
+                        <a href="#" class="hover:text-verde-sage">Privacy Policy</a>
+                        <a href="#" class="hover:text-verde-sage">Terms of Service</a>
+                        <a href="#" class="hover:text-verde-sage">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-verde-sage/10 text-center text-xs text-verde-muted/50">
+                © 2024 Verde Aesthetics. Demo by CGP360.
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        lucide.createIcons();
+        
+        // Mobile Menu Logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-menu');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        }
+
+        if(menuBtn) menuBtn.addEventListener('click', toggleMenu);
+        if(closeBtn) closeBtn.addEventListener('click', toggleMenu);
+    </script>
+</body>
+
+</html>

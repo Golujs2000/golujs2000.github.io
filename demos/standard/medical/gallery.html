@@ -62,9 +62,22 @@
                     Appointment</a>
             </div>
 
-            <button class="md:hidden text-medical-dark">
+            <button id="mobile-menu-btn" class="md:hidden text-medical-dark">
                 <i data-lucide="menu" class="w-7 h-7"></i>
             </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 p-6 flex-col gap-4 shadow-xl text-center">
+            <a href="index.html" class="text-lg font-bold text-slate-600">Home</a>
+            <a href="services.html" class="text-lg font-bold text-slate-600">Treatments</a>
+            <a href="gallery.html" class="text-lg font-bold text-medical-blue">Gallery</a>
+            <a href="about.html" class="text-lg font-bold text-slate-600">Our Team</a>
+            <a href="contact.html" class="text-lg font-bold text-slate-600">Contact</a>
+            <a href="contact.html"
+                class="inline-block px-5 py-3 bg-medical-blue text-white rounded-full font-bold shadow-lg shadow-medical-blue/20">Book
+                Appointment</a>
         </div>
     </nav>
 
@@ -93,15 +106,15 @@
                             <div
                                 class="absolute top-2 left-2 bg-black/60 text-white text-[0.6rem] font-bold px-2 py-1 rounded">
                                 BEFORE</div>
-                            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=400"
+                            <img src="images/gallery-1-before.png"
                                 class="w-full h-48 object-cover rounded-lg filter grayscale" alt="Before">
                         </div>
                         <div class="relative">
                             <div
                                 class="absolute top-2 left-2 bg-medical-blue text-white text-[0.6rem] font-bold px-2 py-1 rounded">
                                 AFTER</div>
-                            <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&q=80&w=400"
-                                class="w-full h-48 object-cover rounded-lg" alt="After">
+                            <img src="images/gallery-1-after.png" class="w-full h-48 object-cover rounded-lg"
+                                alt="After">
                         </div>
                     </div>
                     <div>
@@ -124,15 +137,15 @@
                             <div
                                 class="absolute top-2 left-2 bg-black/60 text-white text-[0.6rem] font-bold px-2 py-1 rounded">
                                 BEFORE</div>
-                            <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&q=80&w=400"
+                            <img src="images/gallery-1-before.png"
                                 class="w-full h-48 object-cover rounded-lg filter sepia" alt="Before">
                         </div>
                         <div class="relative">
                             <div
                                 class="absolute top-2 left-2 bg-medical-blue text-white text-[0.6rem] font-bold px-2 py-1 rounded">
                                 AFTER</div>
-                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&q=80&w=400"
-                                class="w-full h-48 object-cover rounded-lg" alt="After">
+                            <img src="images/gallery-1-after.png" class="w-full h-48 object-cover rounded-lg"
+                                alt="After">
                         </div>
                     </div>
                     <div>
@@ -155,15 +168,15 @@
                             <div
                                 class="absolute top-2 left-2 bg-black/60 text-white text-[0.6rem] font-bold px-2 py-1 rounded">
                                 BEFORE</div>
-                            <img src="https://images.unsplash.com/photo-1595867865639-950c45731309?auto=format&fit=crop&q=80&w=400"
+                            <img src="images/gallery-1-before.png"
                                 class="w-full h-48 object-cover rounded-lg filter contrast-125" alt="Before">
                         </div>
                         <div class="relative">
                             <div
                                 class="absolute top-2 left-2 bg-medical-blue text-white text-[0.6rem] font-bold px-2 py-1 rounded">
                                 AFTER</div>
-                            <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=400"
-                                class="w-full h-48 object-cover rounded-lg" alt="After">
+                            <img src="images/gallery-1-after.png" class="w-full h-48 object-cover rounded-lg"
+                                alt="After">
                         </div>
                     </div>
                     <div>
@@ -186,15 +199,15 @@
                             <div
                                 class="absolute top-2 left-2 bg-black/60 text-white text-[0.6rem] font-bold px-2 py-1 rounded">
                                 BEFORE</div>
-                            <img src="https://images.unsplash.com/photo-1504913659239-6abc776ec49b?auto=format&fit=crop&q=80&w=400"
+                            <img src="images/gallery-1-before.png"
                                 class="w-full h-48 object-cover rounded-lg filter grayscale" alt="Before">
                         </div>
                         <div class="relative">
                             <div
                                 class="absolute top-2 left-2 bg-medical-blue text-white text-[0.6rem] font-bold px-2 py-1 rounded">
                                 AFTER</div>
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400"
-                                class="w-full h-48 object-cover rounded-lg" alt="After">
+                            <img src="images/gallery-1-after.png" class="w-full h-48 object-cover rounded-lg"
+                                alt="After">
                         </div>
                     </div>
                     <div>
@@ -272,6 +285,17 @@
 
     <script>
         lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
+        }
     </script>
 </body>
 
