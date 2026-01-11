@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina Skin & Laser - Premium Aesthetic Clinic</title>
+    <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg" />
+    <meta name="description" content="Advanced skin, hair, and laser treatments in a premium setting." />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Fonts: Cinzel (Luxury Serif) & Lato (Clean Sans) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cinzel"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            DEFAULT: '#C5A059',
+                            light: '#E5C985',
+                            dark: '#9E7E38',
+                        },
+                        navy: {
+                            DEFAULT: '#0F172A',
+                            light: '#1E293B',
+                            dark: '#020617'
+                        },
+                        skin: {
+                            light: '#FDFCF8',
+                            DEFAULT: '#F5F5DC'
+                        }
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('images/aura-hero-holistic.png')",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-skin-light text-navy-DEFAULT font-sans antialiased">
+
+    <!-- Back to Portfolio Badge -->
+    <a href="../../../portfolio.html"
+        class="fixed bottom-4 right-4 z-[100] bg-navy-dark text-white px-5 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-gold transition-colors shadow-2xl flex items-center gap-2 border border-white/10">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Portfolio
+    </a>
+
+    <!-- Top Bar -->
+    <div class="bg-navy-dark text-white/80 text-xs py-3 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="hidden md:flex gap-6">
+                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3 h-3 text-gold"></i> Boring
+                    Road, Patna</span>
+                <span class="flex items-center gap-2"><i data-lucide="mail" class="w-3 h-3 text-gold"></i>
+                    info@luminaclinic.com</span>
+            </div>
+            <div class="flex gap-4 ml-auto">
+                <a href="#" class="hover:text-gold transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                <a href="#" class="hover:text-gold transition-colors"><i data-lucide="instagram"
+                        class="w-4 h-4"></i></a>
+                <a href="#" class="hover:text-gold transition-colors"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col">
+                <span class="font-serif text-3xl font-bold text-navy-dark tracking-wider">LUMINA</span>
+                <span class="text-[0.6rem] uppercase tracking-[0.3em] text-gold font-bold">Skin & Laser</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 font-bold text-xs uppercase tracking-widest text-navy-light">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <a href="about.html" class="hover:text-gold transition-colors">About</a>
+                <a href="services.html" class="hover:text-gold transition-colors">Services</a>
+                <a href="results.html" class="hover:text-gold transition-colors">Results</a>
+                <a href="contact.html"
+                    class="px-6 py-3 bg-gold text-white rounded-none hover:bg-navy-dark transition-colors">
+                    Book Appointment
+                </a>
+            </div>
+
+            <button class="md:hidden text-navy-dark">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Overlapping Cards -->
+    <section class="relative">
+        <!-- Hero Background -->
+        <div class="relative h-[85vh] w-full overflow-hidden">
+            <div class="absolute inset-0 bg-hero-pattern bg-cover bg-center bg-no-repeat transform scale-105"></div>
+            <!-- Gradient Overlay (Warm Gold/Blue Tint) -->
+            <div class="absolute inset-0 bg-gradient-to-r from-navy-dark/80 via-navy-dark/40 to-transparent"></div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
+                <div class="max-w-2xl text-white pt-20">
+                    <span
+                        class="inline-block py-1 px-3 border border-gold/50 rounded-full text-gold text-xs font-bold uppercase tracking-widest mb-6 bg-black/30 backdrop-blur-sm">
+                        Welcome to Lumina
+                    </span>
+                    <h1 class="font-serif text-5xl md:text-7xl leading-tight mb-6 text-shadow">
+                        Modern Treatment <br /> With <span class="text-gold italic">Personal Care</span>
+                    </h1>
+                    <p class="text-lg text-white/90 mb-10 font-light max-w-lg leading-relaxed">
+                        Reclaim your confidence with our advanced hair restoration and skin rejuvenation therapies.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="services.html"
+                            class="px-8 py-4 bg-white text-navy-dark font-bold text-xs uppercase tracking-widest hover:bg-gold hover:text-white transition-colors">
+                            Explore Services
+                        </a>
+                        <a href="tel:+919876543210"
+                            class="flex items-center gap-3 px-8 py-4 border border-white text-white font-bold text-xs uppercase tracking-widest hover:bg-white hover:text-navy-dark transition-colors">
+                            <i data-lucide="phone" class="w-4 h-4"></i> +91 98765 43210
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlapping Features Cards (The "Dr. Jyoti" Signature Look) -->
+        <div class="relative z-20 -mt-24 pb-20">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Card 1: Appointment -->
+                <div
+                    class="bg-white rounded-t-2xl md:rounded-2xl p-8 shadow-xl border-t-4 border-gold group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="font-serif text-2xl text-navy-dark">Get Appointment</h3>
+                        <i data-lucide="calendar-plus"
+                            class="w-8 h-8 text-gold/50 group-hover:text-gold transition-colors"></i>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                        Start your journey to better skin and hair. Book a slot with our experts today.
+                    </p>
+                    <div class="flex items-center gap-3 text-navy-dark font-bold mb-6">
+                        <div class="w-10 h-10 rounded-full bg-skin-light flex items-center justify-center text-gold">
+                            <i data-lucide="phone-call" class="w-5 h-5"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-xs uppercase tracking-widest text-gray-400">Call Us</span>
+                            <span>+91 98765 43210</span>
+                        </div>
+                    </div>
+                    <a href="#"
+                        class="inline-flex items-center gap-2 text-gold text-xs font-bold uppercase tracking-widest hover:gap-4 transition-all">
+                        Request Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2: Location -->
+                <div
+                    class="bg-cyan-50/50 backdrop-blur-md rounded-2xl p-8 shadow-xl border-t-4 border-cyan-400 group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="font-serif text-2xl text-navy-dark">Visit Clinic</h3>
+                        <i data-lucide="map"
+                            class="w-8 h-8 text-cyan-600/50 group-hover:text-cyan-600 transition-colors"></i>
+                    </div>
+                    <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                        Your destination for trusted and effective skin solutions in the heart of the city.
+                    </p>
+                    <div class="mb-6">
+                        <h4 class="font-bold text-navy-dark text-sm mb-2">Meet Us In Clinic</h4>
+                        <p class="text-xs text-gray-500 leading-relaxed">
+                            1st Floor, Galaxy Tower,<br />
+                            Boring Road Crossing, Patna,<br />
+                            Bihar - 800001
+                        </p>
+                    </div>
+                    <a href="#"
+                        class="inline-flex items-center gap-2 text-cyan-700 text-xs font-bold uppercase tracking-widest hover:gap-4 transition-all">
+                        Get Directions <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3: Hours -->
+                <div
+                    class="bg-navy-dark text-white rounded-b-2xl md:rounded-2xl p-8 shadow-xl border-t-4 border-gray-600 group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="font-serif text-2xl">Opening Hours</h3>
+                        <i data-lucide="clock"
+                            class="w-8 h-8 text-white/30 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <ul class="space-y-4 text-sm text-white/70 mb-8">
+                        <li class="flex justify-between border-b border-white/10 pb-2">
+                            <span>Mon - Sat</span>
+                            <span class="text-white">10:00 AM - 08:00 PM</span>
+                        </li>
+                        <li class="flex justify-between border-b border-white/10 pb-2">
+                            <span>Sunday</span>
+                            <span class="text-gold">11:00 AM - 04:00 PM</span>
+                        </li>
+                    </ul>
+                    class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest
+                    hover:gap-4 transition-all">
+                    Book Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section (Gold/Warm) -->
+    <section class="py-20 bg-skin-light">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="absolute inset-0 bg-gold/10 rounded-full transform rotate-6 scale-90 blur-3xl"></div>
+                <!-- Using a placeholder for about image, ideally something warm -->
+                <img src="images/about.png"
+                    class="relative rounded-t-[10rem] rounded-b-2xl shadow-2xl border-b-8 border-gold w-full object-cover aspect-[4/5]"
+                    alt="Doctor">
+            </div>
+            <div>
+                <span class="text-gold font-bold text-xs uppercase tracking-widest mb-2 block">Why Choose Lumina</span>
+                <h2 class="font-serif text-4xl text-navy-dark mb-6 leading-tight">Advanced Care for <br /> <span
+                        class="text-gold italic">Lasting Beauty</span></h2>
+                <p class="text-gray-600 leading-loose mb-8">
+                    We combine medical expertise with artistic precision to deliver results that look natural and feel
+                    confident. Our clinic is equipped with FDA-approved lasers and the latest technology for hair and
+                    skin restoration.
+                </p>
+
+                <div class="grid grid-cols-2 gap-8 mb-8">
+                    <div class="flex gap-4">
+                        <div
+                            class="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-gold shrink-0">
+                            <i data-lucide="medal" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif text-lg text-navy-dark mb-1">Expert Doctors</h4>
+                            <p class="text-xs text-gray-500">10+ Years Exp.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div
+                            class="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center text-gold shrink-0">
+                            <i data-lucide="microscope" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-serif text-lg text-navy-dark mb-1">Latest Tech</h4>
+                            <p class="text-xs text-gray-500">US-FDA Approved</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="about.html"
+                    class="px-8 py-3 border border-navy-dark text-navy-dark font-bold text-xs uppercase tracking-widest hover:bg-navy-dark hover:text-white transition-colors inline-block">
+                    Read More About Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid (Rounded Clean Cards) -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <span class="text-gold font-bold text-xs uppercase tracking-widest mb-2 block">Our Expertise</span>
+            <h2 class="font-serif text-4xl text-navy-dark">Clinical & Aesthetic Services</h2>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Service 1 -->
+            <div
+                class="group bg-skin-light rounded-[2rem] p-6 hover:bg-navy-dark hover:text-white transition-all duration-300">
+                <div class="h-48 rounded-2xl overflow-hidden mb-6">
+                    <img src="images/service-hair.png"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <h3 class="font-serif text-xl mb-2">Hair Restoration</h3>
+                <p class="text-sm text-gray-500 group-hover:text-white/70 mb-4 leading-relaxed">PRP, GFC, and Transplant
+                    solutions for thinning hair.</p>
+                <a href="#"
+                    class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold">Read
+                    More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+            </div>
+
+            <!-- Service 2 -->
+            <div
+                class="group bg-skin-light rounded-[2rem] p-6 hover:bg-navy-dark hover:text-white transition-all duration-300">
+                <div class="h-48 rounded-2xl overflow-hidden mb-6">
+                    <img src="images/service-acne.png"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <h3 class="font-serif text-xl mb-2">Acne & Scars</h3>
+                <p class="text-sm text-gray-500 group-hover:text-white/70 mb-4 leading-relaxed">Chemical peels and
+                    lasers to clear active acne.</p>
+                <a href="#"
+                    class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold">Read
+                    More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+            </div>
+
+            <!-- Service 3 -->
+            <div
+                class="group bg-skin-light rounded-[2rem] p-6 hover:bg-navy-dark hover:text-white transition-all duration-300">
+                <div class="h-48 rounded-2xl overflow-hidden mb-6">
+                    <img src="images/service-laser.png"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <h3 class="font-serif text-xl mb-2">Laser Hair Removal</h3>
+                <p class="text-sm text-gray-500 group-hover:text-white/70 mb-4 leading-relaxed">Painless, permanent
+                    reduction for smooth skin.</p>
+                <a href="#"
+                    class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold">Read
+                    More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+            </div>
+
+            <!-- Service 4 -->
+            <div
+                class="group bg-skin-light rounded-[2rem] p-6 hover:bg-navy-dark hover:text-white transition-all duration-300">
+                <div class="h-48 rounded-2xl overflow-hidden mb-6">
+                    <img src="images/service-anti-aging.png"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <h3 class="font-serif text-xl mb-2">Anti-Aging</h3>
+                <p class="text-sm text-gray-500 group-hover:text-white/70 mb-4 leading-relaxed">Botox, Fillers, and HIFU
+                    for youthful visuals.</p>
+                <a href="#"
+                    class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gold">Read
+                    More <i data-lucide="arrow-right" class="w-3 h-3"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Reviews Section (New) -->
+    <section class="py-20 bg-skin-light border-y border-gold/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="flex justify-center gap-1 text-gold mb-4">
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                    <i data-lucide="star" class="w-6 h-6 fill-current"></i>
+                </div>
+                <h2 class="font-serif text-4xl text-navy-dark mb-4">Loved by Our Patients</h2>
+                <p class="text-gray-500">Rated 4.9/5.0 based on 500+ Google Reviews.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gold/10">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-12 h-12 rounded-full bg-navy-dark text-gold flex items-center justify-center font-serif text-xl font-bold">
+                            A</div>
+                        <div>
+                            <div class="font-bold text-navy-dark">Anjali Singh</div>
+                            <div class="text-xs text-gray-500">2 months ago</div>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                            class="h-6 ml-auto opacity-50">
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        "Dr. Jyoti is simply the best in Patna. Her diagnosis for my skin allergy was spot on. The
+                        clinic is so luxurious, it feels like a 5-star hotel!"
+                    </p>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gold/10">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-12 h-12 rounded-full bg-gold text-white flex items-center justify-center font-serif text-xl font-bold">
+                            R</div>
+                        <div>
+                            <div class="font-bold text-navy-dark">Rahul Kumar</div>
+                            <div class="text-xs text-gray-500">1 month ago</div>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                            class="h-6 ml-auto opacity-50">
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        "I went for a hair transplant consultation. The team was very professional and explained the GFC
+                        procedure clearly. Highly recommended."
+                    </p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gold/10">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div
+                            class="w-12 h-12 rounded-full bg-navy-dark text-gold flex items-center justify-center font-serif text-xl font-bold">
+                            S</div>
+                        <div>
+                            <div class="font-bold text-navy-dark">Sneha Gupta</div>
+                            <div class="text-xs text-gray-500">3 weeks ago</div>
+                        </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                            class="h-6 ml-auto opacity-50">
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        "The laser hair removal treatment was painless and effective. Best aesthetic clinic in Boring
+                        Road! The staff is very polite."
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-flex items-center gap-2 text-gold font-bold uppercase tracking-widest text-xs border-b border-gold pb-1 hover:text-navy-dark hover:border-navy-dark transition-colors">
+                    Read All Reviews <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Gallery Section (New) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-gold font-bold text-xs uppercase tracking-widest mb-2 block">Inside Lumina</span>
+                <h2 class="font-serif text-4xl text-navy-dark">Experience Luxury</h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-96">
+                <!-- Large Image -->
+                <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden group relative">
+                    <img src="images/aura-hero-holistic.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
+                </div>
+                <!-- Small Images -->
+                <div class="col-span-1 row-span-1 rounded-2xl overflow-hidden group relative">
+                    <img src="images/about.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-2xl overflow-hidden group relative">
+                    <img src="images/service-laser.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-2xl overflow-hidden group relative">
+                    <img src="images/service-acne.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+                <div class="col-span-1 row-span-1 rounded-2xl overflow-hidden group relative">
+                    <img src="images/service-anti-aging.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-dark text-white pt-20 pb-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-1">
+                <h4 class="font-serif text-2xl mb-6">LUMINA</h4>
+                <p class="text-white/50 text-sm leading-relaxed mb-6">
+                    Redefining clinical excellence with a touch of luxury. Your skin deserves the best.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold transition-colors"><i
+                            data-lucide="facebook" class="w-4 h-4"></i></a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold transition-colors"><i
+                            data-lucide="instagram" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="font-bold text-sm uppercase tracking-widest mb-6 text-gold">Quick Links</h5>
+                <ul class="space-y-3 text-sm text-white/60">
+                    <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="about.html" class="hover:text-white transition-colors">Our Doctors</a></li>
+                    <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-bold text-sm uppercase tracking-widest mb-6 text-gold">Treatments</h5>
+                <ul class="space-y-3 text-sm text-white/60">
+                    <li><a href="#" class="hover:text-white transition-colors">Laser Hair Removal</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Acne Scar Treatment</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Hair Transplant</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Hydrafacial</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-bold text-sm uppercase tracking-widest mb-6 text-gold">Contact</h5>
+                <ul class="space-y-4 text-sm text-white/60">
+                    <li class="flex gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-gold shrink-0"></i>
+                        <span>1st Floor, Galaxy Tower,<br />Boring Road, Patna-01</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-gold shrink-0"></i>
+                        <span>+91 98765 43210</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-gold shrink-0"></i>
+                        <span>info@luminaclinic.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 border-t border-white/10 pt-8 text-center text-xs text-white/30 uppercase tracking-widest">
+            © 2024 Lumina Skin Clinic. All Rights Reserved. Demo by CGP360.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

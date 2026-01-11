@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Results - Lumina Skin & Laser</title>
+    <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cinzel"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            DEFAULT: '#C5A059',
+                            light: '#E5C985',
+                            dark: '#9E7E38',
+                        },
+                        navy: {
+                            DEFAULT: '#0F172A',
+                            light: '#1E293B',
+                            dark: '#020617'
+                        },
+                        skin: {
+                            light: '#FDFCF8',
+                            DEFAULT: '#F5F5DC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-skin-light text-navy-DEFAULT font-sans antialiased">
+
+    <!-- Top Bar -->
+    <div class="bg-navy-dark text-white/80 text-xs py-3 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="hidden md:flex gap-6">
+                <span class="flex items-center gap-2"><i data-lucide="map-pin" class="w-3 h-3 text-gold"></i> Boring
+                    Road, Patna</span>
+                <span class="flex items-center gap-2"><i data-lucide="mail" class="w-3 h-3 text-gold"></i>
+                    info@luminaclinic.com</span>
+            </div>
+            <div class="flex gap-4 ml-auto">
+                <a href="#" class="hover:text-gold transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                <a href="#" class="hover:text-gold transition-colors"><i data-lucide="instagram"
+                        class="w-4 h-4"></i></a>
+                <a href="#" class="hover:text-gold transition-colors"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="flex flex-col">
+                <span class="font-serif text-3xl font-bold text-navy-dark tracking-wider">LUMINA</span>
+                <span class="text-[0.6rem] uppercase tracking-[0.3em] text-gold font-bold">Skin & Laser</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 font-bold text-xs uppercase tracking-widest text-navy-light">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <a href="about.html" class="hover:text-gold transition-colors">About</a>
+                <a href="services.html" class="hover:text-gold transition-colors">Services</a>
+                <a href="results.html" class="text-gold">Results</a>
+                <a href="contact.html"
+                    class="px-6 py-3 bg-gold text-white rounded-none hover:bg-navy-dark transition-colors">
+                    Book Appointment
+                </a>
+            </div>
+
+            <button class="md:hidden text-navy-dark">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-navy-dark py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('images/result-after.png')] bg-cover bg-center opacity-20"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
+            <span class="text-gold font-bold text-xs uppercase tracking-widest mb-4 block">Proven Outcomes</span>
+            <h1 class="font-serif text-5xl md:text-6xl mb-6">Real Transformations</h1>
+            <p class="text-white/70 max-w-2xl mx-auto font-light text-lg">
+                See the difference our expert care makes. Real patients, real results.
+            </p>
+        </div>
+    </header>
+
+    <!-- Results Gallery -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Case 1 -->
+                <div class="group">
+                    <div class="relative h-80 rounded-2xl overflow-hidden mb-6">
+                        <!-- After Image (Default) -->
+                        <img src="images/result-after.png"
+                            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300">
+                        <!-- Before Image (On Hover) -->
+                        <div
+                            class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="text-white font-bold uppercase tracking-widest border border-white px-4 py-2">View
+                                Before</span>
+                        </div>
+                        <img src="images/result-before.png"
+                            class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
+
+                        <div
+                            class="absolute bottom-4 left-4 bg-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider z-20">
+                            Acne Treatment</div>
+                    </div>
+                    <h3 class="font-serif text-2xl text-navy-dark mb-2">3 Months Post-Treatment</h3>
+                    <p class="text-gray-500 text-sm">Chemical Peels & Diet Modification</p>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="group">
+                    <div class="relative h-80 rounded-2xl overflow-hidden mb-6 bg-gray-100">
+                        <!-- Placeholder images if specific ones not available, reusing generic for demo -->
+                        <img src="images/result-after.png"
+                            class="absolute inset-0 w-full h-full object-cover filter brightness-110">
+                        <div
+                            class="absolute bottom-4 left-4 bg-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider z-20">
+                            Hair Restoration</div>
+                    </div>
+                    <h3 class="font-serif text-2xl text-navy-dark mb-2">6 Months Post-GFC</h3>
+                    <p class="text-gray-500 text-sm">Growth Factor Concentrate Therapy</p>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="group">
+                    <div class="relative h-80 rounded-2xl overflow-hidden mb-6 bg-gray-100">
+                        <!-- Placeholder images -->
+                        <img src="images/result-after.png"
+                            class="absolute inset-0 w-full h-full object-cover filter contrast-125">
+                        <div
+                            class="absolute bottom-4 left-4 bg-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider z-20">
+                            Laser Toning</div>
+                    </div>
+                    <h3 class="font-serif text-2xl text-navy-dark mb-2">Instant Glow</h3>
+                    <p class="text-gray-500 text-sm">Q-Switch Laser & Carbon Peel</p>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="group">
+                    <div class="relative h-80 rounded-2xl overflow-hidden mb-6 bg-gray-100">
+                        <!-- Placeholder images -->
+                        <img src="images/result-after.png"
+                            class="absolute inset-0 w-full h-full object-cover filter sepia">
+                        <div
+                            class="absolute bottom-4 left-4 bg-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider z-20">
+                            Anti-Aging</div>
+                    </div>
+                    <h3 class="font-serif text-2xl text-navy-dark mb-2">Natural Rejuvenation</h3>
+                    <p class="text-gray-500 text-sm">HIFU & Fillers</p>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-16 bg-skin-light p-12 rounded-2xl border border-gold/20">
+                <h3 class="font-serif text-3xl text-navy-dark mb-4">Start Your Transformation</h3>
+                <p class="text-gray-600 mb-8">Book a consultation with our experts to discuss your goals.</p>
+                <a href="contact.html"
+                    class="inline-block px-8 py-4 bg-navy-dark text-white text-xs font-bold uppercase tracking-widest hover:bg-gold transition-colors">
+                    Book Appointment
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-dark text-white pt-20 pb-10 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-1">
+                <h4 class="font-serif text-2xl mb-6">LUMINA</h4>
+                <p class="text-white/50 text-sm leading-relaxed mb-6">
+                    Redefining clinical excellence with a touch of luxury. Your skin deserves the best.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold transition-colors"><i
+                            data-lucide="facebook" class="w-4 h-4"></i></a>
+                    <a href="#"
+                        class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold transition-colors"><i
+                            data-lucide="instagram" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="font-bold text-sm uppercase tracking-widest mb-6 text-gold">Quick Links</h5>
+                <ul class="space-y-3 text-sm text-white/60">
+                    <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Our Doctors</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Services</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-bold text-sm uppercase tracking-widest mb-6 text-gold">Treatments</h5>
+                <ul class="space-y-3 text-sm text-white/60">
+                    <li><a href="#" class="hover:text-white transition-colors">Laser Hair Removal</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Acne Scar Treatment</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Hair Transplant</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Hydrafacial</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-bold text-sm uppercase tracking-widest mb-6 text-gold">Contact</h5>
+                <ul class="space-y-4 text-sm text-white/60">
+                    <li class="flex gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-gold shrink-0"></i>
+                        <span>1st Floor, Galaxy Tower,<br />Boring Road, Patna-01</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-gold shrink-0"></i>
+                        <span>+91 98765 43210</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-gold shrink-0"></i>
+                        <span>info@luminaclinic.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 border-t border-white/10 pt-8 text-center text-xs text-white/30 uppercase tracking-widest">
+            © 2024 Lumina Skin Clinic. All Rights Reserved. Demo by CGP360.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
