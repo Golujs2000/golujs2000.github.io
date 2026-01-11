@@ -105,21 +105,33 @@
                 </a>
             </div>
 
-            <button class="md:hidden text-navy-dark">
+            <button id="mobile-menu-btn" class="md:hidden text-navy-dark">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg">
+            <div class="flex flex-col p-6 gap-4 font-bold text-sm uppercase tracking-widest text-navy-light">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <a href="about.html" class="hover:text-gold transition-colors">About</a>
+                <a href="services.html" class="hover:text-gold transition-colors">Services</a>
+                <a href="results.html" class="hover:text-gold transition-colors">Results</a>
+                <a href="contact.html" class="text-gold hover:text-navy-dark transition-colors">Book Appointment</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section with Overlapping Cards -->
     <section class="relative">
         <!-- Hero Background -->
-        <div class="relative h-[85vh] w-full overflow-hidden">
+        <div class="relative min-h-[85vh] w-full overflow-hidden">
             <div class="absolute inset-0 bg-hero-pattern bg-cover bg-center bg-no-repeat transform scale-105"></div>
             <!-- Gradient Overlay (Warm Gold/Blue Tint) -->
             <div class="absolute inset-0 bg-gradient-to-r from-navy-dark/80 via-navy-dark/40 to-transparent"></div>
 
-            <div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
+            <div class="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center pb-48 pt-32">
                 <div class="max-w-2xl text-white pt-20">
                     <span
                         class="inline-block py-1 px-3 border border-gold/50 rounded-full text-gold text-xs font-bold uppercase tracking-widest mb-6 bg-black/30 backdrop-blur-sm">
@@ -468,6 +480,66 @@
         </div>
     </section>
 
+    <!-- Contact Form Section (New) -->
+    <section class="py-20 bg-skin-light" id="contact-home">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-gold font-bold text-xs uppercase tracking-widest mb-2 block">Get in Touch</span>
+                <h2 class="font-serif text-4xl text-navy-dark">Book Your Consultation</h2>
+            </div>
+
+            <form class="space-y-6 bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-gold/20"
+                action="https://formsubmit.co/info@luminaclinic.com" method="POST">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label
+                            class="block text-xs font-bold uppercase tracking-widest text-navy-light mb-2">Name</label>
+                        <input type="text" name="name" required
+                            class="w-full bg-skin-light border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-gold/50 outline-none transition-all placeholder-gray-400"
+                            placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label
+                            class="block text-xs font-bold uppercase tracking-widest text-navy-light mb-2">Phone</label>
+                        <input type="tel" name="phone" required
+                            class="w-full bg-skin-light border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-gold/50 outline-none transition-all placeholder-gray-400"
+                            placeholder="Your Phone Number">
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label
+                            class="block text-xs font-bold uppercase tracking-widest text-navy-light mb-2">Email</label>
+                        <input type="email" name="email" required
+                            class="w-full bg-skin-light border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-gold/50 outline-none transition-all placeholder-gray-400"
+                            placeholder="email@example.com">
+                    </div>
+                    <div>
+                        <label
+                            class="block text-xs font-bold uppercase tracking-widest text-navy-light mb-2">City/Area</label>
+                        <input type="text" name="place"
+                            class="w-full bg-skin-light border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-gold/50 outline-none transition-all placeholder-gray-400"
+                            placeholder="Where are you from?">
+                    </div>
+                </div>
+
+                <div>
+                    <label
+                        class="block text-xs font-bold uppercase tracking-widest text-navy-light mb-2">Message</label>
+                    <textarea name="message" rows="4"
+                        class="w-full bg-skin-light border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-gold/50 outline-none transition-all placeholder-gray-400"
+                        placeholder="Tell us about your concern..."></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-navy-dark text-white font-bold text-sm uppercase tracking-widest py-4 rounded-lg hover:bg-gold transition-colors shadow-lg shadow-gold/20 flex items-center justify-center gap-2">
+                    Send Message <i data-lucide="send" class="w-4 h-4"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-navy-dark text-white pt-20 pb-10 border-t border-white/10">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
@@ -532,6 +604,14 @@
 
     <script>
         lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
     </script>
 </body>
 

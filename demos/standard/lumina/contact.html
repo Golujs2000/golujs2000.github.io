@@ -134,9 +134,22 @@
                             class="w-full bg-skin-light border-0 p-4 font-sans text-sm focus:ring-1 focus:ring-gold outline-none"
                             required>
                     </div>
-                    <input type="email" name="email" placeholder="Email Address"
-                        class="w-full bg-skin-light border-0 p-4 font-sans text-sm focus:ring-1 focus:ring-gold outline-none"
-                        required>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label
+                                class="block text-xs font-bold uppercase tracking-widest text-navy-light mb-2">Email</label>
+                            <input type="email" name="email" required
+                                class="w-full bg-skin-light border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-gold/50 outline-none transition-all placeholder-gray-400"
+                                placeholder="email@example.com">
+                        </div>
+                        <div>
+                            <label
+                                class="block text-xs font-bold uppercase tracking-widest text-navy-light mb-2">City/Area</label>
+                            <input type="text" name="place"
+                                class="w-full bg-skin-light border-0 rounded-lg px-4 py-3 focus:ring-2 focus:ring-gold/50 outline-none transition-all placeholder-gray-400"
+                                placeholder="City/Area">
+                        </div>
+                    </div>
                     <textarea name="message" rows="4" placeholder="How can we help?"
                         class="w-full bg-skin-light border-0 p-4 font-sans text-sm focus:ring-1 focus:ring-gold outline-none"></textarea>
 
