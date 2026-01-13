@@ -85,6 +85,9 @@ We don't just give you a "website". We provide a complete **Clinic Growth System
 
 ### 💰 Investment Details
 **Total One-Time Cost:** ₹6,999 (Standard Package)
+**Payment Terms:**
+*   **30% Upfront (₹2,100):** To start the design and setup.
+*   **70% Remaining (₹4,899):** Only after the website is live and you are satisfied.
 *No hidden monthly maintenance fees.*
 
 ---

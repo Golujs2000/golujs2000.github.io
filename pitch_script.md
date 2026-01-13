@@ -48,10 +48,13 @@
 ## 🟣 Phase 4: The Offer (The "No-Brainer")
 *Use the price anchor. Price reveal.*
 
-**You:** "Aur Doctor, iski pricing humne bohot simple rakhi hai."
+**You:** "Aur Doctor, iski pricing humne bohot simple aur affordables rakhi hai."
 
-**You:** "Sirf **₹6,999 (One-Time)** mein hum aapko poora setup karke denge, with **1 Year Hosting & Maintenance FREE**. 
-**NOTE:** Isme pure saal chote-mote updates (Jaise photo badalna, text change karna) bilkul FREE included hai. Uske baad life-time wo website aapki hai."
+**You:** "Sirf **₹6,999 (One-Time)** mein hum aapko poora setup karke denge, with **1 Year Hosting & Maintenance FREE**."
+
+**You (The Payment Terms):** "Iska payment process bhi bohot easy hai. Aapko abhi sirf **30% booking amount (₹2,100)** pay karna hai kaam start karne ke liye. Baaki ka **70% (₹4,899)** aap tab denge jab hum website live kar denge aur aap designs se bilkul satisfy honge."
+
+**NOTE:** Isme pure saal chote-mote updates (Jaise photo badalna, text change karna) bilkul FREE included hai. Uske baad life-time wo website aapki hai.
 
 ---
 
@@ -84,8 +87,40 @@
 
 ---
 
-# 📲 WhatsApp Follow-up Message Template
-*(Send this immediately after the call)*
+# � Payment Request & Service Details (WhatsApp)
+*(Send this to finalize the deal after the call)*
+
+**Namaste Dr. [Name]** 🙏,
+
+Jaisa ki humne discuss kiya, hum aapke clinic ki **Standard Web Presence** setup kar rahe hain. 
+
+### 📦 Kya-Kya Milega (Deliverables):
+✅ **5-10 Page Professional Website** (Mobile-friendly)
+✅ **Online Appointment Form** (Directly on your WhatsApp)
+✅ **Google Map Optimization** (To rank you higher in your area)
+✅ **1 Year FREE Hosting & Maintenance**
+✅ **Minor Changes FREE** (पूरे साल कोई भी फोटो या प्राइस बदलना हो)
+
+
+### 💳 Payment & Timeline:
+- **Total Amount:** ₹6,999 (One-Time)
+- **Upfront Booking (30%):** ₹2,100 (Kaam shuru karne ke liye)
+- **Balanced Payment (70%):** ₹4,899 (Website live hone ke baad)
+- **Time for Delivery:** 3 Days
+
+Aap is amount ko niche diye gaye UPI/QR par pay kar sakte hain aur screenshot bhej dijiye. Uske baad humari team aapka kaam shuru kar degi.
+
+**UPI ID:** `[Your UPI ID]` 
+**(Click to Pay: [Link])**
+
+Regards,
+**[Your Name]**
+CGP360 - Your Clinic Growth Partner
+
+---
+
+# �📲 WhatsApp Follow-up Message Template (Initial Demo)
+*(Send this immediately after the first call)*
 
 **Subject:** As discussed - Website Demos for Dr. [Name]
 
