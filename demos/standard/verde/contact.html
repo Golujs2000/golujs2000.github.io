@@ -102,32 +102,33 @@
                 <h1 class="font-serif text-4xl lg:text-5xl text-verde-sageDark mb-2">Begin Your Journey</h1>
                 <p class="text-verde-muted mb-8">We'll get back to you within 24 hours.</p>
 
-                <form class="space-y-6 max-w-md">
+                <form class="space-y-6 max-w-md" action="https://formsubmit.co/contact.cgp360@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Submission from Verde Demo">
                     <div>
                         <label
                             class="block text-xs font-bold uppercase tracking-widest text-verde-sage mb-2">Name</label>
-                        <input type="text"
+                        <input type="text" name="name"
                             class="w-full bg-verde-leaf/20 border-b border-verde-sage/30 p-3 focus:outline-none focus:border-verde-sage focus:bg-verde-leaf/50 transition-colors rounded-t-lg"
                             placeholder="Jane Doe">
                     </div>
                     <div>
                         <label
                             class="block text-xs font-bold uppercase tracking-widest text-verde-sage mb-2">Phone</label>
-                        <input type="tel"
+                        <input type="tel" name="phone"
                             class="w-full bg-verde-leaf/20 border-b border-verde-sage/30 p-3 focus:outline-none focus:border-verde-sage focus:bg-verde-leaf/50 transition-colors rounded-t-lg"
                             placeholder="+91 98765 00000">
                     </div>
                     <div>
                         <label class="block text-xs font-bold uppercase tracking-widest text-verde-sage mb-2">City /
                             Area</label>
-                        <input type="text"
+                        <input type="text" name="city"
                             class="w-full bg-verde-leaf/20 border-b border-verde-sage/30 p-3 focus:outline-none focus:border-verde-sage focus:bg-verde-leaf/50 transition-colors rounded-t-lg"
                             placeholder="e.g. Jubilee Hills">
                     </div>
                     <div>
                         <label
                             class="block text-xs font-bold uppercase tracking-widest text-verde-sage mb-2">Interest</label>
-                        <select
+                        <select name="service"
                             class="w-full bg-verde-leaf/20 border-b border-verde-sage/30 p-3 focus:outline-none focus:border-verde-sage focus:bg-verde-leaf/50 transition-colors rounded-t-lg text-verde-text">
                             <option>General Consultation</option>
                             <option>Acne & Scars</option>
@@ -135,7 +136,7 @@
                             <option>Hair Treatment</option>
                         </select>
                     </div>
-                    <button
+                    <button type="submit"
                         class="w-full py-4 bg-verde-sageDark text-white rounded-full font-bold uppercase tracking-widest text-xs hover:bg-verde-sage transition-all shadow-xl shadow-verde-sage/20">
                         Request Appointment
                     </button>

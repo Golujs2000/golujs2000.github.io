@@ -455,23 +455,24 @@
                 </div>
 
                 <div class="flex-1 w-full relative z-10 bg-white p-8 rounded-3xl shadow-xl shadow-verde-sage/5">
-                    <form class="space-y-4">
+                    <form class="space-y-4" action="https://formsubmit.co/contact.cgp360@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Quick Request from Verde Homepage">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input type="text" placeholder="Name"
+                            <input type="text" name="name" placeholder="Name"
                                 class="w-full bg-verde-base border border-verde-sage/10 px-4 py-3 rounded-xl text-verde-text focus:outline-none focus:border-verde-sage">
-                            <input type="tel" placeholder="Phone"
+                            <input type="tel" name="phone" placeholder="Phone"
                                 class="w-full bg-verde-base border border-verde-sage/10 px-4 py-3 rounded-xl text-verde-text focus:outline-none focus:border-verde-sage">
                         </div>
-                        <input type="text" placeholder="City / Area"
+                        <input type="text" name="city" placeholder="City / Area"
                             class="w-full bg-verde-base border border-verde-sage/10 px-4 py-3 rounded-xl text-verde-text focus:outline-none focus:border-verde-sage">
-                        <select
+                        <select name="treatment"
                             class="w-full bg-verde-base border border-verde-sage/10 px-4 py-3 rounded-xl text-verde-muted focus:outline-none focus:border-verde-sage">
                             <option>Select Treatment</option>
                             <option>Acne Treatment</option>
                             <option>Hair Loss</option>
                             <option>Laser Treatment</option>
                         </select>
-                        <button
+                        <button type="submit"
                             class="w-full bg-verde-sageDark text-white py-4 rounded-xl font-bold uppercase tracking-widest hover:bg-verde-sage transition-all shadow-lg shadow-verde-sage/20">Submit
                             Request</button>
                     </form>

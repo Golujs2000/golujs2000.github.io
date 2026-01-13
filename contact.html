@@ -197,63 +197,63 @@
                             <h2 class="text-2xl font-bold text-brand-deepblue mb-6">Send us a message</h2>
                             <form class="space-y-6" action="https://formsubmit.co/contact.cgp360@gmail.com"
                                 method="POST">
-                                <div class="grid sm:grid-cols-2 gap-6">
-                                    <div class="space-y-2">
-                                        <label for="name" class="text-sm font-medium text-slate-700">Your Name</label>
-                                        <input type="text" id="name" placeholder="E.g. Dr. Rajesh" required
-                                            class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
-                                    </div>
-                                    <div class="space-y-2">
-                                        <label for="clinic" class="text-sm font-medium text-slate-700">Clinic
-                                            Name</label>
-                                        <input type="text" id="clinic" placeholder="E.g. Smile Dental Care" required
-                                            class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
-                                    </div>
-                                </div>
-
-                                <div class="grid sm:grid-cols-2 gap-6">
-                                    <div class="space-y-2">
-                                        <label for="phone" class="text-sm font-medium text-slate-700">Phone
-                                            Number</label>
-                                        <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" required
-                                            class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
-                                    </div>
-                                    <div class="space-y-2">
-                                        <label for="city" class="text-sm font-medium text-slate-700">City/Area</label>
-                                        <input type="text" id="city" placeholder="E.g. Indore" required
-                                            class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
-                                    </div>
-                                </div>
-
                                 <div class="space-y-2">
-                                    <label for="service" class="text-sm font-medium text-slate-700">Interested
-                                        In</label>
-                                    <select id="service"
-                                        class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all">
-                                        <option>Free Clinic Audit</option>
-                                        <option>Standard Package (₹6,999)</option>
-                                        <option>Premium Package (₹14,999)</option>
-                                        <option>Ads Management</option>
-                                        <option>Other Query</option>
-                                    </select>
+                                    <label for="name" class="text-sm font-medium text-slate-700">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="E.g. Dr. Rajesh" required
+                                        class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
                                 </div>
-
                                 <div class="space-y-2">
-                                    <label for="message" class="text-sm font-medium text-slate-700">Message
-                                        (Optional)</label>
-                                    <textarea id="message" rows="4" placeholder="How can we help you?"
-                                        class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400"></textarea>
+                                    <label for="clinic" class="text-sm font-medium text-slate-700">Clinic
+                                        Name</label>
+                                    <input type="text" id="clinic" name="clinic" placeholder="E.g. Smile Dental Care"
+                                        required
+                                        class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
                                 </div>
-
-                                <button type="submit"
-                                    class="w-full rounded-lg bg-brand-blue px-8 py-4 text-base font-bold text-white shadow-lg shadow-brand-blue/25 hover:bg-brand-blue/90 hover:-translate-y-0.5 transition-all">
-                                    Send Message
-                                </button>
-                                <p class="text-center text-xs text-slate-500">We usually reply within 2-4 hours.</p>
-                            </form>
                         </div>
+
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label for="phone" class="text-sm font-medium text-slate-700">Phone
+                                    Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required
+                                    class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
+                            </div>
+                            <div class="space-y-2">
+                                <label for="city" class="text-sm font-medium text-slate-700">City/Area</label>
+                                <input type="text" id="city" name="city" placeholder="E.g. Indore" required
+                                    class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="service" class="text-sm font-medium text-slate-700">Interested
+                                In</label>
+                            <select id="service" name="service"
+                                class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all">
+                                <option>Free Clinic Audit</option>
+                                <option>Standard Package (₹6,999)</option>
+                                <option>Premium Package (₹14,999)</option>
+                                <option>Ads Management</option>
+                                <option>Other Query</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label for="message" class="text-sm font-medium text-slate-700">Message
+                                (Optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can we help you?"
+                                class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full rounded-lg bg-brand-blue px-8 py-4 text-base font-bold text-white shadow-lg shadow-brand-blue/25 hover:bg-brand-blue/90 hover:-translate-y-0.5 transition-all">
+                            Send Message
+                        </button>
+                        <p class="text-center text-xs text-slate-500">We usually reply within 2-4 hours.</p>
+                        </form>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 

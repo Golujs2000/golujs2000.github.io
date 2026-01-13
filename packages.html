@@ -614,18 +614,18 @@
                         This form is front-end only. Connect it to Formspree / Google Forms / your backend later.
                     </p>
 
-                    <form class="mt-6 space-y-4"
-                        onsubmit="event.preventDefault(); alert('Thanks! Please WhatsApp or Email us to proceed.');">
+                    <form class="mt-6 space-y-4" action="https://formsubmit.co/contact.cgp360@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Quick Enquiry from Packages Page">
                         <div>
                             <label class="text-sm font-medium" for="name">Your Name</label>
-                            <input id="name" type="text" required
+                            <input id="name" name="name" type="text" required
                                 class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue text-slate-900"
                                 placeholder="e.g., Dr. Sharma / Clinic Manager" />
                         </div>
 
                         <div>
                             <label class="text-sm font-medium" for="clinic">Clinic Name</label>
-                            <input id="clinic" type="text" required
+                            <input id="clinic" name="clinic_name" type="text" required
                                 class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue text-slate-900"
                                 placeholder="e.g., ABC Dental Clinic" />
                         </div>
@@ -633,13 +633,13 @@
                         <div class="grid sm:grid-cols-2 gap-4">
                             <div>
                                 <label class="text-sm font-medium" for="city">City/Area</label>
-                                <input id="city" type="text" required
+                                <input id="city" name="city" type="text" required
                                     class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue text-slate-900"
                                     placeholder="e.g., Indore" />
                             </div>
                             <div>
                                 <label class="text-sm font-medium" for="phone">Phone</label>
-                                <input id="phone" type="tel" required
+                                <input id="phone" name="phone" type="tel" required
                                     class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue text-slate-900"
                                     placeholder="+91 XXXXX XXXXX" />
                             </div>
@@ -647,11 +647,11 @@
 
                         <div>
                             <label class="text-sm font-medium" for="package">Interested Package</label>
-                            <select id="package"
+                            <select id="package" name="package"
                                 class="mt-1 w-full rounded-md border border-slate-300 px-4 py-2.5 outline-none focus:ring-2 focus:ring-brand-blue text-slate-900">
-                                <option>Basic (₹4,999)</option>
-                                <option>Standard (₹6,999)</option>
-                                <option>Premium (₹9,999)</option>
+                                <option>Free Clinic Audit</option>
+                                <option>Standard Package (₹6,999)</option>
+                                <option>Premium Package (₹14,999)</option>
                                 <option>Ads Setup (Optional)</option>
                             </select>
                         </div>

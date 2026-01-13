@@ -514,17 +514,19 @@
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h2 class="font-serif text-3xl md:text-4xl mb-8">Quick Appointment for Healthy Skin</h2>
 
-            <form class="bg-white rounded-[2rem] p-8 md:p-10 shadow-2xl flex flex-col md:flex-row gap-4 items-center">
+            <form class="bg-white rounded-[2rem] p-8 md:p-10 shadow-2xl flex flex-col md:flex-row gap-4 items-center"
+                action="https://formsubmit.co/contact.cgp360@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Quick Appointment Request from Aura Homepage">
                 <div class="flex-1 w-full space-y-4">
-                    <input type="text" placeholder="Your Name"
+                    <input type="text" name="name" placeholder="Your Name"
                         class="w-full bg-lux-stone/20 border-0 px-6 py-4 rounded-full text-lux-charcoal placeholder:text-lux-muted text-sm focus:ring-1 focus:ring-lux-gold outline-none">
-                    <input type="tel" placeholder="Phone Number"
+                    <input type="tel" name="phone" placeholder="Phone Number"
                         class="w-full bg-lux-stone/20 border-0 px-6 py-4 rounded-full text-lux-charcoal placeholder:text-lux-muted text-sm focus:ring-1 focus:ring-lux-gold outline-none">
-                    <input type="text" placeholder="City / Area"
+                    <input type="text" name="city" placeholder="City / Area"
                         class="w-full bg-lux-stone/20 border-0 px-6 py-4 rounded-full text-lux-charcoal placeholder:text-lux-muted text-sm focus:ring-1 focus:ring-lux-gold outline-none">
                 </div>
                 <div class="flex-1 w-full space-y-4">
-                    <select
+                    <select name="treatment"
                         class="w-full bg-lux-stone/20 border-0 px-6 py-4 rounded-full text-lux-muted text-sm focus:ring-1 focus:ring-lux-gold outline-none appearance-none cursor-pointer">
                         <option>Select Treatment</option>
                         <option>Acne Treatment</option>
@@ -532,7 +534,7 @@
                         <option>Laser Treatment</option>
                         <option>Anti-Aging</option>
                     </select>
-                    <button
+                    <button type="submit"
                         class="w-full bg-lux-charcoal text-white py-4 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-lux-gold transition-colors shadow-lg">Submit
                         Request</button>
                 </div>

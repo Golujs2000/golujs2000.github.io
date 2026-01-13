@@ -46,22 +46,46 @@
 
 ---
 
-## 🚀 4. Growth Action Plan (The Fix)
+## 🚀 4. How to Improve: Growth Roadmap
 
-Here is exactly what we need to do to get you to the Top 3:
+We have identified **exact gaps** in your digital presence. Here is the step-by-step roadmap to fix them and dominate your local area:
 
-| Priority | Action Item | Expected Result |
-| :--- | :--- | :--- |
-| **High** | **Launch Professional Website** | Establish ownership, show services, and build trust. |
-| **High** | **Optimize Google My Business** | Fix categories, add photos, and link to new website to boost rank. |
-| **Medium** | **Review QR Code System** | Get more 5-star reviews from happy patients automatically. |
-| **Low** | **Social Media Basics** | Simple presence on Instagram/Facebook. |
+| Priority | Strategy | Action Item | Impact |
+| :--- | :--- | :--- | :--- |
+| **High** | **Foundation** | **Launch Professional Website** | Creates a permanent 24/7 digital reception to showcase cases & trust. |
+| **High** | **Visibility** | **Optimize Google Profile** | Fixing categories & services sends signals to Google to rank you higher. |
+| **Medium** | **Trust** | **Automated Review System** | A QR system prompts happy patients to leave 5-star reviews instantly. |
+| **Low** | **Awareness** | **Social Media Consistency** | Weekly posts to keep existing patients engaged. |
 
 ---
 
-### 💰 Estimated Investment
+## 📦 5. What We Provide (Standard Package)
+
+We don't just give you a "website". We provide a complete **Clinic Growth System** designed to bring new patients.
+
+### ✅ 1. Premium Medical Website (5-7 Pages)
+*   **Mobile-First Design:** Looks perfect on every phone.
+*   **Fast Loading:** Opens in under 2 seconds (Google loves this).
+*   **Google Analytics:** We connect it so you can see exactly how many patients visit your site.
+*   **Dedicated Pages:** Home, About Dr, Treatments, Gallery (Before/After), Contact.
+*   **"Book Appointment" Integration:** One-click WhatsApp or Call buttons.
+
+### ✅ 2. Google Business Profile Optimization
+*   **Rank Higher:** We optimize your profile description, categories, and services.
+*   **Photo Uploads:** We select and upload high-converting clinic photos.
+*   **Review Strategy:** We provide you with a printed QR code stand for your desk.
+
+### ✅ 3. Technical & Support (Hassle-Free)
+*   **1 Year Hosting Included:** Safe, secure, and fast server.
+*   **Domain Name:** You purchase it (so you are the owner), but we help you with the process.
+*   **SSL Security:** The "Green Lock" that builds trust.
+*   **Unlimited Minor Updates:** Change photos, videos, prices, or text anytime for free.
+
+---
+
+### 💰 Investment Details
 **Total One-Time Cost:** ₹6,999 (Standard Package)
-*Includes: 5-Page Website + Google Map Setup + 1 Year Free Support*
+*No hidden monthly maintenance fees.*
 
 ---
 

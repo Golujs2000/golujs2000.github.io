@@ -511,18 +511,19 @@
                 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-lux-gold via-lux-rose to-lux-gold">
                 </div>
                 <h4 class="font-serif text-2xl mb-6">Request Consultation</h4>
-                <form class="space-y-4">
+                <form class="space-y-4" action="https://formsubmit.co/contact.cgp360@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Quick Request from Luminous Homepage">
                     <div class="grid grid-cols-2 gap-4">
-                        <input type="text" placeholder="First Name"
+                        <input type="text" name="first_name" placeholder="First Name"
                             class="w-full bg-white border-0 px-4 py-3 text-sm focus:ring-1 focus:ring-lux-gold outline-none placeholder:text-lux-muted/50" />
-                        <input type="text" placeholder="Last Name"
+                        <input type="text" name="last_name" placeholder="Last Name"
                             class="w-full bg-white border-0 px-4 py-3 text-sm focus:ring-1 focus:ring-lux-gold outline-none placeholder:text-lux-muted/50" />
                     </div>
-                    <input type="tel" placeholder="Phone Number"
+                    <input type="tel" name="phone" placeholder="Phone Number"
                         class="w-full bg-white border-0 px-4 py-3 text-sm focus:ring-1 focus:ring-lux-gold outline-none placeholder:text-lux-muted/50" />
-                    <input type="text" placeholder="City / Area"
+                    <input type="text" name="city" placeholder="City / Area"
                         class="w-full bg-white border-0 px-4 py-3 text-sm focus:ring-1 focus:ring-lux-gold outline-none placeholder:text-lux-muted/50" />
-                    <select
+                    <select name="treatment"
                         class="w-full bg-white border-0 px-4 py-3 text-sm focus:ring-1 focus:ring-lux-gold outline-none text-lux-muted">
                         <option>Select Treatment</option>
                         <option>Acne Treatment</option>
@@ -530,7 +531,7 @@
                         <option>Anti-Aging</option>
                         <option>Other</option>
                     </select>
-                    <button
+                    <button type="submit"
                         class="w-full bg-lux-charcoal text-white py-4 uppercase tracking-widest text-xs font-bold hover:bg-lux-gold transition-colors duration-300">
                         Confirm Request
                     </button>
