@@ -146,8 +146,40 @@ CGP360 Design Team
 
 ---
 
-# 🧠 Strategy Breakdown (Why this works)
+# 🕒 Phase 6: Next-Day Follow-up (Converting the Demo)
+*Goal: Get feedback and move to 30% Booking.*
 
+### 1. WhatsApp Message (Send around 11:00 AM)
+"Namaste Doctor [Name] 🙏,
+
+Umeed hai mene kal jo **Demos** bheje tha wo check kar liye honge.
+
+Aapko unme se kaunsa design (Theme) zyada professional laga? 
+
+Let me know, phir hum setup shuru karte hain.
+Regards, **[Your Name]**"
+
+---
+
+### 2. Follow-up Call (If no reply on WhatsApp by 4:00 PM)
+
+**You:** "Hello Doctor, **[Your Name]** baat kar raha hoon CGP360 se. Kaise hain aap?"
+*(Wait for response)*
+
+**You:** "Doctor, maine kal aapko kuch clinic demos bheje the. Kya aapko 2 minute mile unhe dekhne ke liye?"
+
+**If they say NO (Busy):**
+"Koi baat nahi sir, main samajh sakta hoon. Aaj shaam ko ya kal morning mein ek baar zaroor dekhiyega. Wo designs khaas kar aapke jaise premium clinics ke liye hain. Main kal phir call karunga aapko feedback lene ke liye."
+
+**If they say YES (Seen it):**
+"Great! Sir, kaisa laga aapko? Kya aapko lagta hai ki aisi website hone se patients ka trust aur badhega?"
+*(Let them talk)*
+
+**You:** "Perfect. Toh Doctor, kya hum aapke clinic ke details ke sath setup shuru karein? Process bohot simple hai, aap bas ₹2,100 ka **booking amount** pay karke setup start kar sakte hain, aur baaki payment website live hone ke baad."
+
+---
+
+# 🛡️ Objection Handling (Cheat Sheet)
 ### 1. The "Pattern Interrupt" (Opening)
 Calling me "Sir" and asking "Loan chahiye?" makes me hang up.
 But saying **"Maine Google Map par aapka clinic dekha"** creates curiosity.
