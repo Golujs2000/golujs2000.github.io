@@ -347,6 +347,114 @@
             </div>
         </section>
 
+        <!-- Revenue Leakage Calculator -->
+        <section id="calculator" class="py-24 bg-white border-y border-slate-200 overflow-hidden">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <div
+                            class="inline-flex items-center gap-2 rounded-full bg-red-50 border border-red-100 px-3 py-1 text-sm text-red-600 font-medium mb-6">
+                            <i data-lucide="alert-triangle" class="w-4 h-4"></i>
+                            The Invisibility Cost
+                        </div>
+                        <h2 class="text-4xl font-bold text-brand-deepblue tracking-tight leading-tight mb-6">
+                            How much revenue is your clinic <span
+                                class="text-red-600 underline decoration-red-200">leaking</span> every month?
+                        </h2>
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                            70% of local patients only call the Top 3 clinics on Google Maps. If you're not there,
+                            you're
+                            invisible. Use this tool to calculate your potential loss.
+                        </p>
+
+                        <div class="space-y-8 max-w-lg">
+                            <!-- Specialty Selection -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-900 mb-3">Clinic Specialty</label>
+                                <select id="calc-specialty"
+                                    class="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-brand-blue">
+                                    <option value="2000">Dental Practice</option>
+                                    <option value="3000">Derma / Skin Clinic</option>
+                                    <option value="4000">Orthopedic Surgeon</option>
+                                    <option value="2500">Eye / Lasik Clinic</option>
+                                    <option value="1500">Pediatric Clinic</option>
+                                    <option value="1000">Physiotherapy</option>
+                                    <option value="800">General Physician</option>
+                                </select>
+                            </div>
+
+                            <!-- Patient Value Slider -->
+                            <div>
+                                <div class="flex justify-between items-center mb-3">
+                                    <label class="text-sm font-semibold text-slate-900">Avg. New Patient Value
+                                        (₹)</label>
+                                    <span id="label-patient-value"
+                                        class="text-brand-blue font-bold text-lg">₹2,000</span>
+                                </div>
+                                <input type="range" id="input-patient-value" min="500" max="25000" step="500"
+                                    value="2000"
+                                    class="w-full h-2 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-brand-blue">
+                            </div>
+
+                            <!-- Search Volume Slider -->
+                            <div>
+                                <div class="flex justify-between items-center mb-3">
+                                    <label class="text-sm font-semibold text-slate-900">Monthly Searches in Your
+                                        Area</label>
+                                    <span id="label-searches" class="text-brand-blue font-bold text-lg">1,000</span>
+                                </div>
+                                <input type="range" id="input-searches" min="100" max="10000" step="100" value="1000"
+                                    class="w-full h-2 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-brand-blue">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Result Card -->
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-brand-blue/5 blur-3xl rounded-full translate-x-10"></div>
+                        <div
+                            class="relative bg-brand-deepblue rounded-2xl p-8 sm:p-12 text-white shadow-2xl overflow-hidden border border-white/10">
+                            <div
+                                class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 bg-red-600/20 rounded-full blur-3xl">
+                            </div>
+
+                            <h3 class="text-xl font-bold mb-8 flex items-center gap-2">
+                                <i data-lucide="calculator" class="w-5 h-5 text-red-400"></i>
+                                Your Potential Leakage
+                            </h3>
+
+                            <div class="space-y-8">
+                                <div>
+                                    <div class="text-white/60 text-sm font-medium uppercase tracking-wider mb-1">Monthly
+                                        Revenue Loss</div>
+                                    <div class="text-4xl sm:text-5xl font-bold" id="monthly-loss">₹1,40,000</div>
+                                </div>
+
+                                <div class="pt-8 border-t border-white/10">
+                                    <div class="text-white/60 text-sm font-medium uppercase tracking-wider mb-1">Annual
+                                        Revenue Loss</div>
+                                    <div class="text-5xl sm:text-6xl font-bold text-red-400" id="annual-loss">
+                                        ₹16,80,000</div>
+                                </div>
+
+                                <div class="bg-white/5 rounded-xl p-5 border border-white/10">
+                                    <p class="text-sm text-white/80 leading-relaxed italic">
+                                        "This is the revenue you are handing over to your competitors every year by not
+                                        ranking in the Top 3."
+                                    </p>
+                                </div>
+
+                                <a href="./contact.html"
+                                    class="block w-full py-4 bg-brand-blue hover:bg-brand-blue/90 text-white text-center font-bold rounded-xl transition-all shadow-lg shadow-brand-blue/30 lg:scale-105">
+                                    Stop the Leakage — Get Free Audit
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Packages -->
         <section id="packages" class="py-32 bg-slate-50 border-y border-slate-200">
             <div class="mx-auto max-w-7xl px-4">
@@ -856,10 +964,53 @@
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Calculator Logic
+        (function () {
+            const specialtySelector = document.getElementById('calc-specialty');
+            const patientValueInput = document.getElementById('input-patient-value');
+            const searchesInput = document.getElementById('input-searches');
+
+            const labelPatientValue = document.getElementById('label-patient-value');
+            const labelSearches = document.getElementById('label-searches');
+            const monthlyLossDisplay = document.getElementById('monthly-loss');
+            const annualLossDisplay = document.getElementById('annual-loss');
+
+            function formatCurrency(num) {
+                return '₹' + num.toLocaleString('en-IN');
+            }
+
+            function calculate() {
+                const value = parseInt(patientValueInput.value);
+                const searches = parseInt(searchesInput.value);
+
+                // Logic: 10% CTR for Top 3, 70% invisibility rule
+                const lostPatients = Math.round(searches * 0.10 * 0.70);
+                const monthlyLoss = lostPatients * value;
+                const annualLoss = monthlyLoss * 12;
+
+                if (labelPatientValue) labelPatientValue.textContent = formatCurrency(value);
+                if (labelSearches) labelSearches.textContent = searches.toLocaleString();
+                if (monthlyLossDisplay) monthlyLossDisplay.textContent = formatCurrency(monthlyLoss);
+                if (annualLossDisplay) annualLossDisplay.textContent = formatCurrency(annualLoss);
+            }
+
+            if (specialtySelector && patientValueInput && searchesInput) {
+                specialtySelector.addEventListener('change', () => {
+                    patientValueInput.value = specialtySelector.value;
+                    calculate();
+                });
+
+                patientValueInput.addEventListener('input', calculate);
+                searchesInput.addEventListener('input', calculate);
+
+                calculate();
+            }
+        })();
+
         lucide.createIcons();
     </script>
     <script src="./assets/js/pricing.js"></script>
-    </script>
 </body>
 
 </html>

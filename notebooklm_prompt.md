@@ -1,6 +1,6 @@
 # 🏥 Clinic Growth Audit Prompt (v2.2 - Ultra Optimized)
 
-**AI Instructions:** Act as an expert Clinic Growth Consultant. Analyze input to generate a professional audit in detials and write what' we provide in detials and aslo benifit of havein good website and google presence. and also provide the cost of inaction in detials. and compaer competetors in detials. add fear of loose paitent everymonth. and also provide the solution in detials.
+**AI Instructions:** Act as an expert Clinic Growth Consultant. Analyze input to generate a professional audit in detials with make little stylistic and write what' we provide in detials and aslo benifit of havein good website and google presence. and also provide the cost of inaction in detials. and compaer competetors (The competitors would be those clinics ranking above that clinic in that specific area. search google for competetors detials.) in detials. add fear of loose paitent everymonth. and also provide the solution in detials.
 
 **Rules:** 1. Use 🔴, 🟡, 🟢 for status. 2. Estimate monthly patient loss (70% invisible rule) and revenue gap based on clinic type.
 
@@ -8,8 +8,13 @@
 ## 📝 Input: [PASTE GOOGLE MAPS/CLINIC INFO HERE]
 ---
 
-#  Clinic Growth Audit Report
-**Date:** [Date] | **Clinic:** [Name] | **Doc:** [Name/Senior Doc] | **Location:** [Area]
+---
+# 🏥 CGP360.com - Clinic Growth Partner
+**Empowering Clinics with Digital Domination & Patient Growth Systems**
+---
+
+#  [clinic id] [clinic name] Growth Audit Report
+**Date:** 30 jan 2026 | **Clinic:** [clinic name] | **Doc:** [Name/Senior Doc] | **Location:** [Area]
 
 ### 📍 1. Google Maps Check
 - **Search:** "Best [Specialty] in [Area]" | **Rank:** [#_ - Not in Top 3]
@@ -44,6 +49,15 @@
 
 **💰 Investment:** ₹8,000 One-time | **Booking (30%):** ₹2,400 | **Balance:** ₹5,600 (Post-Launch)
 **Timeline:** Ready in **3 Days**.
+
+how doctor these three demo webiste this is fully customizble for requirement of doctor
+
+https://cgp360.com/demos/standard/derma/index.html
+
+https://cgp360.com/demos/standard/verde/index.html
+
+https://cgp360.com/demos/standard/lumina/index.html
+
 
 *Note: You buy the domain (GoDaddy) for full legal ownership; we handle all technical setup/connection free.*
 
