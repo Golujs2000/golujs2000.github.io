@@ -50,9 +50,9 @@
 
 **You:** "Aur Doctor, iski pricing humne bohot simple aur affordables rakhi hai."
 
-**You:** "Sirf **₹6,999 (One-Time)** mein hum aapko poora setup karke denge, with **1 Year Hosting & Maintenance FREE**."
+**You:** "Sirf **₹8,000 (One-Time)** mein hum aapko poora setup karke denge, with **1 Year Hosting & Maintenance FREE**."
 
-**You (The Payment Terms):** "Iska payment process bhi bohot easy hai. Aapko abhi sirf **30% booking amount (₹2,100)** pay karna hai kaam start karne ke liye. Baaki ka **70% (₹4,899)** aap tab denge jab hum website live kar denge aur aap designs se bilkul satisfy honge."
+**You (The Payment Terms):** "Iska payment process bhi bohot easy hai. Aapko abhi sirf **30% booking amount (₹2,400)** pay karna hai kaam start karne ke liye. Baaki ka **70% (₹5,600)** aap tab denge jab hum website live kar denge aur aap designs se bilkul satisfy honge."
 
 **NOTE:** Isme pure saal chote-mote updates (Jaise photo badalna, text change karna) bilkul FREE included hai. Uske baad life-time wo website aapki hai.
 
@@ -77,7 +77,7 @@
 **Answer:** "Sir, Justdial ek directory hai jahan **aapke competitor** bhi list hote hain. Wahan patient compare karta hai. **Website aapki khud ki dukan hai**, wahan sirf AAP ho. Aur website ka link aap Justdial pe daloge toh wahan se lead conversion double ho jayega."
 
 ### 2. "Bohot mehenga hai (Too Expensive)."
-**Answer:** "Sir, ₹6,999 one-time hai. Agar is website se pure saal mein **sirf 2 naye patient** bhi aa gaye, toh aapka paisa wapas (ROI Recovered). Uske baad jo bhi patient aayega wo profit hi hai. Kya aapko nahi lagta 2 patient toh aaram se aa jayenge?"
+**Answer:** "Sir, ₹8,000 one-time hai. Agar is website se pure saal mein **sirf 2 naye patient** bhi aa gaye, toh aapka paisa wapas (ROI Recovered). Uske baad jo bhi patient aayega wo profit hi hai. Kya aapko nahi lagta 2 patient toh aaram se aa jayenge?"
 
 ### 3. "Abhi time nahi hai / Baad mein sochenge."
 **Answer:** "Bilkul sir. Main bas chahta hoon aap ek baar **Demo** dekh lijiye taaki aapko idea ho ki modernized clinic kaisa dikhta hai. Dekhne ka koi charge nahi hai. Main WhatsApp kar doon?"
@@ -103,9 +103,9 @@ Jaisa ki humne discuss kiya, hum aapke clinic ki **Standard Web Presence** setup
 
 
 ### 💳 Payment & Timeline:
-- **Total Amount:** ₹6,999 (One-Time)
-- **Upfront Booking (30%):** ₹2,100 (Kaam shuru karne ke liye)
-- **Balanced Payment (70%):** ₹4,899 (Website live hone ke baad)
+- **Total Amount:** ₹8,000 (One-Time)
+- **Upfront Booking (30%):** ₹2,400 (Kaam shuru karne ke liye)
+- **Balanced Payment (70%):** ₹5,600 (Website live hone ke baad)
 - **Time for Delivery:** 3 Days
 
 Aap is amount ko niche diye gaye UPI/QR par pay kar sakte hain aur screenshot bhej dijiye. Uske baad humari team aapka kaam shuru kar degi.
@@ -137,7 +137,7 @@ Jaisa maine bataya, hum aapke clinic ko **Premium & Trustworthy** dikhane mein h
 **Offer:**
 ✅ 5-Page Website
 ✅ SEO & WhatsApp Setup
-✅ **Cost:** ₹6,999 (One-Time Only)
+✅ **Cost:** ₹8,000 (One-Time Only)
 
 Aap free hokar check karein.
 Regards,
@@ -175,7 +175,7 @@ Regards, **[Your Name]**"
 "Great! Sir, kaisa laga aapko? Kya aapko lagta hai ki aisi website hone se patients ka trust aur badhega?"
 *(Let them talk)*
 
-**You:** "Perfect. Toh Doctor, kya hum aapke clinic ke details ke sath setup shuru karein? Process bohot simple hai, aap bas ₹2,100 ka **booking amount** pay karke setup start kar sakte hain, aur baaki payment website live hone ke baad."
+**You:** "Perfect. Toh Doctor, kya hum aapke clinic ke details ke sath setup shuru karein? Process bohot simple hai, aap bas ₹2,400 ka **booking amount** pay karke setup start kar sakte hain, aur baaki payment website live hone ke baad."
 
 ---
 

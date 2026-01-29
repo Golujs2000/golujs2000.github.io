@@ -45,7 +45,7 @@ Just wanted to share a quick update. We recently launched a website for another 
 
 Your clinic is one of the best in the locality, but without a strong digital presence, you are missing out on new patients.
 
-With just a **₹2,100 (30%)** booking amount, we can start your setup tomorrow.
+With just a **₹2,400 (30%)** booking amount, we can start your setup tomorrow.
 
 Shall we proceed?
 
@@ -56,7 +56,7 @@ Regards, **[Your Name]**"
 *(Wait for response)*
 **You:** "Sir, maine aapko ek screenshot bheja hai WhatsApp par. Humne abhi ek clinic ka setup complete kiya aur wo area mein **Top 3** mein rank kar rahe hain Google par."
 **You:** "Sir, aapka clinic itna purana aur reputed hai, par online presence na hone ki wajah se naye patients pados waale clinic ke paas chale jaate hain jinki website hai."
-**You:** "Kya hum aapke clinic ka setup bhi shuru karein? Sirf **30% (₹2,100)** se start kar sakte hain hum."
+**You:** "Kya hum aapke clinic ka setup bhi shuru karein? Sirf **30% (₹2,400)** se start kar sakte hain hum."
 
 ---
 
@@ -68,7 +68,7 @@ Regards, **[Your Name]**"
 
 I am just following up on your file. This month, we are only onboarding **12 Doctors** for specialized growth setups (including Free SEO & Maintenance), and only **2 slots** are remaining.
 
-I would love to have your clinic included in this special one-time offer (₹6,999).
+I would love to have your clinic included in this special one-time offer (₹8,000).
 
 If we confirm today, we can have your professional website ready within 3 days.
 
@@ -80,7 +80,7 @@ Regards, **[Your Name]**"
 **You:** "Namaste Doctor Sahab, **[Your Name]** baat kar raha hoon CGP360 se."
 **You:** "Sir, actually is month hum sirf **12 clinics** ka setup kar rahe hain (Free SEO aur Maintenance ke sath), aur mere paas sirf **2 slots** bache hain."
 **You:** "Maine socha ek baar aapse final confirm kar loon, kyunki aapke area se 2-3 enquiries aur aayi hui hain. Lekin main pehle aapko preference Dena chahta tha."
-**You:** "Kya hum aapka slot book karein? Sirf **₹2,100** lagega start karne ke liye."
+**You:** "Kya hum aapka slot book karein? Sirf **₹2,400** lagega start karne ke liye."
 
 ---
 

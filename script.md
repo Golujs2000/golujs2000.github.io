@@ -34,10 +34,10 @@ This document provides a comprehensive breakdown of the services included in the
 
 ## 💰 Investment & Payment Terms
 
-| Total One-Time Cost | ₹6,999 (No Hidden Charges) |
+| Total One-Time Cost | ₹8,000 (No Hidden Charges) |
 | :--- | :--- |
-| **Upfront Booking (30%)** | **₹2,100** (To initiate design & server setup) |
-| **Balance Payment (70%)** | **₹4,899** (Payable after website launch & satisfaction) |
+| **Upfront Booking (30%)** | **₹2,400** (To initiate design & server setup) |
+| **Balance Payment (70%)** | **₹5,600** (Payable after website launch & satisfaction) |
 
 *Note: Domain name (approx. ₹800-1000/year) is to be purchased by the clinic owner for full ownership. We connect it for FREE.*
 
@@ -55,7 +55,7 @@ To start your clinic's digital transformation, please provide:
 1.  Clinic Name & Location.
 2.  Doctor's Profile (Degree & Experience).
 3.  Treatment List & Prices.
-4.  **Booking Amount Receipt (₹2,100).**
+4.  **Booking Amount Receipt (₹2,400).**
 
 **UPI ID for Payment:** `[Your UPI ID Here]`
 

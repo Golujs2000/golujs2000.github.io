@@ -35,14 +35,14 @@
 
 ---
 
-## 📦 5. What We Provide (Standard Growth Package - ₹6,999)
+## 📦 5. What We Provide (Standard Growth Package - ₹8,000)
 - **Setup:** 5-10 Page Website (Customized) + Booking Form + WhatsApp Chat.
 - **Domination:** Advanced Google SEO + Maps/GBP Setup + Analytics.
 - **Trust:** QR Code for Google Reviews (Reception Stand) + Social Media Integrations.
 - **Assets:** Photo/Video Gallery + Professional Cases.
 - **Support:** 1-Yr Free Hosting + SSL + Unlimited Minor Changes (Photos/Prices).
 
-**💰 Investment:** ₹6,999 One-time | **Booking (30%):** ₹2,100 | **Balance:** ₹4,899 (Post-Launch)
+**💰 Investment:** ₹8,000 One-time | **Booking (30%):** ₹2,400 | **Balance:** ₹5,600 (Post-Launch)
 **Timeline:** Ready in **3 Days**.
 
 *Note: You buy the domain (GoDaddy) for full legal ownership; we handle all technical setup/connection free.*
