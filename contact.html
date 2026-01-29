@@ -60,6 +60,7 @@
             </a>
 
             <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+                <a class="hover:text-slate-900" href="index.html">Home</a>
                 <a class="hover:text-slate-900" href="./services.html">Services</a>
                 <a class="hover:text-slate-900" href="./packages.html">Packages</a>
                 <a class="hover:text-slate-900" href="./portfolio.html">Portfolio</a>
@@ -120,140 +121,198 @@
         </script>
     </header>
 
-    <main>
-        <!-- Top Hero with dark background -->
-        <section class="bg-brand-deepblue text-white pt-20 pb-32 lg:pb-48">
-            <div class="mx-auto max-w-7xl px-4 text-center">
+    <main class="overflow-hidden">
+        <!-- Premium Hero Section -->
+        <section class="relative bg-white pt-24 pb-48 border-b border-slate-100">
+            <!-- Background Decorative Elements -->
+            <div
+                class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-blue/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2">
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-emerald-400/5 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2">
+            </div>
+
+            <div class="relative z-10 mx-auto max-w-7xl px-4 text-center">
                 <div
-                    class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm text-brand-blue mb-6 backdrop-blur-sm">
-                    <i data-lucide="sparkles" class="w-4 h-4 text-brand-blue"></i>
-                    <span>Ready to grow your clinic?</span>
+                    class="inline-flex items-center gap-2 rounded-full bg-brand-blue/10 px-4 py-1.5 text-sm font-semibold text-brand-blue mb-8">
+                    <i data-lucide="phone-call" class="w-4 h-4"></i>
+                    Direct Consultation Support
                 </div>
-                <h1 class="text-4xl md:text-6xl font-bold tracking-tight">Let's Start Your <span
-                        class="text-brand-blue">Growth Journey</span></h1>
-                <p class="mt-6 text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">
-                    Have a question or want a free audit? We’re here to help. Reach out to us via phone, WhatsApp, or
-                    the form below.
+                <h1 class="text-5xl md:text-7xl font-extrabold text-brand-deepblue tracking-tight mb-8">
+                    Let's Build Your <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-cyan-500">Digital
+                        Clinic</span>
+                </h1>
+                <p class="mt-6 text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
+                    Have a question or want a zero-cost audit? Our clinic growth experts are ready to assist you.
+                    <span class="block mt-2 font-bold text-brand-deepblue">Trusted by 50+ Doctors nationwide.</span>
                 </p>
             </div>
         </section>
 
-        <!-- Overlapping Grid Section -->
-        <section class="relative bg-brand-offwhite px-4 pb-24">
-            <div class="mx-auto max-w-7xl -mt-20 lg:-mt-32">
-                <div class="grid lg:grid-cols-5 gap-8 lg:gap-12">
+        <!-- Redesigned Contact Grid -->
+        <section class="relative bg-brand-offwhite px-4 pb-32">
+            <div class="mx-auto max-w-7xl -mt-24 relative z-20">
+                <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
 
-                    <!-- Contact Info (Left, 2 cols width) -->
-                    <div class="lg:col-span-2 space-y-6 mt-12">
-                        <!-- Card 1: Phone -->
+                    <!-- Side Info (4 cols) -->
+                    <div class="lg:col-span-4 space-y-6">
                         <div
-                            class="bg-white rounded-xl shadow-lg shadow-slate-200/50 p-6 border border-slate-100 flex items-start gap-5 hover:-translate-y-1 transition-transform">
+                            class="bg-white rounded-3xl p-8 shadow-xl shadow-brand-deepblue/5 border border-white hover:ring-2 hover:ring-brand-blue/20 transition-all group">
                             <div
-                                class="w-12 h-12 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
-                                <i data-lucide="phone" class="w-6 h-6"></i>
+                                class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-blue flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <i data-lucide="phone" class="w-7 h-7"></i>
                             </div>
-                            <div>
-                                <h3 class="font-bold text-lg text-brand-deepblue">Call Us</h3>
-                                <p class="text-slate-600 text-sm mt-1">Mon-Sat from 10am to 7pm</p>
-                                <a href="tel:+919234525942"
-                                    class="block mt-2 font-semibold text-brand-blue hover:underline">+91 92345 25942</a>
-                            </div>
+                            <h3 class="text-2xl font-bold text-brand-deepblue mb-2">Instant Call</h3>
+                            <p class="text-slate-500 mb-6 leading-relaxed">Speak directly with our clinic growth
+                                consultant for immediate help.</p>
+                            <a href="tel:+919234525942"
+                                class="inline-flex items-center gap-2 text-xl font-bold text-brand-blue hover:text-brand-deepblue transition-colors">
+                                +91 92345 25942
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                            </a>
                         </div>
 
-                        <!-- Card 2: WhatsApp -->
                         <div
-                            class="bg-white rounded-xl shadow-lg shadow-slate-200/50 p-6 border border-slate-100 flex items-start gap-5 hover:-translate-y-1 transition-transform">
+                            class="bg-white rounded-3xl p-8 shadow-xl shadow-brand-deepblue/5 border border-white hover:ring-2 hover:ring-emerald-400/20 transition-all group">
                             <div
-                                class="w-12 h-12 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
-                                <i data-lucide="message-circle" class="w-6 h-6"></i>
+                                class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <i data-lucide="message-circle" class="w-7 h-7"></i>
                             </div>
-                            <div>
-                                <h3 class="font-bold text-lg text-brand-deepblue">WhatsApp</h3>
-                                <p class="text-slate-600 text-sm mt-1">Fastest response time</p>
-                                <a href="https://wa.me/919234525942" target="_blank"
-                                    class="block mt-2 font-semibold text-brand-blue hover:underline">Chat with us</a>
-                            </div>
+                            <h3 class="text-2xl font-bold text-brand-deepblue mb-2">WhatsApp Us</h3>
+                            <p class="text-slate-500 mb-6 leading-relaxed">Fastest way to get your questions answered or
+                                book a demo.</p>
+                            <a href="https://wa.me/919234525942" target="_blank" rel="noopener"
+                                class="inline-flex items-center gap-2 text-xl font-bold text-brand-blue hover:text-brand-deepblue transition-colors">
+                                Chat on WhatsApp
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                            </a>
                         </div>
 
-                        <!-- Card 3: Email -->
                         <div
-                            class="bg-white rounded-xl shadow-lg shadow-slate-200/50 p-6 border border-slate-100 flex items-start gap-5 hover:-translate-y-1 transition-transform">
+                            class="bg-brand-deepblue rounded-3xl p-8 shadow-2xl shadow-brand-deepblue/20 text-white relative overflow-hidden group">
                             <div
-                                class="w-12 h-12 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center shrink-0">
-                                <i data-lucide="mail" class="w-6 h-6"></i>
+                                class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2">
                             </div>
-                            <div>
-                                <h3 class="font-bold text-lg text-brand-deepblue">Email</h3>
-                                <p class="text-slate-600 text-sm mt-1">For general enquiries</p>
-                                <a href="mailto:contact.cgp360@gmail.com"
-                                    class="block mt-2 font-semibold text-brand-blue hover:underline">contact.cgp360@gmail.com</a>
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-white/10 text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <i data-lucide="mail" class="w-7 h-7"></i>
                             </div>
+                            <h3 class="text-2xl font-bold mb-2">Email Support</h3>
+                            <p class="text-white/60 mb-6 leading-relaxed">For partnership queries or detailed clinic
+                                requirements.</p>
+                            <a href="mailto:contact.cgp360@gmail.com"
+                                class="text-xl font-bold hover:text-brand-blue transition-colors block border-b border-white/20 pb-2">
+                                contact.cgp360@gmail.com
+                            </a>
                         </div>
                     </div>
 
-                    <!-- Contact Form (Right, 3 cols width) -->
-                    <div id="contact-form" class="lg:col-span-3 mt-12">
-                        <div class="bg-white/80 backdrop-blur-xl rounded-2xl shadow-xl border border-white p-8 lg:p-10">
-                            <h2 class="text-2xl font-bold text-brand-deepblue mb-6">Send us a message</h2>
-                            <form class="space-y-6" action="https://formsubmit.co/contact.cgp360@gmail.com"
-                                method="POST">
-                                <div class="space-y-2">
-                                    <label for="name" class="text-sm font-medium text-slate-700">Your Name</label>
-                                    <input type="text" id="name" name="name" placeholder="E.g. Dr. Rajesh" required
-                                        class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
-                                </div>
-                                <div class="space-y-2">
-                                    <label for="clinic" class="text-sm font-medium text-slate-700">Clinic
-                                        Name</label>
-                                    <input type="text" id="clinic" name="clinic" placeholder="E.g. Smile Dental Care"
-                                        required
-                                        class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
-                                </div>
-                        </div>
-
-                        <div class="grid sm:grid-cols-2 gap-6">
-                            <div class="space-y-2">
-                                <label for="phone" class="text-sm font-medium text-slate-700">Phone
-                                    Number</label>
-                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required
-                                    class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
+                    <!-- Main Form (8 cols) -->
+                    <div class="lg:col-span-8">
+                        <div
+                            class="bg-white/70 backdrop-blur-2xl rounded-[2.5rem] p-10 md:p-14 shadow-2xl border border-white/50 relative">
+                            <div class="absolute top-8 right-10 flex gap-1 opacity-20">
+                                <div class="w-2 h-2 rounded-full bg-brand-blue"></div>
+                                <div class="w-2 h-2 rounded-full bg-brand-blue"></div>
+                                <div class="w-2 h-2 rounded-full bg-brand-blue"></div>
                             </div>
-                            <div class="space-y-2">
-                                <label for="city" class="text-sm font-medium text-slate-700">City/Area</label>
-                                <input type="text" id="city" name="city" placeholder="E.g. Indore" required
-                                    class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400">
-                            </div>
-                        </div>
 
-                        <div class="space-y-2">
-                            <label for="service" class="text-sm font-medium text-slate-700">Interested
-                                In</label>
-                            <select id="service" name="service"
-                                class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all">
-                                <option>Free Clinic Audit</option>
-                                <option>Standard Package (₹8,000)</option>
-                                <option>Premium Package (₹15,000)</option>
-                                <option>Ads Management</option>
-                                <option>Other Query</option>
-                            </select>
-                        </div>
+                            <h2 class="text-3xl font-extrabold text-brand-deepblue mb-2">Request Your Free Audit</h2>
+                            <p class="text-slate-500 mb-10 text-lg">Tell us about your clinic, and we'll send you a
+                                detailed growth report.</p>
 
-                        <div class="space-y-2">
-                            <label for="message" class="text-sm font-medium text-slate-700">Message
-                                (Optional)</label>
-                            <textarea id="message" name="message" rows="4" placeholder="How can we help you?"
-                                class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-700 focus:border-brand-blue focus:outline-none focus:ring-4 focus:ring-brand-blue/10 transition-all placeholder:text-slate-400"></textarea>
-                        </div>
+                            <form id="contact-form" action="https://formsubmit.co/contact.cgp360@gmail.com"
+                                method="POST" class="space-y-8">
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div class="space-y-3">
+                                        <label
+                                            class="text-sm font-bold text-brand-deepblue uppercase tracking-wider">Your
+                                            Full Name</label>
+                                        <div class="relative">
+                                            <i data-lucide="user"
+                                                class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+                                            <input type="text" name="name" required placeholder="Dr. Rajesh Sharma"
+                                                class="w-full bg-white border border-slate-200 rounded-2xl py-4 pl-12 pr-4 outline-none focus:ring-4 focus:ring-brand-blue/10 focus:border-brand-blue transition-all font-medium text-slate-800">
+                                        </div>
+                                    </div>
+                                    <div class="space-y-3">
+                                        <label
+                                            class="text-sm font-bold text-brand-deepblue uppercase tracking-wider">Clinic
+                                            Name</label>
+                                        <div class="relative">
+                                            <i data-lucide="hospital"
+                                                class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+                                            <input type="text" name="clinic" required placeholder="Healing Touch Clinic"
+                                                class="w-full bg-white border border-slate-200 rounded-2xl py-4 pl-12 pr-4 outline-none focus:ring-4 focus:ring-brand-blue/10 focus:border-brand-blue transition-all font-medium text-slate-800">
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <button type="submit"
-                            class="w-full rounded-lg bg-brand-blue px-8 py-4 text-base font-bold text-white shadow-lg shadow-brand-blue/25 hover:bg-brand-blue/90 hover:-translate-y-0.5 transition-all">
-                            Send Message
-                        </button>
-                        <p class="text-center text-xs text-slate-500">We usually reply within 2-4 hours.</p>
-                        </form>
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div class="space-y-3">
+                                        <label
+                                            class="text-sm font-bold text-brand-deepblue uppercase tracking-wider">Mobile
+                                            Number</label>
+                                        <div class="relative">
+                                            <i data-lucide="phone-call"
+                                                class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+                                            <input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX"
+                                                class="w-full bg-white border border-slate-200 rounded-2xl py-4 pl-12 pr-4 outline-none focus:ring-4 focus:ring-brand-blue/10 focus:border-brand-blue transition-all font-medium text-slate-800">
+                                        </div>
+                                    </div>
+                                    <div class="space-y-3">
+                                        <label
+                                            class="text-sm font-bold text-brand-deepblue uppercase tracking-wider">Location
+                                            / City</label>
+                                        <div class="relative">
+                                            <i data-lucide="map-pin"
+                                                class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+                                            <input type="text" name="city" required placeholder="E.g. Indore, MP"
+                                                class="w-full bg-white border border-slate-200 rounded-2xl py-4 pl-12 pr-4 outline-none focus:ring-4 focus:ring-brand-blue/10 focus:border-brand-blue transition-all font-medium text-slate-800">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-3">
+                                    <label
+                                        class="text-sm font-bold text-brand-deepblue uppercase tracking-wider">Interested
+                                        Service</label>
+                                    <div class="relative">
+                                        <i data-lucide="check-square"
+                                            class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none"></i>
+                                        <select name="service" required
+                                            class="w-full bg-white border border-slate-200 rounded-2xl py-4 pl-12 pr-4 outline-none focus:ring-4 focus:ring-brand-blue/10 focus:border-brand-blue transition-all font-medium text-slate-800 appearance-none">
+                                            <option value="Free Clinic Audit">Free Clinic Audit (Recommended)</option>
+                                            <option value="Standard Package">Standard Package (₹8,000)</option>
+                                            <option value="Premium Package">Premium Package (₹15,000)</option>
+                                            <option value="Ads & Promotion">Ads & Promotion Setup</option>
+                                        </select>
+                                        <i data-lucide="chevron-down"
+                                            class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none"></i>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-3">
+                                    <label
+                                        class="text-sm font-bold text-brand-deepblue uppercase tracking-wider">Message
+                                        (Optional)</label>
+                                    <textarea name="message" rows="4"
+                                        placeholder="Briefly describe your requirements..."
+                                        class="w-full bg-white border border-slate-200 rounded-2xl py-4 px-6 outline-none focus:ring-4 focus:ring-brand-blue/10 focus:border-brand-blue transition-all font-medium text-slate-800 resize-none"></textarea>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full bg-brand-blue hover:bg-brand-deepblue text-white font-bold text-xl py-5 rounded-2xl shadow-xl shadow-brand-blue/30 transition-all hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-3">
+                                    <i data-lucide="send" class="w-6 h-6"></i>
+                                    Submit Growth Request
+                                </button>
+                                <p class="text-center text-slate-400 text-sm italic">We respect your privacy. No spam,
+                                    only growth.</p>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
 
