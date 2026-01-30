@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Studies — Real Results from Real Clinics | CGP360</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <meta name="description"
+        content="See how CGP360 helped local clinics increase their Google Maps visibility, patient bookings, and online presence with our one-time packages." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3754ED',
+                            offwhite: '#EEF3F7',
+                            deepblue: '#131B62',
+                            black: '#080E29',
+                            white: '#F7FDFF',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-slate-900">
+    <!-- Top Bar -->
+    <div class="bg-brand-deepblue text-white">
+        <div
+            class="mx-auto max-w-7xl px-4 py-2 text-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <i data-lucide="check-circle" class="w-4 h-4 text-brand-blue"></i>
+                <span>One-time packages • No monthly fees</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a class="flex items-center gap-1.5 underline decoration-white/40 hover:decoration-white"
+                    href="tel:+919234525942">
+                    <i data-lucide="phone" class="w-3.5 h-3.5"></i> Call: +91 92345 25942
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-30 bg-white/60 backdrop-blur-xl border-b border-slate-200/50 shadow-sm">
+        <div class="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between gap-4">
+            <a href="index.html"><img src="./assets/logo.svg" alt="CGP360 Logo"
+                    class="h-10 w-auto object-contain" /></a>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
+                <a class="hover:text-slate-900" href="index.html">Home</a>
+                <a class="hover:text-slate-900" href="services.html">Services</a>
+                <a class="hover:text-slate-900" href="packages.html">Packages</a>
+                <a class="hover:text-slate-900" href="portfolio.html">Portfolio</a>
+                <a class="hover:text-slate-900 font-semibold text-brand-blue" href="case-studies.html">Case Studies</a>
+                <a class="hover:text-slate-900" href="why-us.html">Why Us?</a>
+                <a class="hover:text-slate-900" href="contact.html">Contact</a>
+            </nav>
+            <a href="contact.html"
+                class="hidden sm:inline-flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">Get
+                Free Audit</a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-brand-blue">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-xl border-b border-slate-200/50 shadow-lg md:hidden">
+            <div class="px-4 py-6 space-y-4">
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="index.html">Home</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="services.html">Services</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="packages.html">Packages</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="portfolio.html">Portfolio</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="case-studies.html">Case
+                    Studies</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue" href="why-us.html">Why Us?</a>
+                <a class="block text-sm font-medium text-slate-700 hover:text-brand-blue"
+                    href="contact.html">Contact</a>
+                <div class="pt-4 border-t border-slate-200/50 flex flex-col gap-3">
+                    <a href="contact.html"
+                        class="flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-3 text-sm font-medium text-white hover:bg-slate-800">
+                        Get Free Audit
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenu.classList.contains('hidden') ? 'menu' : 'x';
+                mobileMenuBtn.innerHTML = `<i data-lucide="${icon}" class="w-6 h-6"></i>`;
+                lucide.createIcons();
+            });
+        </script>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-b from-brand-offwhite to-white py-20">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="text-center max-w-3xl mx-auto">
+                    <p
+                        class="inline-flex items-center gap-2 rounded-full bg-white border border-brand-blue/20 px-3 py-1 text-sm text-brand-deepblue mb-6">
+                        <i data-lucide="award" class="w-4 h-4 text-brand-blue"></i>
+                        Real Clinics, Real Results
+                    </p>
+                    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight leading-tight">
+                        See How We've Helped <span class="text-brand-blue">Local Clinics Grow</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-700 leading-relaxed">
+                        From invisible to top-ranked on Google Maps. From zero online presence to a professional digital
+                        identity. Here are real transformation stories from clinics just like yours.
+                    </p>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                    <div
+                        class="bg-white/60 backdrop-blur-md border border-white/50 p-6 rounded-xl shadow-sm text-center">
+                        <div class="text-3xl font-bold text-brand-deepblue">5-10x</div>
+                        <div class="text-sm text-slate-600 mt-1">Increase in Map Views</div>
+                    </div>
+                    <div
+                        class="bg-white/60 backdrop-blur-md border border-white/50 p-6 rounded-xl shadow-sm text-center">
+                        <div class="text-3xl font-bold text-brand-deepblue">4.6+</div>
+                        <div class="text-sm text-slate-600 mt-1">Average Rating Achieved</div>
+                    </div>
+                    <div
+                        class="bg-white/60 backdrop-blur-md border border-white/50 p-6 rounded-xl shadow-sm text-center">
+                        <div class="text-3xl font-bold text-brand-deepblue">3 Days</div>
+                        <div class="text-sm text-slate-600 mt-1">Average Delivery Time</div>
+                    </div>
+                    <div
+                        class="bg-white/60 backdrop-blur-md border border-white/50 p-6 rounded-xl shadow-sm text-center">
+                        <div class="text-3xl font-bold text-brand-deepblue">100%</div>
+                        <div class="text-sm text-slate-600 mt-1">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study 1: Dr. Sharma's Dental Clinic -->
+        <section class="py-24 bg-white">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span
+                            class="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+                            Case Study #1
+                        </span>
+                        <h2 class="text-3xl font-bold text-brand-deepblue mb-4">
+                            Malhotra Dental Clinic
+                        </h2>
+                        <p class="text-slate-600 mb-6">
+                            <strong>Location:</strong> Indore, Madhya Pradesh<br>
+                            <strong>Specialty:</strong> Dental Surgery & Orthodontics<br>
+                            <strong>Package:</strong> Standard (₹8,000)
+                        </p>
+
+                        <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+                            <h3 class="font-bold text-red-900 mb-2">The Problem</h3>
+                            <ul class="text-sm text-red-800 space-y-1">
+                                <li>• Not visible on Google Maps (ranked #12 for "dentist in Indore")</li>
+                                <li>• Only 18 Google reviews (3.8★ rating)</li>
+                                <li>• No professional website - patients couldn't find service details</li>
+                                <li>• Losing 50-60 potential patients monthly to competitors</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
+                            <h3 class="font-bold text-green-900 mb-2">Our Solution</h3>
+                            <ul class="text-sm text-green-800 space-y-1">
+                                <li>✓ Built 7-page professional website with gallery</li>
+                                <li>✓ Optimized Google Business Profile with photos & services</li>
+                                <li>✓ Set up review QR code system at reception</li>
+                                <li>✓ Added online appointment booking form</li>
+                                <li>✓ Delivered in 3 days</li>
+                            </ul>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-brand-offwhite p-4 rounded-lg">
+                                <div class="text-xs text-slate-600 uppercase tracking-wider mb-1">Before</div>
+                                <div class="text-2xl font-bold text-slate-400">#12 Rank</div>
+                                <div class="text-xs text-slate-500">18 reviews (3.8★)</div>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <div class="text-xs text-green-700 uppercase tracking-wider mb-1">After 45 Days</div>
+                                <div class="text-2xl font-bold text-green-600">#2 Rank</div>
+                                <div class="text-xs text-green-600">47 reviews (4.7★)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div
+                            class="bg-gradient-to-br from-brand-blue to-brand-deepblue text-white p-8 rounded-xl shadow-2xl">
+                            <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                                <i data-lucide="trending-up" class="w-5 h-5"></i>
+                                Results After 60 Days
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">Google Map Views</span>
+                                    <span class="font-bold text-xl">↑ 780%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">Website Visits</span>
+                                    <span class="font-bold text-xl">1,450/mo</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">Appointment Bookings</span>
+                                    <span class="font-bold text-xl">↑ 320%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">Phone Calls</span>
+                                    <span class="font-bold text-xl">↑ 240%</span>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-6 border-t border-white/20">
+                                <div class="text-sm text-white/80">Estimated Monthly Revenue Increase</div>
+                                <div class="text-3xl font-bold mt-1">₹1,85,000</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-brand-offwhite p-6 rounded-xl border border-slate-200">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="quote" class="w-8 h-8 text-brand-blue shrink-0"></i>
+                                <div>
+                                    <p class="text-slate-700 italic mb-3">
+                                        "CGP360 transformed my practice. We now rank #2 on Google Maps and the website
+                                        brings 3-4 new patients every day. Best ₹8,000 I've ever spent!"
+                                    </p>
+                                    <div class="font-bold text-brand-deepblue">— Dr. Rajesh Malhotra</div>
+                                    <div class="text-sm text-slate-500">Malhotra Dental Clinic, Indore</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study 2: Dr. Priya's Physiotherapy -->
+        <section class="py-24 bg-brand-offwhite">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1 space-y-6">
+                        <div
+                            class="bg-gradient-to-br from-purple-600 to-purple-800 text-white p-8 rounded-xl shadow-2xl">
+                            <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                                <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+                                90-Day Performance
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">Search Visibility</span>
+                                    <span class="font-bold text-xl">↑ 560%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">Direction Requests</span>
+                                    <span class="font-bold text-xl">↑ 410%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">WhatsApp Inquiries</span>
+                                    <span class="font-bold text-xl">120/mo</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">New Patients</span>
+                                    <span class="font-bold text-xl">↑ 285%</span>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-6 border-t border-white/20">
+                                <div class="text-sm text-white/80">ROI (Return on Investment)</div>
+                                <div class="text-3xl font-bold mt-1">2,350%</div>
+                                <div class="text-xs text-white/70 mt-1">In first 3 months</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="quote" class="w-8 h-8 text-purple-600 shrink-0"></i>
+                                <div>
+                                    <p class="text-slate-700 italic mb-3">
+                                        "I was skeptical about the one-time payment model, but the results speak for
+                                        themselves. Free hosting for a year is truly free - no hidden charges!"
+                                    </p>
+                                    <div class="font-bold text-brand-deepblue">— Dr. Priya Deshmukh</div>
+                                    <div class="text-sm text-slate-500">Deshmukh Physiotherapy & Wellness, Bhopal</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-1 lg:order-2">
+                        <span
+                            class="inline-block bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+                            Case Study #2
+                        </span>
+                        <h2 class="text-3xl font-bold text-brand-deepblue mb-4">
+                            Deshmukh Physiotherapy & Wellness
+                        </h2>
+                        <p class="text-slate-600 mb-6">
+                            <strong>Location:</strong> Bhopal, Madhya Pradesh<br>
+                            <strong>Specialty:</strong> Sports Injury & Rehabilitation<br>
+                            <strong>Package:</strong> Standard (₹8,000)
+                        </p>
+
+                        <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+                            <h3 class="font-bold text-red-900 mb-2">The Challenge</h3>
+                            <ul class="text-sm text-red-800 space-y-1">
+                                <li>• Completely invisible online - no Google presence</li>
+                                <li>• Relied 100% on word-of-mouth referrals</li>
+                                <li>• Younger patients expected online booking</li>
+                                <li>• Competitors with websites were winning clients</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
+                            <h3 class="font-bold text-green-900 mb-2">What We Did</h3>
+                            <ul class="text-sm text-green-800 space-y-1">
+                                <li>✓ Created Google Business Profile from scratch</li>
+                                <li>✓ Built 8-page website with service catalog</li>
+                                <li>✓ Integrated WhatsApp chat button</li>
+                                <li>✓ Set up appointment booking system</li>
+                                <li>✓ Added photo gallery with treatment images</li>
+                            </ul>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-brand-offwhite p-4 rounded-lg">
+                                <div class="text-xs text-slate-600 uppercase tracking-wider mb-1">Before</div>
+                                <div class="text-2xl font-bold text-slate-400">Not Listed</div>
+                                <div class="text-xs text-slate-500">0 online presence</div>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <div class="text-xs text-purple-700 uppercase tracking-wider mb-1">After 90 Days</div>
+                                <div class="text-2xl font-bold text-purple-600">#3 Rank</div>
+                                <div class="text-xs text-purple-600">52 reviews (4.8★)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Study 3: Dr. Verma's Skin Clinic -->
+        <section class="py-24 bg-white">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span
+                            class="inline-block bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+                            Case Study #3
+                        </span>
+                        <h2 class="text-3xl font-bold text-brand-deepblue mb-4">
+                            Khanna Skin & Laser Clinic
+                        </h2>
+                        <p class="text-slate-600 mb-6">
+                            <strong>Location:</strong> Gwalior, Madhya Pradesh<br>
+                            <strong>Specialty:</strong> Dermatology & Cosmetic Treatments<br>
+                            <strong>Package:</strong> Premium (₹15,000)
+                        </p>
+
+                        <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+                            <h3 class="font-bold text-red-900 mb-2">The Situation</h3>
+                            <ul class="text-sm text-red-800 space-y-1">
+                                <li>• Had a website but it looked outdated (from 2018)</li>
+                                <li>• No mobile-friendly design (60% traffic lost)</li>
+                                <li>• Wanted to share skincare tips via blog</li>
+                                <li>• Manual appointment tracking was inefficient</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
+                            <h3 class="font-bold text-green-900 mb-2">Premium Package Benefits</h3>
+                            <ul class="text-sm text-green-800 space-y-1">
+                                <li>✓ Complete website redesign (modern + mobile-first)</li>
+                                <li>✓ Blog system with admin panel</li>
+                                <li>✓ Appointment dashboard to manage bookings</li>
+                                <li>✓ Advanced SEO optimization</li>
+                                <li>✓ Priority support for 1 year</li>
+                            </ul>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-brand-offwhite p-4 rounded-lg">
+                                <div class="text-xs text-slate-600 uppercase tracking-wider mb-1">Old Website</div>
+                                <div class="text-2xl font-bold text-slate-400">2% CTR</div>
+                                <div class="text-xs text-slate-500">High bounce rate</div>
+                            </div>
+                            <div class="bg-rose-50 p-4 rounded-lg">
+                                <div class="text-xs text-rose-700 uppercase tracking-wider mb-1">New Website</div>
+                                <div class="text-2xl font-bold text-rose-600">18% CTR</div>
+                                <div class="text-xs text-rose-600">65% time increase</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-br from-rose-500 to-rose-700 text-white p-8 rounded-xl shadow-2xl">
+                            <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+                                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                                Premium Package Impact
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">Blog Readership</span>
+                                    <span class="font-bold text-xl">2,800/mo</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">Organic Traffic</span>
+                                    <span class="font-bold text-xl">↑ 640%</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">Online Bookings</span>
+                                    <span class="font-bold text-xl">85/mo</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-white/90">Avg. Session Time</span>
+                                    <span class="font-bold text-xl">4m 32s</span>
+                                </div>
+                            </div>
+                            <div class="mt-6 pt-6 border-t border-white/20">
+                                <div class="text-sm text-white/80">Monthly Revenue Growth</div>
+                                <div class="text-3xl font-bold mt-1">₹3,20,000</div>
+                                <div class="text-xs text-white/70 mt-1">From online channels alone</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-brand-offwhite p-6 rounded-xl border border-slate-200">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="quote" class="w-8 h-8 text-rose-600 shrink-0"></i>
+                                <div>
+                                    <p class="text-slate-700 italic mb-3">
+                                        "The blog feature has been a game-changer. I publish skincare tips weekly and it
+                                        drives constant traffic. The admin panel makes everything so easy!"
+                                    </p>
+                                    <div class="font-bold text-brand-deepblue">— Dr. Vikram Khanna</div>
+                                    <div class="text-sm text-slate-500">Khanna Skin & Laser Clinic, Gwalior</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Success Factors -->
+        <section class="py-24 bg-brand-deepblue text-white">
+            <div class="mx-auto max-w-7xl px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4">What Makes These Success Stories Possible?</h2>
+                    <p class="text-white/80 max-w-2xl mx-auto">
+                        Every clinic is different, but these proven strategies work consistently across specialties.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20">
+                        <div class="w-12 h-12 rounded-lg bg-brand-blue grid place-items-center mb-4">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Google Maps Optimization</h3>
+                        <p class="text-white/80 text-sm">
+                            Proper categories, complete services, high-quality photos, and regular posts keep you
+                            visible in local searches.
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20">
+                        <div class="w-12 h-12 rounded-lg bg-brand-blue grid place-items-center mb-4">
+                            <i data-lucide="star" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Review Generation System</h3>
+                        <p class="text-white/80 text-sm">
+                            QR codes, WhatsApp templates, and staff scripts ensure a steady flow of authentic 5-star
+                            reviews.
+                        </p>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-lg rounded-xl p-6 border border-white/20">
+                        <div class="w-12 h-12 rounded-lg bg-brand-blue grid place-items-center mb-4">
+                            <i data-lucide="layout" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Professional Website</h3>
+                        <p class="text-white/80 text-sm">
+                            Fast, mobile-friendly sites with clear calls-to-action convert browsers into patients 24/7.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-brand-offwhite">
+            <div class="mx-auto max-w-4xl px-4 text-center">
+                <h2 class="text-3xl font-bold text-brand-deepblue mb-4">
+                    Your Clinic Could Be Next
+                </h2>
+                <p class="text-lg text-slate-600 mb-8">
+                    Get a free audit and see exactly how we can help you rank higher, get more reviews, and attract more
+                    patients.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html"
+                        class="inline-flex items-center justify-center rounded-md bg-brand-blue px-8 py-4 text-base font-semibold text-white hover:bg-brand-blue/90 transition-all shadow-lg shadow-brand-blue/20">
+                        Get Your Free Audit
+                    </a>
+                    <a href="packages.html"
+                        class="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-8 py-4 text-base font-semibold text-slate-900 hover:bg-slate-50 transition-all">
+                        View Packages
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+        <div class="mx-auto max-w-7xl px-4 py-10">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/logo.svg" alt="CGP360 Logo" class="h-8 w-auto object-contain" />
+                </div>
+                <div class="text-sm text-slate-600">
+                    © <span id="year"></span> CGP360. All rights reserved.
+                </div>
+            </div>
+            <div class="mt-6 text-xs text-slate-500">
+                Disclaimer: Results depend on location, competition, and clinic cooperation (photos, info, timely
+                responses).
+            </div>
+            <div class="flex gap-6 text-sm mt-4">
+                <a href="terms.html" class="text-slate-500 hover:text-brand-blue">Terms</a>
+                <a href="privacy.html" class="text-slate-500 hover:text-brand-blue">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
