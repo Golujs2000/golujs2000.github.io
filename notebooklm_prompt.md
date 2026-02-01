@@ -12,11 +12,10 @@ Rules: 1. Use 🔴, 🟡, 🟢 for status. 2. Estimate monthly patient loss (70%
 
 [clinic id] [clinic name] Growth Audit Report
 
-Date: 30 jan 2026 | Clinic: [clinic name] | Doc: [Name/Senior Doc] | Location: [Area]
+Date: 31 jan 2026 | Clinic: [clinic name] | Doc: [Name/Senior Doc] | Location: [Area]
 
 
 📍 1. Google Maps Check
-
 
 Search: "Best [Specialty] in [Area]" | Rank: [#_ - Not in Top 3]
 
