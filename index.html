@@ -27,6 +27,391 @@
             }
         }
     </script>
+    <style>
+        /* Modern CSS Variables for Premium Design */
+        :root {
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            --gradient-5: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            --gradient-mesh: radial-gradient(at 40% 20%, hsla(240, 100%, 70%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 0.3) 0px, transparent 50%),
+                radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 0.3) 0px, transparent 50%);
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animated Gradient Background */
+        @keyframes gradient-shift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .animated-gradient {
+            background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #4facfe);
+            background-size: 400% 400%;
+            animation: gradient-shift 15s ease infinite;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        /* Pulse Glow Effect */
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(55, 84, 237, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 40px rgba(55, 84, 237, 0.8), 0 0 60px rgba(55, 84, 237, 0.4);
+            }
+        }
+
+        .pulse-glow {
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+
+        /* Fade In Up Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        /* Stagger Animation Delays */
+        .stagger-1 {
+            animation-delay: 0.1s;
+            opacity: 0;
+        }
+
+        .stagger-2 {
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+
+        .stagger-3 {
+            animation-delay: 0.3s;
+            opacity: 0;
+        }
+
+        .stagger-4 {
+            animation-delay: 0.4s;
+            opacity: 0;
+        }
+
+        .stagger-5 {
+            animation-delay: 0.5s;
+            opacity: 0;
+        }
+
+        .stagger-6 {
+            animation-delay: 0.6s;
+            opacity: 0;
+        }
+
+        /* Gradient Border Animation */
+        @keyframes rotate-gradient {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .gradient-border {
+            position: relative;
+            background: white;
+            border-radius: 1rem;
+        }
+
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: 1rem;
+            padding: 2px;
+            background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #4facfe);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            z-index: -1;
+        }
+
+        /* Shimmer Effect */
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+
+        .shimmer {
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            background-size: 1000px 100%;
+            animation: shimmer 3s infinite;
+        }
+
+        /* Icon Bounce on Hover */
+        .icon-bounce:hover {
+            animation: bounce 0.6s ease;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Number Count Up Effect */
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .count-up {
+            animation: countUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        /* Glassmorphism Enhanced */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+        }
+
+        /* Hover Lift Effect */
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Particle Background */
+        .particle-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.3) 0%, transparent 70%);
+            animation: float-particle 20s infinite ease-in-out;
+        }
+
+        @keyframes float-particle {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.3;
+            }
+
+            33% {
+                transform: translate(100px, -100px) scale(1.2);
+                opacity: 0.6;
+            }
+
+            66% {
+                transform: translate(-100px, 100px) scale(0.8);
+                opacity: 0.4;
+            }
+        }
+
+        /* Button Gradient Hover */
+        .btn-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btn-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            transition: left 0.3s ease;
+        }
+
+        .btn-gradient:hover::before {
+            left: 0;
+        }
+
+        .btn-gradient span {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Scroll Reveal */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Card Glow on Hover */
+        .card-glow {
+            transition: all 0.3s ease;
+        }
+
+        .card-glow:hover {
+            box-shadow: 0 0 30px rgba(102, 126, 234, 0.4), 0 0 60px rgba(102, 126, 234, 0.2);
+        }
+
+        /* Rotating Border */
+        .rotating-border {
+            position: relative;
+        }
+
+        .rotating-border::after {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            background: conic-gradient(from 0deg, #667eea, #764ba2, #f093fb, #4facfe, #667eea);
+            border-radius: inherit;
+            z-index: -1;
+            animation: rotate-gradient 4s linear infinite;
+        }
+
+        /* Mesh Gradient Background */
+        .mesh-gradient {
+            background-color: #EEF3F7;
+            background-image: var(--gradient-mesh);
+        }
+
+        /* Stat Card Animation */
+        @keyframes stat-appear {
+            from {
+                opacity: 0;
+                transform: scale(0.8) rotateY(90deg);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1) rotateY(0deg);
+            }
+        }
+
+        .stat-card {
+            animation: stat-appear 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+            opacity: 0;
+        }
+
+        /* Navigation Link Styles */
+        .nav-link {
+            position: relative;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::before {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 
 <body class="bg-white text-slate-900">
@@ -61,23 +446,25 @@
                 <img src="./assets/logo.svg" alt="CGP360 Logo" class="h-10 w-auto object-contain" />
             </a>
 
-            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
-                <a class="hover:text-slate-900" href="./services.html">Services</a>
-                <a class="hover:text-slate-900" href="./packages.html">Packages</a>
-                <a class="hover:text-slate-900" href="./portfolio.html">Portfolio</a>
-                <a class="hover:text-slate-900" href="./case-studies.html">Case Studies</a>
-                <a class="hover:text-slate-900" href="./why-us.html">Why Us?</a>
-                <a class="hover:text-slate-900" href="./ads.html">Ads</a>
-                <a class="hover:text-slate-900" href="./contact.html">Contact</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm text-slate-700">
+                <a class="nav-link" href="./services.html">Services</a>
+                <a class="nav-link" href="./packages.html">Packages</a>
+                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                <a class="nav-link" href="./case-studies.html">Case Studies</a>
+                <a class="nav-link" href="./why-us.html">Why Us?</a>
+                <a class="nav-link" href="./ads.html">Ads</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
             </nav>
 
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-3">
                 <a href="./contact.html"
-                    class="hidden sm:inline-flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">
+                    class="hidden sm:inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-105 transition-all duration-300">
+                    <i data-lucide="sparkles" class="w-4 h-4 mr-1.5"></i>
                     Get Free Audit
                 </a>
                 <a href="https://wa.me/919234525942" target="_blank" rel="noopener"
-                    class="inline-flex items-center justify-center rounded-md border border-slate-300 px-4 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50">
+                    class="inline-flex items-center justify-center rounded-lg border-2 border-emerald-500 bg-emerald-50 px-4 py-2.5 text-sm font-semibold text-emerald-700 hover:bg-emerald-500 hover:text-white hover:scale-105 transition-all duration-300">
+                    <i data-lucide="message-circle" class="w-4 h-4 mr-1.5"></i>
                     WhatsApp
                 </a>
                 <!-- Mobile Menu Button -->
@@ -127,77 +514,91 @@
 
     <!-- Hero -->
     <main id="top">
-        <section class="bg-gradient-to-b from-brand-offwhite to-white">
-            <div class="mx-auto max-w-7xl px-4 py-20 sm:py-32 grid lg:grid-cols-2 gap-16 items-center">
-                <div>
+        <section class="mesh-gradient relative overflow-hidden">
+            <!-- Animated Particles Background -->
+            <div class="particle-bg">
+                <div class="particle" style="width: 200px; height: 200px; top: 10%; left: 10%; animation-delay: 0s;">
+                </div>
+                <div class="particle" style="width: 150px; height: 150px; top: 60%; left: 80%; animation-delay: 5s;">
+                </div>
+                <div class="particle" style="width: 100px; height: 100px; top: 80%; left: 20%; animation-delay: 10s;">
+                </div>
+            </div>
+
+            <div class="mx-auto max-w-7xl px-4 py-20 sm:py-32 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+                <div class="fade-in-up">
                     <p
-                        class="inline-flex items-center gap-2 rounded-full bg-white border border-brand-blue/20 px-3 py-1 text-sm text-brand-deepblue">
-                        <i data-lucide="sparkles" class="w-4 h-4 text-brand-blue"></i>
-                        Your Clinic Growth Partner
+                        class="inline-flex items-center gap-2 rounded-full glass-card px-4 py-2 text-sm text-brand-deepblue font-medium pulse-glow">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-brand-blue icon-bounce"></i>
+                        <span class="gradient-text font-bold">Your Clinic Growth Partner</span>
                     </p>
 
-                    <h1 class="mt-6 text-4xl sm:text-6xl font-bold tracking-tight leading-tight">
-                        Get More Patients from <span class="text-brand-blue">Google Maps</span> — plus a fast clinic
+                    <h1 class="mt-6 text-4xl sm:text-6xl font-bold tracking-tight leading-tight fade-in-up stagger-1">
+                        Get More Patients from <span class="gradient-text">Google Maps</span> — plus a fast clinic
                         website.
                     </h1>
 
-                    <p class="mt-6 text-lg text-slate-700 max-w-xl leading-relaxed">
+                    <p class="mt-6 text-lg text-slate-700 max-w-xl leading-relaxed fade-in-up stagger-2">
                         CGP360 provides 360 Digital Solutions to help local clinics build a professional online presence
-                        with Google Business
-                        optimization, a review system,
-                        and a modern website. <span class="font-semibold">One-time packages</span> with <span
-                            class="font-semibold">1 year free hosting & maintenance</span>.
+                        with Google Business optimization, a review system, and a modern website.
+                        <span
+                            class="font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">One-time
+                            packages</span> with
+                        <span
+                            class="font-semibold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">1
+                            year free hosting & maintenance</span>.
                     </p>
 
-                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 fade-in-up stagger-3">
                         <a href="./packages.html"
-                            class="inline-flex items-center justify-center rounded-md bg-brand-blue px-8 py-4 text-base font-semibold text-white hover:bg-brand-blue/90 transition-all shadow-lg shadow-brand-blue/20">
-                            View Packages
+                            class="btn-gradient inline-flex items-center justify-center rounded-lg px-8 py-4 text-base font-semibold text-white shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-105 transition-all duration-300">
+                            <span>View Packages</span>
                         </a>
                         <a href="./contact.html"
-                            class="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-8 py-4 text-base font-semibold text-slate-900 hover:bg-slate-50 transition-all">
+                            class="inline-flex items-center justify-center rounded-lg border-2 border-purple-500/30 bg-white/80 backdrop-blur-sm px-8 py-4 text-base font-semibold text-slate-900 hover:bg-white hover:border-purple-500 hover:scale-105 transition-all duration-300">
                             Get Free Clinic Audit
                         </a>
                     </div>
 
                     <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6">
-                        <div class="rounded-xl bg-white/60 backdrop-blur-md border border-white/50 p-5 shadow-sm">
-                            <div class="text-3xl font-bold text-brand-deepblue">5–10x</div>
-                            <div class="text-sm text-slate-600 font-medium">More map views*</div>
+                        <div class="glass-card rounded-2xl p-5 hover-lift card-glow stat-card stagger-1">
+                            <div class="text-3xl font-bold gradient-text count-up">5–10x</div>
+                            <div class="text-sm text-slate-600 font-medium mt-1">More map views*</div>
                         </div>
-                        <div class="rounded-xl bg-white/60 backdrop-blur-md border border-white/50 p-5 shadow-sm">
-                            <div class="text-3xl font-bold text-brand-deepblue">4.6+</div>
-                            <div class="text-sm text-slate-600 font-medium">Rating goal</div>
+                        <div class="glass-card rounded-2xl p-5 hover-lift card-glow stat-card stagger-2">
+                            <div class="text-3xl font-bold gradient-text count-up">4.6+</div>
+                            <div class="text-sm text-slate-600 font-medium mt-1">Rating goal</div>
                         </div>
-                        <div class="rounded-xl bg-white/60 backdrop-blur-md border border-white/50 p-5 shadow-sm">
-                            <div class="text-3xl font-bold text-brand-deepblue">7 days</div>
-                            <div class="text-sm text-slate-600 font-medium">Typical delivery</div>
+                        <div class="glass-card rounded-2xl p-5 hover-lift card-glow stat-card stagger-3">
+                            <div class="text-3xl font-bold gradient-text count-up">7 days</div>
+                            <div class="text-sm text-slate-600 font-medium mt-1">Typical delivery</div>
                         </div>
-                        <div class="rounded-xl bg-white/60 backdrop-blur-md border border-white/50 p-5 shadow-sm">
-                            <div class="text-3xl font-bold text-brand-deepblue">₹0/mo</div>
-                            <div class="text-sm text-slate-600 font-medium">No monthly fees</div>
+                        <div class="glass-card rounded-2xl p-5 hover-lift card-glow stat-card stagger-4">
+                            <div class="text-3xl font-bold gradient-text count-up">₹0/mo</div>
+                            <div class="text-sm text-slate-600 font-medium mt-1">No monthly fees</div>
                         </div>
                     </div>
 
-                    <p class="mt-4 text-xs text-slate-500">
+                    <p class="mt-4 text-xs text-slate-500 fade-in-up stagger-5">
                         *Results vary by location/competition. We set up the system that improves visibility & trust.
                     </p>
                 </div>
 
                 <!-- Hero Card -->
-                <div class="lg:justify-self-end relative">
+                <div class="lg:justify-self-end relative float-animation fade-in-up stagger-2">
                     <div
-                        class="relative rounded-2xl overflow-hidden shadow-2xl shadow-brand-blue/10 border-4 border-white transform hover:scale-[1.01] transition-transform duration-500">
-                        <img src="./assets/doctor.png" alt="Professional Doctor" class="w-full h-auto object-cover" />
+                        class="relative rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/20 border-4 border-white/50 hover:shadow-purple-500/40 transition-all duration-500 hover:scale-[1.02]">
+                        <img src="./assets/hero-doctor.png" alt="Professional Doctor"
+                            class="w-full h-auto object-cover" />
                         <div
-                            class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur px-5 py-4 rounded-xl border border-brand-offwhite shadow-lg flex items-center gap-4">
+                            class="absolute bottom-6 left-6 right-6 glass-card px-6 py-5 rounded-2xl shadow-2xl flex items-center gap-4 hover-lift">
                             <div
-                                class="w-12 h-12 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue shrink-0">
-                                <i data-lucide="shield-check" class="w-6 h-6"></i>
+                                class="w-14 h-14 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white shrink-0 pulse-glow">
+                                <i data-lucide="shield-check" class="w-7 h-7"></i>
                             </div>
                             <div>
-                                <div class="font-bold text-brand-deepblue text-base">Trusted Partner</div>
-                                <div class="text-sm text-brand-black/60">Helping clinics grow</div>
+                                <div class="font-bold text-brand-deepblue text-lg">Trusted Partner</div>
+                                <div class="text-sm text-brand-black/70">Helping clinics grow</div>
                             </div>
                         </div>
                     </div>
@@ -206,10 +607,25 @@
         </section>
 
         <!-- Services -->
-        <section id="services" class="py-32 bg-brand-offwhite">
-            <div class="mx-auto max-w-7xl px-4">
-                <div class="max-w-2xl">
-                    <h2 class="text-4xl font-bold tracking-tight text-brand-deepblue">Services built for local clinics
+        <section id="services" class="py-32 bg-white relative overflow-hidden">
+            <!-- Decorative Background -->
+            <div class="absolute inset-0 opacity-30">
+                <div
+                    class="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse">
+                </div>
+                <div class="absolute bottom-20 right-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"
+                    style="animation-delay: 2s;"></div>
+            </div>
+
+            <div class="mx-auto max-w-7xl px-4 relative z-10">
+                <div class="max-w-2xl text-center mx-auto scroll-reveal">
+                    <div
+                        class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-100 to-blue-100 px-4 py-2 text-sm font-semibold mb-4">
+                        <i data-lucide="zap" class="w-4 h-4 text-purple-600"></i>
+                        <span class="gradient-text">Comprehensive Solutions</span>
+                    </div>
+                    <h2 class="text-4xl sm:text-5xl font-bold tracking-tight">
+                        <span class="gradient-text">Services</span> built for local clinics
                     </h2>
                     <p class="mt-4 text-lg text-slate-600">
                         We focus on what drives patient calls: Google Maps visibility, trust (reviews), and a fast
@@ -218,73 +634,79 @@
                 </div>
 
                 <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div
-                        class="rounded-xl border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="glass-card rounded-2xl p-8 hover-lift card-glow scroll-reveal group">
                         <div
-                            class="h-14 w-14 rounded-xl bg-orange-600 text-white grid place-items-center shadow-lg shadow-orange-500/10">
-                            <i data-lucide="map-pin" class="w-7 h-7"></i>
+                            class="h-16 w-16 rounded-2xl bg-gradient-to-br from-orange-500 to-red-500 text-white grid place-items-center shadow-2xl shadow-orange-500/30 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="map-pin" class="w-8 h-8 icon-bounce"></i>
                         </div>
-                        <h3 class="mt-8 font-bold text-xl text-brand-deepblue">Google Business Optimization</h3>
+                        <h3
+                            class="mt-8 font-bold text-xl text-brand-deepblue group-hover:text-purple-600 transition-colors">
+                            Google Business Optimization</h3>
                         <p class="mt-4 text-slate-600 leading-relaxed">
                             Categories, services, description, photos, Q&A, posts—optimized to improve Maps visibility.
                         </p>
                     </div>
 
-                    <div
-                        class="rounded-xl border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="glass-card rounded-2xl p-8 hover-lift card-glow scroll-reveal group">
                         <div
-                            class="h-14 w-14 rounded-xl bg-yellow-500 text-white grid place-items-center shadow-lg shadow-yellow-500/10">
-                            <i data-lucide="star" class="w-7 h-7"></i>
+                            class="h-16 w-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-orange-400 text-white grid place-items-center shadow-2xl shadow-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="star" class="w-8 h-8 icon-bounce"></i>
                         </div>
-                        <h3 class="mt-8 font-bold text-xl text-brand-deepblue">Reviews System Setup</h3>
+                        <h3
+                            class="mt-8 font-bold text-xl text-brand-deepblue group-hover:text-purple-600 transition-colors">
+                            Reviews System Setup</h3>
                         <p class="mt-4 text-slate-600 leading-relaxed">
                             Review link + QR code + WhatsApp templates + staff script—so reviews come consistently.
                         </p>
                     </div>
 
-                    <div
-                        class="rounded-xl border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="glass-card rounded-2xl p-8 hover-lift card-glow scroll-reveal group">
                         <div
-                            class="h-14 w-14 rounded-xl bg-blue-600 text-white grid place-items-center shadow-lg shadow-blue-500/10">
-                            <i data-lucide="layout" class="w-7 h-7"></i>
+                            class="h-16 w-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-500 text-white grid place-items-center shadow-2xl shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="layout" class="w-8 h-8 icon-bounce"></i>
                         </div>
-                        <h3 class="mt-8 font-bold text-xl text-brand-deepblue">Fast-Performance Website</h3>
+                        <h3
+                            class="mt-8 font-bold text-xl text-brand-deepblue group-hover:text-purple-600 transition-colors">
+                            Fast-Performance Website</h3>
                         <p class="mt-4 text-slate-600 leading-relaxed">
                             Mobile-first site with click-to-call, WhatsApp button, services, and Google Maps embed.
                         </p>
                     </div>
 
-                    <div
-                        class="rounded-xl border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="glass-card rounded-2xl p-8 hover-lift card-glow scroll-reveal group">
                         <div
-                            class="h-14 w-14 rounded-xl bg-purple-600 text-white grid place-items-center shadow-lg shadow-purple-500/10">
-                            <i data-lucide="calendar" class="w-7 h-7"></i>
+                            class="h-16 w-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 text-white grid place-items-center shadow-2xl shadow-purple-500/30 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="calendar" class="w-8 h-8 icon-bounce"></i>
                         </div>
-                        <h3 class="mt-8 font-bold text-xl text-brand-deepblue">Online Appointment Booking</h3>
+                        <h3
+                            class="mt-8 font-bold text-xl text-brand-deepblue group-hover:text-purple-600 transition-colors">
+                            Online Appointment Booking</h3>
                         <p class="mt-4 text-slate-600 leading-relaxed">
                             Included in Premium: booking form with date/time selection and WhatsApp/email notifications.
                         </p>
                     </div>
 
-                    <div
-                        class="rounded-xl border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="glass-card rounded-2xl p-8 hover-lift card-glow scroll-reveal group">
                         <div
-                            class="h-14 w-14 rounded-xl bg-rose-600 text-white grid place-items-center shadow-lg shadow-rose-500/10">
-                            <i data-lucide="megaphone" class="w-7 h-7"></i>
+                            class="h-16 w-16 rounded-2xl bg-gradient-to-br from-rose-500 to-pink-500 text-white grid place-items-center shadow-2xl shadow-rose-500/30 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="megaphone" class="w-8 h-8 icon-bounce"></i>
                         </div>
-                        <h3 class="mt-8 font-bold text-xl text-brand-deepblue">Ads Setup (Optional)</h3>
+                        <h3
+                            class="mt-8 font-bold text-xl text-brand-deepblue group-hover:text-purple-600 transition-colors">
+                            Ads Setup (Optional)</h3>
                         <p class="mt-4 text-slate-600 leading-relaxed">
                             Google Ads, Instagram Ads, and Facebook Ads setup—only when you want faster leads.
                         </p>
                     </div>
 
-                    <div
-                        class="rounded-xl border border-white/50 bg-white/60 backdrop-blur-lg p-8 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+                    <div class="glass-card rounded-2xl p-8 hover-lift card-glow scroll-reveal group">
                         <div
-                            class="h-14 w-14 rounded-xl bg-emerald-600 text-white grid place-items-center shadow-lg shadow-emerald-500/10">
-                            <i data-lucide="life-buoy" class="w-7 h-7"></i>
+                            class="h-16 w-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 text-white grid place-items-center shadow-2xl shadow-emerald-500/30 group-hover:scale-110 transition-transform duration-300">
+                            <i data-lucide="life-buoy" class="w-8 h-8 icon-bounce"></i>
                         </div>
-                        <h3 class="mt-8 font-bold text-xl text-brand-deepblue">1-Year Support</h3>
+                        <h3
+                            class="mt-8 font-bold text-xl text-brand-deepblue group-hover:text-purple-600 transition-colors">
+                            1-Year Support</h3>
                         <p class="mt-4 text-slate-600 leading-relaxed">
                             FREE 1-year hosting + basic maintenance: minor text/images updates and technical support.
                         </p>
@@ -294,55 +716,69 @@
         </section>
 
         <!-- Testimonials / Social Proof -->
-        <section class="py-20 bg-white border-y border-slate-200">
-            <div class="mx-auto max-w-7xl px-4">
-                <div class="text-center mb-12">
+        <section class="py-20 relative overflow-hidden">
+            <!-- Background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-50 via-white to-blue-50"></div>
+            <div
+                class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+            </div>
+            <div
+                class="absolute bottom-20 right-10 w-72 h-72 bg-gradient-to-br from-blue-200 to-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20">
+            </div>
+
+            <div class="mx-auto max-w-7xl px-4 relative z-10">
+                <div class="text-center mb-12 scroll-reveal">
                     <div
-                        class="inline-flex items-center gap-2 rounded-full border border-brand-blue/20 bg-brand-blue/5 px-4 py-1.5 text-sm text-brand-blue mb-4">
-                        <i data-lucide="heart" class="w-4 h-4 fill-current"></i> Trusted by Local Clinics
+                        class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-100 to-pink-100 px-4 py-2 text-sm font-semibold mb-4">
+                        <i data-lucide="heart" class="w-4 h-4 text-purple-600 fill-current"></i>
+                        <span class="gradient-text">Trusted by Local Clinics</span>
                     </div>
-                    <h2 class="text-3xl font-bold tracking-tight text-brand-deepblue">What doctors are saying</h2>
+                    <h2 class="text-4xl sm:text-5xl font-bold tracking-tight">
+                        What <span class="gradient-text">doctors</span> are saying
+                    </h2>
                 </div>
-                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div class="bg-brand-offwhite p-8 rounded-xl border border-slate-200 shadow-sm text-left">
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div
+                        class="glass-card p-8 rounded-2xl border-2 border-purple-500/20 shadow-xl hover-lift scroll-reveal">
                         <div class="flex gap-1 text-yellow-400 mb-4">
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
                         </div>
                         <p class="text-slate-700 italic text-lg leading-relaxed">"The Standard package was perfect for
                             my dental practice. We
                             rank better on Maps now, and patients love seeing our photos before visiting."</p>
                         <div class="mt-6 font-semibold text-brand-deepblue flex items-center gap-3">
                             <div
-                                class="w-10 h-10 rounded-full bg-slate-200 grid place-items-center text-slate-500 font-bold">
+                                class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 grid place-items-center text-white font-bold text-lg shadow-lg">
                                 DA</div>
                             <div>
-                                <div>Dr. Ankit</div>
-                                <div class="text-xs text-slate-500 font-normal">Dental Surgeon</div>
+                                <div class="text-lg">Dr. Ankit</div>
+                                <div class="text-sm text-slate-500 font-normal">Dental Surgeon</div>
                             </div>
                         </div>
                     </div>
-                    <div class="bg-brand-offwhite p-8 rounded-xl border border-slate-200 shadow-sm text-left">
+                    <div
+                        class="glass-card p-8 rounded-2xl border-2 border-blue-500/20 shadow-xl hover-lift scroll-reveal">
                         <div class="flex gap-1 text-yellow-400 mb-4">
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
-                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
                         </div>
                         <p class="text-slate-700 italic text-lg leading-relaxed">"Zero technical headaches. They set up
                             everything including the
                             booking form. Hosting is actually free as promised."</p>
                         <div class="mt-6 font-semibold text-brand-deepblue flex items-center gap-3">
                             <div
-                                class="w-10 h-10 rounded-full bg-slate-200 grid place-items-center text-slate-500 font-bold">
+                                class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-500 grid place-items-center text-white font-bold text-lg shadow-lg">
                                 DP</div>
                             <div>
-                                <div>Dr. Priya</div>
-                                <div class="text-xs text-slate-500 font-normal">Physiotherapist</div>
+                                <div class="text-lg">Dr. Priya</div>
+                                <div class="text-sm text-slate-500 font-normal">Physiotherapist</div>
                             </div>
                         </div>
                     </div>
@@ -586,154 +1022,166 @@
         </section>
 
         <!-- Packages -->
-        <section id="packages" class="py-32 bg-slate-50 border-y border-slate-200">
-            <div class="mx-auto max-w-7xl px-4">
-                <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
+        <section id="packages" class="py-32 relative overflow-hidden">
+            <!-- Animated Background -->
+            <div class="absolute inset-0 mesh-gradient opacity-50"></div>
+            <div
+                class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse">
+            </div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-300 to-cyan-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"
+                style="animation-delay: 2s;"></div>
+
+            <div class="mx-auto max-w-7xl px-4 relative z-10">
+                <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16 scroll-reveal">
                     <div class="max-w-2xl">
-                        <h2 class="text-4xl font-bold tracking-tight text-brand-deepblue">One-time packages</h2>
+                        <div
+                            class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-100 to-blue-100 px-4 py-2 text-sm font-semibold mb-4">
+                            <i data-lucide="package" class="w-4 h-4 text-purple-600"></i>
+                            <span class="gradient-text">Flexible Pricing</span>
+                        </div>
+                        <h2 class="text-4xl sm:text-5xl font-bold tracking-tight">
+                            <span class="gradient-text">One-time</span> packages
+                        </h2>
                         <p class="mt-4 text-lg text-slate-600">
                             Simple, fixed pricing. Domain not included (clinic owner buys). We connect it free.
                         </p>
                     </div>
                     <a href="./contact.html"
-                        class="inline-flex items-center justify-center rounded-md bg-brand-deepblue px-6 py-3 text-base font-semibold text-white hover:bg-slate-800 transition-colors">
-                        Get Free Audit
+                        class="btn-gradient inline-flex items-center justify-center rounded-lg px-6 py-3 text-base font-semibold text-white shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-105 transition-all duration-300">
+                        <span>Get Free Audit</span>
                     </a>
                 </div>
 
-                <div class="grid lg:grid-cols-3 gap-6">
+                <div class="grid lg:grid-cols-3 gap-8">
                     <!-- Starter (Free) -->
-                    <div
-                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-6 flex flex-col hover:shadow-xl transition-shadow shadow-sm">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-semibold">Starter</h3>
-                            <span class="text-xs rounded-full bg-slate-100 px-3 py-1 text-slate-700">Free Audit</span>
+                    <div class="glass-card rounded-2xl p-8 flex flex-col hover-lift scroll-reveal group">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-bold text-brand-deepblue">Starter</h3>
+                            <span
+                                class="text-xs rounded-full bg-gradient-to-r from-emerald-100 to-teal-100 px-3 py-1.5 text-emerald-700 font-semibold">Free
+                                Audit</span>
                         </div>
-                        <div class="mt-4">
-                            <div id="price-free" class="text-4xl font-bold">Free</div>
-                            <div class="text-sm text-slate-600 mt-1">No Cost • <span
-                                    class="text-brand-blue font-semibold">Ready in 24 Hrs</span></div>
+                        <div class="mb-6">
+                            <div id="price-free" class="text-5xl font-bold gradient-text">Free</div>
+                            <div class="text-sm text-slate-600 mt-2">No Cost • <span
+                                    class="text-purple-600 font-semibold">Ready in 24 Hrs</span></div>
                         </div>
-                        <ul class="mt-6 space-y-4 text-sm text-slate-700 mb-8">
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>Clinic Performance
-                                    Audit</strong>
-                            </li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Google Maps Ranking Check</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Competition Analysis</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Improvement Report</li>
-                            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-slate-400 shrink-0"></i><span
-                                    class="text-slate-500">No Website</span></li>
-                            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-slate-400 shrink-0"></i><span
-                                    class="text-slate-500">No Booking System</span></li>
+                        <ul class="space-y-4 text-sm text-slate-700 mb-8 flex-grow">
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-emerald-500 shrink-0"></i><strong>Clinic Performance
+                                    Audit</strong></li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-emerald-500 shrink-0"></i>Google Maps Ranking Check</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-emerald-500 shrink-0"></i>Competition Analysis</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-emerald-500 shrink-0"></i>Improvement Report</li>
+                            <li class="flex gap-3"><i data-lucide="x-circle"
+                                    class="w-5 h-5 text-slate-300 shrink-0"></i><span class="text-slate-400">No
+                                    Website</span></li>
+                            <li class="flex gap-3"><i data-lucide="x-circle"
+                                    class="w-5 h-5 text-slate-300 shrink-0"></i><span class="text-slate-400">No Booking
+                                    System</span></li>
                         </ul>
                         <a href="contact.html"
-                            class="mt-auto block text-center rounded-md border border-slate-300 px-5 py-3 font-semibold hover:bg-slate-50">Get
-                            Free Audit</a>
+                            class="block text-center rounded-lg border-2 border-slate-300 px-6 py-3 font-semibold hover:bg-slate-50 hover:border-purple-500 transition-all duration-300">
+                            Get Free Audit
+                        </a>
                     </div>
 
-                    <!-- Standard (Prev. Starter) -->
+                    <!-- Standard (Popular) -->
                     <div
-                        class="rounded-md border-2 border-brand-blue bg-white/80 backdrop-blur-lg p-6 flex flex-col relative shadow-2xl shadow-brand-blue/10">
+                        class="relative glass-card rounded-2xl p-8 flex flex-col hover-lift scroll-reveal group border-2 border-purple-500/50 shadow-2xl shadow-purple-500/20">
                         <div
-                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-blue text-white text-xs font-bold px-3 py-1 rounded-full">
-                            POPULAR</div>
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-semibold">Standard</h3>
+                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg pulse-glow">
+                            ⭐ POPULAR
                         </div>
-                        <div class="mt-4">
-                            <div id="price-basic" class="text-4xl font-bold">₹8,000</div>
-                            <div class="text-sm text-slate-600 mt-1">One-time • <span
-                                    class="text-brand-blue font-semibold">Ready in 3 Days</span></div>
+                        <div class="flex items-center justify-between mb-6 mt-2">
+                            <h3 class="text-xl font-bold text-brand-deepblue">Standard</h3>
+                        </div>
+                        <div class="mb-6">
+                            <div id="price-basic" class="text-5xl font-bold gradient-text">₹8,000</div>
+                            <div class="text-sm text-slate-600 mt-2">One-time • <span
+                                    class="text-purple-600 font-semibold">Ready in 3 Days</span></div>
                             <div
-                                class="text-[10px] font-bold uppercase tracking-wider text-slate-500 mt-2 bg-slate-100 inline-block px-2 py-0.5 rounded">
-                                ₹2,400 Booking Amount (30%)
+                                class="text-[10px] font-bold uppercase tracking-wider text-slate-500 mt-2 bg-purple-100 inline-block px-2 py-1 rounded">
+                                ₹2,400 Booking (30%)
                             </div>
                         </div>
-                        <ul class="mt-6 space-y-4 text-sm text-slate-700 mb-8">
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>5-10 Page Website</strong>
+                        <ul class="space-y-4 text-sm text-slate-700 mb-8 flex-grow">
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-purple-500 shrink-0"></i><strong>5-10 Page Website</strong></li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-purple-500 shrink-0"></i>1 Year Free Hosting + Maintenance</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-purple-500 shrink-0"></i>30 Days Free Content Updates</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-purple-500 shrink-0"></i>Google Map Listing Setup</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-purple-500 shrink-0"></i><strong>Online Appointment
+                                    Booking</strong></li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-purple-500 shrink-0"></i>Google Analytics Setup</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-purple-500 shrink-0"></i>Professional Gallery (25 Photos + 5
+                                Videos)</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-purple-500 shrink-0"></i>Services & Q&A Setup</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-purple-500 shrink-0"></i><strong>Advanced SEO Setup</strong>
                             </li>
-                            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0"></i>1
-                                Year Free Hosting + Maintenance (Minor Changes Free)</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>30 Days Free Content Updates</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Google Map Listing Setup</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>Online Appointment Booking
-                                    Form</strong></li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Google Analytics Setup
-                            </li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Professional Photo Gallery (25 Photos +
-                                5 Videos)</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Services & Q&A Setup</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>Advanced SEO Setup</strong>
-                            </li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Mobile Responsive Design</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>WhatsApp Chat Button</li>
-                            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-slate-400 shrink-0"></i><span
-                                    class="text-slate-500">Domain not included</span></li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-purple-500 shrink-0"></i>Mobile Responsive Design</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-purple-500 shrink-0"></i>WhatsApp Chat Button</li>
                         </ul>
                         <a href="contact.html"
-                            class="mt-auto block text-center rounded-md bg-brand-blue text-white px-5 py-3 font-semibold hover:bg-brand-blue/90">Get
-                            Started Now</a>
+                            class="btn-gradient block text-center rounded-lg px-6 py-3 font-semibold text-white shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-105 transition-all duration-300">
+                            <span>Get Started Now</span>
+                        </a>
                     </div>
 
                     <!-- Premium -->
                     <div
-                        class="rounded-md border border-white/50 bg-white/60 backdrop-blur-lg p-6 flex flex-col hover:shadow-xl transition-shadow shadow-sm">
-                        <div class="flex items-center justify-between">
-                            <h3 class="text-lg font-semibold">Premium</h3>
-                            <span class="text-xs rounded-full bg-slate-100 px-3 py-1 text-slate-700">Complete
-                                Automation</span>
+                        class="glass-card rounded-2xl p-8 flex flex-col hover-lift scroll-reveal group border-2 border-blue-500/30">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-bold text-brand-deepblue">Premium</h3>
+                            <span
+                                class="text-xs rounded-full bg-gradient-to-r from-blue-100 to-cyan-100 px-3 py-1.5 text-blue-700 font-semibold">Complete</span>
                         </div>
-                        <div class="mt-4">
-                            <div id="price-premium" class="text-4xl font-bold">₹15,000</div>
-                            <div class="text-sm text-slate-600 mt-1">One-time • <span
-                                    class="text-brand-blue font-semibold">Ready in 7 Days</span></div>
+                        <div class="mb-6">
+                            <div id="price-premium" class="text-5xl font-bold gradient-text">₹15,000</div>
+                            <div class="text-sm text-slate-600 mt-2">One-time • <span
+                                    class="text-purple-600 font-semibold">Ready in 7 Days</span></div>
                         </div>
-                        <ul class="mt-6 space-y-4 text-sm text-slate-700 mb-8">
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>Everything in Standard</strong>
+                        <ul class="space-y-4 text-sm text-slate-700 mb-8 flex-grow">
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-blue-500 shrink-0"></i><strong>Everything in Standard</strong>
                             </li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>Complete Blog System
-                                    Setup</strong>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-blue-500 shrink-0"></i><strong>Complete Blog System</strong>
                             </li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>Private Admin Panel</strong>
-                            </li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Post/Update/Delete Blogs</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>View All Appointments</li>
-                            <li class="flex gap-3"><i data-lucide="check" class="w-5 h-5 text-brand-blue shrink-0"></i>1
-                                Year Free Hosting + Maintenance (Minor Changes Free)</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>30 Days Free Content Updates</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i><strong>Google Rank Booster</strong>
-                                (Advanced SEO)</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Patient-Focused Site Structure</li>
-                            <li class="flex gap-3"><i data-lucide="check"
-                                    class="w-5 h-5 text-brand-blue shrink-0"></i>Priority Support (Phone/WhatsApp)</li>
-                            <li class="flex gap-3"><i data-lucide="x" class="w-5 h-5 text-slate-400 shrink-0"></i><span
-                                    class="text-slate-500">Domain not included</span></li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-blue-500 shrink-0"></i><strong>Private Admin Panel</strong></li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-blue-500 shrink-0"></i>Post/Update/Delete Blogs</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-blue-500 shrink-0"></i>View All Appointments</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-blue-500 shrink-0"></i>1 Year Free Hosting + Maintenance</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-blue-500 shrink-0"></i>30 Days Free Content Updates</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-blue-500 shrink-0"></i><strong>Google Rank Booster</strong></li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-blue-500 shrink-0"></i>Patient-Focused Site Structure</li>
+                            <li class="flex gap-3"><i data-lucide="check-circle"
+                                    class="w-5 h-5 text-blue-500 shrink-0"></i>Priority Support (Phone/WhatsApp)</li>
                         </ul>
                         <a href="contact.html"
-                            class="mt-auto block text-center rounded-md border border-slate-300 px-5 py-3 font-semibold hover:bg-slate-50">Choose
-                            Premium</a>
+                            class="block text-center rounded-lg border-2 border-blue-500 bg-gradient-to-r from-blue-50 to-cyan-50 px-6 py-3 font-semibold text-blue-700 hover:from-blue-100 hover:to-cyan-100 hover:scale-105 transition-all duration-300">
+                            Choose Premium
+                        </a>
                     </div>
                 </div>
 
@@ -1136,6 +1584,31 @@
 
                 calculate();
             }
+        })();
+
+        // Scroll Reveal Animation
+        (function () {
+            const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+
+            const elementInView = (el, offset = 100) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return elementTop <= (window.innerHeight || document.documentElement.clientHeight) - offset;
+            };
+
+            const displayScrollElement = (element) => {
+                element.classList.add('revealed');
+            };
+
+            const handleScrollAnimation = () => {
+                scrollRevealElements.forEach((el) => {
+                    if (elementInView(el)) {
+                        displayScrollElement(el);
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', handleScrollAnimation);
+            handleScrollAnimation(); // Initial check on page load
         })();
 
         lucide.createIcons();

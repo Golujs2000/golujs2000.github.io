@@ -27,6 +27,37 @@
             }
         }
     </script>
+    <style>
+        /* Navigation Link Styles */
+        .nav-link {
+            position: relative;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::before {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 
 <body class="bg-white text-slate-900">
@@ -54,19 +85,21 @@
             <a href="index.html" class="flex items-center gap-2">
                 <img src="./assets/logo.svg" alt="CGP360 Logo" class="h-10 w-auto object-contain" />
             </a>
-            <nav class="hidden md:flex items-center gap-6 text-sm text-slate-700">
-                <a class="hover:text-slate-900" href="index.html">Home</a>
-                <a class="hover:text-slate-900 font-semibold text-brand-blue" href="services.html">Services</a>
-                <a class="hover:text-slate-900" href="packages.html">Packages</a>
-                <a class="hover:text-slate-900" href="portfolio.html">Portfolio</a>
-                <a class="hover:text-slate-900" href="why-us.html">Why Us?</a>
-                <a class="hover:text-slate-900" href="contact.html">Contact</a>
-                <a class="hover:text-slate-900" href="about.html">About</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm text-slate-700">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link font-semibold text-brand-blue" href="services.html">Services</a>
+                <a class="nav-link" href="packages.html">Packages</a>
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link" href="why-us.html">Why Us?</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="about.html">About</a>
             </nav>
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-3">
                 <a href="contact.html"
-                    class="hidden sm:inline-flex items-center justify-center rounded-md bg-brand-deepblue px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">Get
-                    Free Audit</a>
+                    class="hidden sm:inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-105 transition-all duration-300">
+                    <i data-lucide="sparkles" class="w-4 h-4 mr-1.5"></i>
+                    Get Free Audit
+                </a>
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-brand-blue">
                     <i data-lucide="menu" class="w-6 h-6"></i>
